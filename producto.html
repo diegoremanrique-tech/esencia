@@ -154,6 +154,7 @@ nav.scrolled .nav-logo{height:34px}
 }
 .nav-cart:hover{border-color:var(--gold);color:var(--gold)}
 .nav-cart-dot{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.nav-cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;background:var(--gold);color:var(--black);font-size:9px;font-weight:600;letter-spacing:0;border-radius:50%;padding:0 5px}
 
 /* ─── BREADCRUMB ─── */
 .breadcrumb{
@@ -576,9 +577,10 @@ footer{
     <li><a href="/#colecciones">Colecciones</a></li>
     <li><a href="/#proceso">Nosotros</a></li>
   </ul>
-  <button class="nav-cart">
+  <button class="nav-cart" id="navCart">
     <span class="nav-cart-dot"></span>
-    <span>Carrito · 0</span>
+    <span>Carrito</span>
+    <span class="nav-cart-count" id="cartCount">0</span>
   </button>
 </nav>
 
@@ -596,7 +598,15 @@ footer{
 </div>
 
 <!-- PRODUCT HERO -->
-<section class="product">
+<!-- data-* del producto: el carrito y el selector de tallas leen estos atributos.
+     En el Bloque 4 se generarán dinámicamente según el slug de la URL. -->
+<section class="product"
+  data-id="m9"
+  data-slug="dior-sauvage"
+  data-nombre="Sauvage"
+  data-marca="Dior"
+  data-tier="disenador"
+  data-genero="masculino">
 
   <!-- GALERÍA -->
   <div class="gallery reveal-left">
@@ -853,5 +863,7 @@ window.addEventListener('load', () => {
   });
 });
 </script>
+  <!-- Carrito compartido (Bloque 2) -->
+  <script src="/assets/carrito.js" defer></script>
 </body>
 </html>
