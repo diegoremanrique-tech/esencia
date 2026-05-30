@@ -1,0 +1,14 @@
+# Variables de entorno (llaves secretas) — NUNCA subir
+.env
+.env.local
+.env.*.local
+
+# Dependencias
+node_modules/
+
+# Vercel
+.vercel
+
+# Sistema
+.DS_Store
+*.log

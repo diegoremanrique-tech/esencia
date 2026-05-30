@@ -1,0 +1,14 @@
+{
+  "name": "esencia",
+  "version": "1.0.0",
+  "description": "Sitio web de ESENCIA — perfumes luxury, Lima Perú. Pagos Culqi, CRM Notion, emails Resend.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  }
+}

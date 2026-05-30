@@ -1,0 +1,39 @@
+/* ============================================================
+   ESENCIA — Variables CSS globales
+   Identidad de marca (no tocar): fondo negro, acentos dorados.
+   Estas variables se extrajeron de los 3 HTML y se consolidan
+   aquí como fuente única. Cada HTML mantiene su :root inline
+   con los mismos valores, por lo que enlazar este archivo no
+   cambia nada visual.
+   ============================================================ */
+:root{
+  /* Negros y superficies */
+  --black:#000;          /* fondo base del body */
+  --near:#050505;        /* negro de marca */
+  --surf:#0a0a0a;        /* superficie carrito / tarjetas */
+  --surf2:#0f0f0f;
+  --surf3:#141414;
+
+  /* Bordes (oscuros, nunca blancos) */
+  --border:#181818;
+  --border2:#252525;
+  --border3:#333;
+
+  /* Tipografía / textos */
+  --text:#f5f0eb;
+  --text2:#a09888;
+  --text3:#5a5248;
+  --text4:#3a342e;
+
+  /* Dorados — acento de marca #c9a96e */
+  --gold:#c9a96e;
+  --gold2:#8a6f42;
+  --gold3:#2a2010;
+  --gold-deep:#a08658;
+  --gold-glow:rgba(201,169,110,.12);
+
+  /* Notas / alertas */
+  --note:#9c8f76;
+  --red:#c84545;
+  --red-deep:#8a2f2f;
+}
