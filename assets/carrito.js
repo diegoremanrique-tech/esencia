@@ -310,51 +310,22 @@
     const prod = document.querySelector('.product[data-slug]');
     if (!prod) return; // No es la página de producto
 
-    const tier = normalizarTier(prod.dataset.tier);
-    const tabla = PRECIOS[tier];
-    const base = {
-      id: prod.dataset.id || prod.dataset.slug,
-      slug: prod.dataset.slug,
-      nombre: prod.dataset.nombre || '',
-      marca: prod.dataset.marca || '',
-      coleccion: tier,
-      imagen: (document.querySelector('.gal-main img') || {}).src || '',
-    };
-
-    const opts = Array.from(document.querySelectorAll('.size-opt'));
-    // Asigna el precio correcto de la tabla a cada talla + etiqueta de precio
-    opts.forEach((opt) => {
-      const ml = Number(opt.dataset.size);
-      const precio = tabla[ml];
-      if (precio != null) {
-        opt.dataset.price = precio;
-        let pl = opt.querySelector('.size-price');
-        if (!pl) {
-          pl = document.createElement('div');
-          pl.className = 'size-price';
-          opt.appendChild(pl);
-        }
-        pl.textContent = money(precio);
-      }
-    });
-
-    // Precio total inicial = talla activa (por defecto 50ml)
-    const activa = document.querySelector('.size-opt.active') || opts[0];
-    const totalPrice = document.getElementById('totalPrice');
-    const ctaPrice = document.getElementById('ctaPrice');
-    if (activa && totalPrice) {
-      totalPrice.textContent = activa.dataset.price;
-      const sub = ctaPrice && ctaPrice.querySelector('sub');
-      if (sub) sub.textContent = ` · ${activa.dataset.size}ml`;
-    }
-
+    // Los precios y datos los puebla producto.html desde el JSON. Aquí solo
+    // enganchamos los botones y leemos el estado EN VIVO al hacer clic, para
+    // que el item del carrito siempre refleje el producto/talla actuales.
     function lineaSeleccionada() {
-      const sel = document.querySelector('.size-opt.active') || opts[0];
-      return Object.assign({}, base, {
+      const sel = document.querySelector('.size-opt.active') || document.querySelector('.size-opt');
+      return {
+        id: prod.dataset.id || prod.dataset.slug,
+        slug: prod.dataset.slug,
+        nombre: prod.dataset.nombre || '',
+        marca: prod.dataset.marca || '',
+        coleccion: normalizarTier(prod.dataset.tier),
         talla: Number(sel.dataset.size),
         precio: Number(sel.dataset.price),
         cantidad: 1,
-      });
+        imagen: (document.querySelector('.gal-main img') || {}).src || '',
+      };
     }
 
     const btnAdd = document.querySelector('.cta-secondary');

@@ -1,0 +1,8531 @@
+[
+  {
+    "slug": "louis-vuitton-ombre-nomade",
+    "nombre": "Ombre Nomade",
+    "marca": "Louis Vuitton",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Misterioso",
+      "Lujoso",
+      "Exclusividad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Frambuesa"
+    ],
+    "notas_corazon": [
+      "Incienso",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Oud",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Misterioso, Lujoso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/louis-vuitton-ombre-nomade.jpg"
+  },
+  {
+    "slug": "louis-vuitton-limmensit",
+    "nombre": "L'Immensité",
+    "marca": "Louis Vuitton",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Limpio",
+      "Elegante"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Jengibre",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Romero",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Ámbar gris"
+    ],
+    "descripcion_corta": "Fresco, Limpio",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/louis-vuitton-limmensit.jpg"
+  },
+  {
+    "slug": "louis-vuitton-imagination",
+    "nombre": "Imagination",
+    "marca": "Louis Vuitton",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Reuniones"
+    ],
+    "caracter": [
+      "Fresco",
+      "Refinado",
+      "Exclusivo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Neroli",
+      "Jengibre"
+    ],
+    "notas_fondo": [
+      "Té negro",
+      "Cedro"
+    ],
+    "descripcion_corta": "Fresco, Refinado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/louis-vuitton-imagination.jpg"
+  },
+  {
+    "slug": "creed-aventus",
+    "nombre": "Aventus",
+    "marca": "Creed",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Éxito",
+      "Clase"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Piña",
+      "Grosella negra"
+    ],
+    "notas_corazon": [
+      "Abedul",
+      "Pachulí"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Musgo"
+    ],
+    "descripcion_corta": "Éxito, Clase",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/creed-aventus.jpg"
+  },
+  {
+    "slug": "creed-silver-mountain-water",
+    "nombre": "Silver Mountain Water",
+    "marca": "Creed",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Pureza",
+      "Fresco"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Bergamota",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Té verde",
+      "Grosella negra"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Pureza, Fresco",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/creed-silver-mountain-water.jpg"
+  },
+  {
+    "slug": "tom-ford-ombre-leather-2018",
+    "nombre": "Ombre Leather 2018",
+    "marca": "Tom Ford",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Misterioso",
+      "Elegante",
+      "Sexy"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Cardamomo"
+    ],
+    "notas_corazon": [
+      "Cuero",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Misterioso, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/tom-ford-ombre-leather-2018.jpg"
+  },
+  {
+    "slug": "chanel-bleu-de-chanel",
+    "nombre": "Bleu de Chanel",
+    "marca": "Chanel",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario",
+      "Oficina"
+    ],
+    "caracter": [
+      "Moderno",
+      "Elegante",
+      "Versátil"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Jengibre",
+      "Nuez moscada"
+    ],
+    "notas_fondo": [
+      "Incienso",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Moderno, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-bleu-de-chanel.jpg"
+  },
+  {
+    "slug": "chanel-allure-homme-sport",
+    "nombre": "Allure Homme Sport",
+    "marca": "Chanel",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Refrescante",
+      "Moderno"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Naranja",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Pimienta",
+      "Neroli"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Refrescante, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-allure-homme-sport.jpg"
+  },
+  {
+    "slug": "dior-sauvage",
+    "nombre": "Sauvage",
+    "marca": "Dior",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Elegante"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota",
+      "Pimienta"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Geranio"
+    ],
+    "notas_fondo": [
+      "Ambroxan",
+      "Cedro"
+    ],
+    "descripcion_corta": "Fresco, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-sauvage.jpg"
+  },
+  {
+    "slug": "dior-sauvage-elixir",
+    "nombre": "Sauvage Elixir",
+    "marca": "Dior",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Denso",
+      "Exclusivo"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Canela",
+      "Nuez moscada"
+    ],
+    "notas_corazon": [
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Regaliz"
+    ],
+    "descripcion_corta": "Denso, Exclusivo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-sauvage-elixir.jpg"
+  },
+  {
+    "slug": "dior-fahrenheit",
+    "nombre": "Fahrenheit",
+    "marca": "Dior",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Noche"
+    ],
+    "caracter": [
+      "Clásico",
+      "Maduro"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Lavanda",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Violeta",
+      "Cedro"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Clásico, Maduro",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-fahrenheit.jpg"
+  },
+  {
+    "slug": "dior-vainilla-diorama",
+    "nombre": "Vainilla Diorama",
+    "marca": "Dior",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Lujo",
+      "Exclusivo"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Naranja",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Cacao",
+      "Cardamomo"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Lujo, Exclusivo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-vainilla-diorama.jpg"
+  },
+  {
+    "slug": "gucci-pour-homme",
+    "nombre": "Pour Homme",
+    "marca": "Gucci",
+    "genero": "masculino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Reuniones",
+      "Noche"
+    ],
+    "caracter": [
+      "Elegante",
+      "Misterioso",
+      "Autoridad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Lavanda",
+      "Albahaca"
+    ],
+    "notas_corazon": [
+      "Pimienta",
+      "Incienso"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Elegante, Misterioso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/gucci-pour-homme.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-le-male",
+    "nombre": "Le Male",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario",
+      "Trabajo"
+    ],
+    "caracter": [
+      "Clásico",
+      "Acogedor",
+      "Confianza"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Menta",
+      "Lavanda"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Azahar"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Clásico, Acogedor",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-le-male.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-ultra-male",
+    "nombre": "Ultra Male",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Dulce",
+      "Intenso",
+      "Seductor"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Pera",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Esclarea"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Dulce, Intenso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-ultra-male.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-le-male-elixir",
+    "nombre": "Le Male Elixir",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Sofisticado",
+      "Refinado",
+      "Seductor"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Lavanda",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Vainilla",
+      "Benjuí"
+    ],
+    "notas_fondo": [
+      "Miel",
+      "Tabaco"
+    ],
+    "descripcion_corta": "Sofisticado, Refinado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-le-male-elixir.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-le-beau",
+    "nombre": "Le Beau",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Fresco",
+      "Ligero",
+      "Relajado"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Coco"
+    ],
+    "notas_fondo": [
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Fresco, Ligero",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-le-beau.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-scandal-pour-homme",
+    "nombre": "Scandal Pour Homme",
+    "marca": "Jean Paul Gaultier",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Casual"
+    ],
+    "caracter": [
+      "Moderno",
+      "Atractivo",
+      "Extrovertido"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Esclarea",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Caramelo",
+      "Haba Tonka"
+    ],
+    "notas_fondo": [
+      "Vetiver"
+    ],
+    "descripcion_corta": "Moderno, Atractivo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-scandal-pour-homme.jpg"
+  },
+  {
+    "slug": "valentino-uomo-born-in-roma",
+    "nombre": "Uomo Born In Roma",
+    "marca": "Valentino",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Frescura",
+      "Nocturno"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Salvia",
+      "Sal"
+    ],
+    "notas_corazon": [
+      "Hojas de violeta"
+    ],
+    "notas_fondo": [
+      "Vetiver",
+      "Madera"
+    ],
+    "descripcion_corta": "Frescura, Nocturno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/valentino-uomo-born-in-roma.jpg"
+  },
+  {
+    "slug": "giorgio-armani-acqua-di-gio-profumo",
+    "nombre": "Acqua Di Gio Profumo",
+    "marca": "Giorgio Armani",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Oficina"
+    ],
+    "caracter": [
+      "Intenso",
+      "Elegante"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Bergamota",
+      "Notas marinas"
+    ],
+    "notas_corazon": [
+      "Geranio",
+      "Romero"
+    ],
+    "notas_fondo": [
+      "Incienso",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Intenso, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-acqua-di-gio-profumo.jpg"
+  },
+  {
+    "slug": "giorgio-armani-acqua-di-gio",
+    "nombre": "Acqua Di Gio",
+    "marca": "Giorgio Armani",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Playa",
+      "Piscina"
+    ],
+    "caracter": [
+      "Fresco",
+      "Acuático",
+      "Ligero"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Lima",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Calone"
+    ],
+    "notas_fondo": [
+      "Musgo",
+      "Cedro"
+    ],
+    "descripcion_corta": "Fresco, Acuático",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-acqua-di-gio.jpg"
+  },
+  {
+    "slug": "giorgio-armani-stronger-with-you",
+    "nombre": "Stronger With You",
+    "marca": "Giorgio Armani",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Romántico",
+      "Exitoso"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Cardamomo",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Salvia",
+      "Melón"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Castaña"
+    ],
+    "descripcion_corta": "Dulce, Romántico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-stronger-with-you.jpg"
+  },
+  {
+    "slug": "giorgio-armani-armani-code-black",
+    "nombre": "Armani Code Black",
+    "marca": "Giorgio Armani",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Elegante",
+      "Fuerza",
+      "Seductor"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Anís estrellado",
+      "Flor de olivo"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Tabaco"
+    ],
+    "descripcion_corta": "Elegante, Fuerza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-armani-code-black.jpg"
+  },
+  {
+    "slug": "giorgio-armani-emporio-white-for-him",
+    "nombre": "Emporio White For Him",
+    "marca": "Giorgio Armani",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Trabajo",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Ligero",
+      "Casual"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Bergamota",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Romero",
+      "Cardamomo"
+    ],
+    "notas_fondo": [
+      "Almizcle"
+    ],
+    "descripcion_corta": "Fresco, Ligero",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-emporio-white-for-him.jpg"
+  },
+  {
+    "slug": "mont-blanc-legend",
+    "nombre": "Legend",
+    "marca": "Mont Blanc",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Versátil",
+      "Masculinidad",
+      "Seguridad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Piña"
+    ],
+    "notas_corazon": [
+      "Manzana roja",
+      "Frutos secos"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Versátil, Masculinidad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/mont-blanc-legend.jpg"
+  },
+  {
+    "slug": "mont-blanc-legend-spirit",
+    "nombre": "Legend Spirit",
+    "marca": "Mont Blanc",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Activo",
+      "Frescura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Notas acuáticas",
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Madera blanca"
+    ],
+    "descripcion_corta": "Activo, Frescura",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/mont-blanc-legend-spirit.jpg"
+  },
+  {
+    "slug": "mont-blanc-legend-night",
+    "nombre": "Legend Night",
+    "marca": "Mont Blanc",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Sofisticado",
+      "Seductor"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota",
+      "Salvia"
+    ],
+    "notas_corazon": [
+      "Manzana",
+      "Menta"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Akigalawood"
+    ],
+    "descripcion_corta": "Sexy, Sofisticado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/mont-blanc-legend-night.jpg"
+  },
+  {
+    "slug": "mont-blanc-starwalker",
+    "nombre": "Starwalker",
+    "marca": "Mont Blanc",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Innovador",
+      "Moderno",
+      "Creativo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bambú",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Nuez moscada",
+      "Jengibre"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Innovador, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/mont-blanc-starwalker.jpg"
+  },
+  {
+    "slug": "mont-blanc-emblem",
+    "nombre": "Emblem",
+    "marca": "Mont Blanc",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Oficina",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Elegante",
+      "Ejecutivo",
+      "Clase"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Toronja",
+      "Esclarea"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Hojas de violeta"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Elegante, Ejecutivo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/mont-blanc-emblem.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-men",
+    "nombre": "212 Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Urbano",
+      "Moderno",
+      "Frescura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Notas verdes",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Jengibre",
+      "Gardenia"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Incienso"
+    ],
+    "descripcion_corta": "Urbano, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-men.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-men-aqua",
+    "nombre": "212 Men Aqua",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Playa",
+      "Casual"
+    ],
+    "caracter": [
+      "Urbano",
+      "Moderno",
+      "Frescura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Notas marinas",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Ambroxan",
+      "Cardamomo"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Urbano, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-men-aqua.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-heroes",
+    "nombre": "212 Heroes",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Energético",
+      "Vibrante",
+      "Aventura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pera",
+      "Cannabis"
+    ],
+    "notas_corazon": [
+      "Geranio",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Cuero"
+    ],
+    "descripcion_corta": "Energético, Vibrante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-heroes.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-sexy-men",
+    "nombre": "212 Sexy Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Seductor",
+      "Masculino"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Pimienta",
+      "Cardamomo"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Madera de gaiac"
+    ],
+    "descripcion_corta": "Dulce, Seductor",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-sexy-men.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-men",
+    "nombre": "212 VIP Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Éxito",
+      "Moderno",
+      "Jóvenes"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Maracuyá",
+      "Lima"
+    ],
+    "notas_corazon": [
+      "Vodka",
+      "Menta"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Éxito, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-men.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-black",
+    "nombre": "212 VIP Black",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Éxito",
+      "Moderno",
+      "Jóvenes"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Absenta",
+      "Anís"
+    ],
+    "notas_corazon": [
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle negro"
+    ],
+    "descripcion_corta": "Éxito, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-black.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-black-red",
+    "nombre": "212 VIP Black Red",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Éxito",
+      "Moderno",
+      "Jóvenes"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Pimienta",
+      "Jengibre"
+    ],
+    "notas_corazon": [
+      "Absenta"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Madera de gaiac"
+    ],
+    "descripcion_corta": "Éxito, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-black-red.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-wild-party",
+    "nombre": "212 VIP Wild Party",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Éxito",
+      "Moderno",
+      "Jóvenes"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pimienta negra",
+      "Caviar"
+    ],
+    "notas_corazon": [
+      "Hojas de violeta"
+    ],
+    "notas_fondo": [
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Éxito, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-wild-party.jpg"
+  },
+  {
+    "slug": "carolina-herrera-ch-men",
+    "nombre": "CH Men",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Clásico",
+      "Elegante",
+      "Sofisticado"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Hierba",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Nuez moscada",
+      "Azafrán"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Azúcar"
+    ],
+    "descripcion_corta": "Clásico, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-ch-men.jpg"
+  },
+  {
+    "slug": "carolina-herrera-ch-men-prive",
+    "nombre": "CH Men Prive",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Intenso",
+      "Elegante",
+      "Sofisticado"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Whisky",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Cardamomo",
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Intenso, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-ch-men-prive.jpg"
+  },
+  {
+    "slug": "carolina-herrera-bad-boy",
+    "nombre": "Bad Boy",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Moderno",
+      "Atrevido",
+      "Extrovertido"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pimienta blanca",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Salvia",
+      "Cedro"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Cacao"
+    ],
+    "descripcion_corta": "Moderno, Atrevido",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-bad-boy.jpg"
+  },
+  {
+    "slug": "carolina-herrera-bad-boy-dazzling-garden",
+    "nombre": "Bad Boy Dazzling Garden",
+    "marca": "Carolina Herrera",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Moderno",
+      "Ligero",
+      "Jóvenes"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pimienta blanca",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Vetiver",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Cacao",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Moderno, Ligero",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-bad-boy-dazzling-garden.jpg"
+  },
+  {
+    "slug": "versace-eros",
+    "nombre": "Eros",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Noche"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Sociable",
+      "Extrovertido"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Menta",
+      "Manzana verde"
+    ],
+    "notas_corazon": [
+      "Haba Tonka",
+      "Geranio"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Cedro"
+    ],
+    "descripcion_corta": "Juvenil, Sociable",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-eros.jpg"
+  },
+  {
+    "slug": "versace-eros-flame",
+    "nombre": "Eros Flame",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Apasionado",
+      "Decente",
+      "Intenso"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Mandarina",
+      "Pimienta negra"
+    ],
+    "notas_corazon": [
+      "Romero",
+      "Geranio"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Apasionado, Decente",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-eros-flame.jpg"
+  },
+  {
+    "slug": "versace-eros-energy",
+    "nombre": "Eros Energy",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Gimnasio",
+      "Trabajo"
+    ],
+    "caracter": [
+      "Fresco",
+      "Moderno",
+      "Energético"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cítricos",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Pimienta rosa"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Fresco, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-eros-energy.jpg"
+  },
+  {
+    "slug": "versace-pour-homme",
+    "nombre": "Pour Homme",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Oficina",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Formal",
+      "Elegante"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Neroli"
+    ],
+    "notas_corazon": [
+      "Jacinto",
+      "Cedro"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Fresco, Formal",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-pour-homme.jpg"
+  },
+  {
+    "slug": "versace-eau-fraiche",
+    "nombre": "Eau Fraiche",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Piscina",
+      "Aventura"
+    ],
+    "caracter": [
+      "Acuático",
+      "Enérgico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Estagón",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Madera",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Acuático, Enérgico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-eau-fraiche.jpg"
+  },
+  {
+    "slug": "versace-blue-jeans",
+    "nombre": "Blue Jeans",
+    "marca": "Versace",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Informal"
+    ],
+    "caracter": [
+      "Floral",
+      "Clásico",
+      "Relajado"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Cítricos",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Floral, Clásico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-blue-jeans.jpg"
+  },
+  {
+    "slug": "paco-rabanne-1-million",
+    "nombre": "1 Million",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Dulce",
+      "Clásico",
+      "Carismático"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Mandarina",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Especias"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Dulce, Clásico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-1-million.jpg"
+  },
+  {
+    "slug": "paco-rabanne-1-million-elixir",
+    "nombre": "1 Million Elixir",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Dulce",
+      "Intenso",
+      "Lujoso"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Manzana",
+      "Davana"
+    ],
+    "notas_corazon": [
+      "Rosa damascena",
+      "Osmanto"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Dulce, Intenso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-1-million-elixir.jpg"
+  },
+  {
+    "slug": "paco-rabanne-1-million-lucky",
+    "nombre": "1 Million Lucky",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Jugoso",
+      "Coqueto"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Ciruela",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Avellana",
+      "Miel"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Madera de cedro"
+    ],
+    "descripcion_corta": "Dulce, Jugoso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-1-million-lucky.jpg"
+  },
+  {
+    "slug": "paco-rabanne-1-million-intense",
+    "nombre": "1 Million Intense",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos exclusivos"
+    ],
+    "caracter": [
+      "Sofisticado",
+      "Masculino"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Mandarina",
+      "Cardamomo"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Neroli"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Raíz de lirio"
+    ],
+    "descripcion_corta": "Sofisticado, Masculino",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-1-million-intense.jpg"
+  },
+  {
+    "slug": "paco-rabanne-1-million-golden-oud",
+    "nombre": "1 Million Golden Oud",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos exclusivos"
+    ],
+    "caracter": [
+      "Nicho",
+      "Sofisticado"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Nuez moscada",
+      "Azafrán"
+    ],
+    "notas_corazon": [
+      "Iris",
+      "Gurjum"
+    ],
+    "notas_fondo": [
+      "Oud",
+      "Cuero"
+    ],
+    "descripcion_corta": "Nicho, Sofisticado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-1-million-golden-oud.jpg"
+  },
+  {
+    "slug": "paco-rabanne-invictus-intense",
+    "nombre": "Invictus Intense",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Acuático",
+      "Vitalidad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Pimienta negra",
+      "Azahar"
+    ],
+    "notas_corazon": [
+      "Laurel",
+      "Whisky"
+    ],
+    "notas_fondo": [
+      "Ámbar gris",
+      "Sal"
+    ],
+    "descripcion_corta": "Fresco, Acuático",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-invictus-intense.jpg"
+  },
+  {
+    "slug": "paco-rabanne-invictus-legend",
+    "nombre": "Invictus Legend",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Ligero",
+      "Vitalidad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Sal marina"
+    ],
+    "notas_corazon": [
+      "Geranio",
+      "Especias"
+    ],
+    "notas_fondo": [
+      "Ámbar rojo",
+      "Madera"
+    ],
+    "descripcion_corta": "Fresco, Ligero",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-invictus-legend.jpg"
+  },
+  {
+    "slug": "paco-rabanne-invictus-onyx",
+    "nombre": "Invictus Onyx",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Cítrico",
+      "Ligero",
+      "Confianza"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Notas marinas"
+    ],
+    "notas_corazon": [
+      "Laurel",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Ámbar gris"
+    ],
+    "descripcion_corta": "Cítrico, Ligero",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-invictus-onyx.jpg"
+  },
+  {
+    "slug": "paco-rabanne-invictus-victory",
+    "nombre": "Invictus Victory",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Competitivo",
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Intenso",
+      "Masculinidad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Limón",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Incienso"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Dulce, Intenso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-invictus-victory.jpg"
+  },
+  {
+    "slug": "paco-rabanne-invictus-victory-elixir",
+    "nombre": "Invictus Victory Elixir",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Competitivo",
+      "Noche"
+    ],
+    "caracter": [
+      "Cítrico",
+      "Dulce",
+      "Enérgico"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Lavanda",
+      "Cardamomo"
+    ],
+    "notas_corazon": [
+      "Incienso",
+      "Pachulí"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Cítrico, Dulce",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-invictus-victory-elixir.jpg"
+  },
+  {
+    "slug": "paco-rabanne-phantom",
+    "nombre": "Phantom",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Extrovertido",
+      "Enérgico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Manzana",
+      "Humo"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Juvenil, Extrovertido",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-phantom.jpg"
+  },
+  {
+    "slug": "paco-rabanne-pure-xs",
+    "nombre": "Pure XS",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Seductor",
+      "Sensual",
+      "Misterioso"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Jengibre",
+      "Tomillo"
+    ],
+    "notas_corazon": [
+      "Vainilla",
+      "Canela"
+    ],
+    "notas_fondo": [
+      "Mirra",
+      "Cuero"
+    ],
+    "descripcion_corta": "Seductor, Sensual",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-pure-xs.jpg"
+  },
+  {
+    "slug": "paco-rabanne-black-xs",
+    "nombre": "Black XS",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Afrutado",
+      "Rebelde"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Salvia"
+    ],
+    "notas_corazon": [
+      "Praliné",
+      "Canela"
+    ],
+    "notas_fondo": [
+      "Ámbar negro",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Dulce, Afrutado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-black-xs.jpg"
+  },
+  {
+    "slug": "paco-rabanne-black-xs-lexces",
+    "nombre": "Black XS L'Exces",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Dulce",
+      "Amaderado",
+      "Alternativo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Lavanda"
+    ],
+    "notas_corazon": [
+      "Cipriol",
+      "Notas marinas"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Dulce, Amaderado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-black-xs-lexces.jpg"
+  },
+  {
+    "slug": "paco-rabanne-pour-homme",
+    "nombre": "Pour Homme",
+    "marca": "Paco Rabanne",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Herbal",
+      "Tradicional"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Romero",
+      "Salvia"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Geranio"
+    ],
+    "notas_fondo": [
+      "Musgo de roble",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Herbal, Tradicional",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-pour-homme.jpg"
+  },
+  {
+    "slug": "ralph-lauren-polo-blue",
+    "nombre": "Polo Blue",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Elegante",
+      "Limpieza",
+      "Frescura"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Melón",
+      "Pepino"
+    ],
+    "notas_corazon": [
+      "Albahaca",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Gamuza",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Elegante, Limpieza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ralph-lauren-polo-blue.jpg"
+  },
+  {
+    "slug": "ralph-lauren-polo-red",
+    "nombre": "Polo Red",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Apasionado",
+      "Audaz",
+      "Intenso"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Arándano",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Azafrán",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Café",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Apasionado, Audaz",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ralph-lauren-polo-red.jpg"
+  },
+  {
+    "slug": "ralph-lauren-polo-sport",
+    "nombre": "Polo Sport",
+    "marca": "Ralph Lauren",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Libre",
+      "Enérgico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Menta",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Jengibre",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Libre, Enérgico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ralph-lauren-polo-sport.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-the-one-for-men",
+    "nombre": "The One For Men",
+    "marca": "Dolce & Gabbana",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Varonil",
+      "Elegante",
+      "Seductor"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Cilantro"
+    ],
+    "notas_corazon": [
+      "Jengibre",
+      "Cardamomo"
+    ],
+    "notas_fondo": [
+      "Tabaco",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Varonil, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-the-one-for-men.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-light-blue-pour-homme",
+    "nombre": "Light Blue Pour Homme",
+    "marca": "Dolce & Gabbana",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Vacaciones",
+      "Playa"
+    ],
+    "caracter": [
+      "Cítrico",
+      "Acuático",
+      "Relajado"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Pomelo",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Romero",
+      "Pimienta"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Incienso"
+    ],
+    "descripcion_corta": "Cítrico, Acuático",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-light-blue-pour-homme.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-k-by-dolce-and-gabbana",
+    "nombre": "K by Dolce & Gabbana",
+    "marca": "Dolce & Gabbana",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Diario",
+      "Oficina"
+    ],
+    "caracter": [
+      "Elegante",
+      "Clásico",
+      "Seguridad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cítricos",
+      "Naranja sanguina"
+    ],
+    "notas_corazon": [
+      "Pimiento morrón",
+      "Esclarea"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Elegante, Clásico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-k-by-dolce-and-gabbana.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-pour-homme",
+    "nombre": "Pour Homme",
+    "marca": "Dolce & Gabbana",
+    "genero": "masculino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Adulto",
+      "Elegante",
+      "Tradicional"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cítricos",
+      "Neroli"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Tabaco",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Adulto, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-pour-homme.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-bottled",
+    "nombre": "Boss Bottled",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario",
+      "Oficina"
+    ],
+    "caracter": [
+      "Clásico",
+      "Elegante",
+      "Caballeroso"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana",
+      "Ciruela"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Caoba"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Clásico, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-bottled.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-bottled-night",
+    "nombre": "Boss Bottled Night",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Seductor",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Abedul"
+    ],
+    "notas_corazon": [
+      "Violeta"
+    ],
+    "notas_fondo": [
+      "Notas amaderadas",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Seductor, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-bottled-night.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-man",
+    "nombre": "Hugo Man",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Libre",
+      "Relajado"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana verde",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Clavel",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Abeto",
+      "Cedro"
+    ],
+    "descripcion_corta": "Fresco, Libre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-man.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-energise",
+    "nombre": "Hugo Energise",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Dinámico",
+      "Urbano",
+      "Energético"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Menta",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Cilantro",
+      "Enebro"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Dinámico, Urbano",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-energise.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-the-scent",
+    "nombre": "Boss The Scent",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sofisticado",
+      "Seductor",
+      "Misterioso"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Jengibre",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Maninka",
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Cuero",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Sofisticado, Seductor",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-the-scent.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-in-motion",
+    "nombre": "Boss In Motion",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Diario",
+      "Activo"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Creativo",
+      "Activo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Naranja",
+      "Albahaca"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Nuez moscada"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Juvenil, Creativo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-in-motion.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-orange",
+    "nombre": "Boss Orange",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Agradable",
+      "Sencillo",
+      "Relajado"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana",
+      "Cilantro"
+    ],
+    "notas_corazon": [
+      "Incienso",
+      "Pimienta"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Agradable, Sencillo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-orange.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-bottled-unlimited",
+    "nombre": "Boss Bottled Unlimited",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Deportivo",
+      "Diario"
+    ],
+    "caracter": [
+      "Moderno",
+      "Juvenil"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Menta",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Piña",
+      "Canela"
+    ],
+    "notas_fondo": [
+      "Ládano",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Moderno, Juvenil",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-bottled-unlimited.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-xy",
+    "nombre": "Hugo XY",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Relajado",
+      "Moderno"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Pera",
+      "Cedro"
+    ],
+    "notas_corazon": [
+      "Albahaca",
+      "Menta"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Juvenil, Relajado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-xy.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-urban-journey",
+    "nombre": "Hugo Urban Journey",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Urbano",
+      "Dinámico",
+      "Minimalista"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Notas verdes",
+      "Florales"
+    ],
+    "notas_corazon": [
+      "Té negro"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Madera de gaiac"
+    ],
+    "descripcion_corta": "Urbano, Dinámico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-urban-journey.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-red",
+    "nombre": "Hugo Red",
+    "marca": "Hugo Boss",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Moderno"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Notas metálicas",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Ruibarbo",
+      "Notas metálicas"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Cedro"
+    ],
+    "descripcion_corta": "Juvenil, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-red.jpg"
+  },
+  {
+    "slug": "lacoste-lhomme",
+    "nombre": "L'Homme",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Casual"
+    ],
+    "caracter": [
+      "Urbano",
+      "Seguridad",
+      "Carisma"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Ruibarbo"
+    ],
+    "notas_corazon": [
+      "Jengibre",
+      "Pimienta negra"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Urbano, Seguridad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-lhomme.jpg"
+  },
+  {
+    "slug": "lacoste-l-12-12-noir",
+    "nombre": "L.12.12 Noir",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Verano",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Noche",
+      "Casual"
+    ],
+    "caracter": [
+      "Carismático",
+      "Alegre",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Sandía"
+    ],
+    "notas_corazon": [
+      "Albahaca",
+      "Lavanda"
+    ],
+    "notas_fondo": [
+      "Chocolate oscuro",
+      "Cachemira"
+    ],
+    "descripcion_corta": "Carismático, Alegre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-l-12-12-noir.jpg"
+  },
+  {
+    "slug": "lacoste-l-12-12-energized",
+    "nombre": "L.12.12 Energized",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Divertido",
+      "Energía"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Jengibre",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Cedro"
+    ],
+    "descripcion_corta": "Juvenil, Divertido",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-l-12-12-energized.jpg"
+  },
+  {
+    "slug": "lacoste-l-12-12-blanc",
+    "nombre": "L.12.12 Blanc",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario",
+      "Oficina"
+    ],
+    "caracter": [
+      "Minimalista",
+      "Pureza",
+      "Elegancia"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Pomelo",
+      "Romero"
+    ],
+    "notas_corazon": [
+      "Ylang-Ylang",
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Cuero"
+    ],
+    "descripcion_corta": "Minimalista, Pureza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-l-12-12-blanc.jpg"
+  },
+  {
+    "slug": "lacoste-essential",
+    "nombre": "Essential",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Libre",
+      "Relajado",
+      "Frescura"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Toronja",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Pimienta",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Libre, Relajado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-essential.jpg"
+  },
+  {
+    "slug": "lacoste-l-12-12-magnetic",
+    "nombre": "L.12.12 Magnetic",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Magnético",
+      "Moderno",
+      "Misterioso"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Artemisa",
+      "Bambú"
+    ],
+    "notas_corazon": [
+      "Geranio",
+      "Violeta"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Magnético, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-l-12-12-magnetic.jpg"
+  },
+  {
+    "slug": "calvin-klein-eternity-for-men",
+    "nombre": "Eternity For Men",
+    "marca": "Calvin Klein",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Trabajo"
+    ],
+    "caracter": [
+      "Clásico",
+      "Romántico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Albahaca",
+      "Salvia"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Clásico, Romántico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-eternity-for-men.jpg"
+  },
+  {
+    "slug": "calvin-klein-ck-one",
+    "nombre": "CK One",
+    "marca": "Calvin Klein",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Casual"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Limón",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Nuez moscada",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Musgo"
+    ],
+    "descripcion_corta": "Fresco, Casual",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-ck-one.jpg"
+  },
+  {
+    "slug": "calvin-klein-ck-in2u-for-him",
+    "nombre": "CK IN2U For Him",
+    "marca": "Calvin Klein",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Aventura",
+      "Casual"
+    ],
+    "caracter": [
+      "Joven",
+      "Aventura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Hojas de tomatera"
+    ],
+    "notas_corazon": [
+      "Cacao"
+    ],
+    "notas_fondo": [
+      "Vetiver",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Joven, Aventura",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-ck-in2u-for-him.jpg"
+  },
+  {
+    "slug": "calvin-klein-escape-for-men",
+    "nombre": "Escape For Men",
+    "marca": "Calvin Klein",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual"
+    ],
+    "caracter": [
+      "Romántico",
+      "Clásico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Melón",
+      "Eucalipto"
+    ],
+    "notas_corazon": [
+      "Romero",
+      "Abeto"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Romántico, Clásico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-escape-for-men.jpg"
+  },
+  {
+    "slug": "lattafa-khamrah",
+    "nombre": "Khamrah",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Intenso",
+      "Seductor",
+      "Sensual"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Canela",
+      "Nuez moscada"
+    ],
+    "notas_corazon": [
+      "Praliné",
+      "Dátiles"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Intenso, Seductor",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-khamrah.jpg"
+  },
+  {
+    "slug": "lattafa-khamrah-qahwa",
+    "nombre": "Khamrah Qahwa",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Calculador",
+      "Elegante",
+      "Exótico"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Café",
+      "Cardamomo"
+    ],
+    "notas_corazon": [
+      "Praliné",
+      "Frutas confitadas"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Calculador, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-khamrah-qahwa.jpg"
+  },
+  {
+    "slug": "lattafa-fakhar-black",
+    "nombre": "Fakhar Black",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Versátil",
+      "Moderno",
+      "Aventurero"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Lavanda",
+      "Geranio"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Madera"
+    ],
+    "descripcion_corta": "Versátil, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-fakhar-black.jpg"
+  },
+  {
+    "slug": "lattafa-asad",
+    "nombre": "Asad",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Oficina",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Alfa",
+      "Directo",
+      "Confiado"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Pimienta negra",
+      "Piña"
+    ],
+    "notas_corazon": [
+      "Café",
+      "Iris"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Alfa, Directo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-asad.jpg"
+  },
+  {
+    "slug": "lattafa-asad-zanzibar",
+    "nombre": "Asad Zanzibar",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Deportivo"
+    ],
+    "caracter": [
+      "Fresco",
+      "Marino",
+      "Relajado"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Pimienta negra"
+    ],
+    "notas_corazon": [
+      "Agua de coco",
+      "Sal"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Incienso"
+    ],
+    "descripcion_corta": "Fresco, Marino",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-asad-zanzibar.jpg"
+  },
+  {
+    "slug": "lattafa-asad-bourbon",
+    "nombre": "Asad Bourbon",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Cenas"
+    ],
+    "caracter": [
+      "Nocturno",
+      "Elegante",
+      "Sofisticado"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Especias"
+    ],
+    "notas_corazon": [
+      "Ron",
+      "Madera"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Nocturno, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-asad-bourbon.jpg"
+  },
+  {
+    "slug": "tommy-hilfiger-tommy",
+    "nombre": "Tommy",
+    "marca": "Tommy Hilfiger",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Clásico",
+      "Juvenil"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Menta",
+      "Lavanda"
+    ],
+    "notas_corazon": [
+      "Rosa",
+      "Arándano"
+    ],
+    "notas_fondo": [
+      "Cactus",
+      "Algodón"
+    ],
+    "descripcion_corta": "Clásico, Juvenil",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/tommy-hilfiger-tommy.jpg"
+  },
+  {
+    "slug": "tommy-hilfiger-impact",
+    "nombre": "Impact",
+    "marca": "Tommy Hilfiger",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "fresco",
+    "estacion": [
+      "Verano",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Casual",
+      "Oficina"
+    ],
+    "caracter": [
+      "Joven",
+      "Ambicioso"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Toronja",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Ciprés"
+    ],
+    "notas_fondo": [
+      "Akigalawood",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Joven, Ambicioso",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/tommy-hilfiger-impact.jpg"
+  },
+  {
+    "slug": "cristiano-ronaldo-legacy",
+    "nombre": "Legacy",
+    "marca": "Cristiano Ronaldo",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Moderno",
+      "Nocturno"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana",
+      "Lavanda"
+    ],
+    "notas_corazon": [
+      "Cedro",
+      "Romero"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Ámbar gris"
+    ],
+    "descripcion_corta": "Moderno, Nocturno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/cristiano-ronaldo-legacy.jpg"
+  },
+  {
+    "slug": "cristiano-ronaldo-cr7",
+    "nombre": "CR7",
+    "marca": "Cristiano Ronaldo",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Diario"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Cardamomo"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Cedro"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Juvenil, Diario",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/cristiano-ronaldo-cr7.jpg"
+  },
+  {
+    "slug": "paris-hilton-paris-hilton-for-men",
+    "nombre": "Paris Hilton For Men",
+    "marca": "Paris Hilton",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Frescura",
+      "Uso diario"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Mango",
+      "Pepino"
+    ],
+    "notas_corazon": [
+      "Salvia",
+      "Resina"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Frescura, Uso diario",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-paris-hilton-for-men.jpg"
+  },
+  {
+    "slug": "ferrari-ferrari-black",
+    "nombre": "Ferrari Black",
+    "marca": "Ferrari",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Deportivo"
+    ],
+    "caracter": [
+      "Llamativo",
+      "Deportivo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana",
+      "Ciruela"
+    ],
+    "notas_corazon": [
+      "Canela",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Madera de cedro"
+    ],
+    "descripcion_corta": "Llamativo, Deportivo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ferrari-ferrari-black.jpg"
+  },
+  {
+    "slug": "dior-jadore",
+    "nombre": "J'Adore",
+    "marca": "Dior",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Citas"
+    ],
+    "caracter": [
+      "Elegante",
+      "Glamour",
+      "Sensualidad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pera",
+      "Melón"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Lirio de los valles"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Elegante, Glamour",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-jadore.jpg"
+  },
+  {
+    "slug": "dior-miss-dior-edp",
+    "nombre": "Miss Dior EDP",
+    "marca": "Dior",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Romántico",
+      "Sofisticada"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Rosa",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Palo de rosa"
+    ],
+    "descripcion_corta": "Romántico, Sofisticada",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-miss-dior-edp.jpg"
+  },
+  {
+    "slug": "dior-miss-dior-blooming-bouquet",
+    "nombre": "Miss Dior Blooming Bouquet",
+    "marca": "Dior",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Tierna",
+      "Día a día"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Mandarina siciliana"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Rosa de damasco"
+    ],
+    "notas_fondo": [
+      "Almizcle blanco"
+    ],
+    "descripcion_corta": "Joven, Tierna",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-miss-dior-blooming-bouquet.jpg"
+  },
+  {
+    "slug": "dior-hypnotic-poison",
+    "nombre": "Hypnotic Poison",
+    "marca": "Dior",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Misteriosa",
+      "Sensualidad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Coco",
+      "Ciruela"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Alcaravea"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almendra amarga"
+    ],
+    "descripcion_corta": "Misteriosa, Sensualidad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dior-hypnotic-poison.jpg"
+  },
+  {
+    "slug": "chanel-coco-mademoiselle",
+    "nombre": "Coco Mademoiselle",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Sofisticación",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Naranja",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Rosa",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Joven, Sofisticación",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-coco-mademoiselle.jpg"
+  },
+  {
+    "slug": "chanel-chanel-n5",
+    "nombre": "Chanel N°5",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Noche"
+    ],
+    "caracter": [
+      "Clásico",
+      "Elegante",
+      "Poder"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Aldehídos",
+      "Neroli"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Clásico, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-chanel-n5.jpg"
+  },
+  {
+    "slug": "chanel-chance-eau-tendre",
+    "nombre": "Chance Eau Tendre",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Dulce",
+      "Alegría"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Membrillo",
+      "Toronja"
+    ],
+    "notas_corazon": [
+      "Jacinto",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Iris"
+    ],
+    "descripcion_corta": "Dulce, Alegría",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-chance-eau-tendre.jpg"
+  },
+  {
+    "slug": "chanel-chance",
+    "nombre": "Chance",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Versatilidad",
+      "Vibrante",
+      "Libre"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pimienta rosa",
+      "Piña"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Limón"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Versatilidad, Vibrante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-chance.jpg"
+  },
+  {
+    "slug": "chanel-coco",
+    "nombre": "Coco",
+    "marca": "Chanel",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Noche"
+    ],
+    "caracter": [
+      "Clásico",
+      "Autoridad",
+      "Elegante"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Cilantro",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Clavel",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Clásico, Autoridad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/chanel-coco.jpg"
+  },
+  {
+    "slug": "valentino-born-in-roma-donna-intense",
+    "nombre": "Born In Roma Donna Intense",
+    "marca": "Valentino",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Ocasiones especiales"
+    ],
+    "caracter": [
+      "Sensual",
+      "Atrevida"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Vainilla",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Benjuí"
+    ],
+    "descripcion_corta": "Sensual, Atrevida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/valentino-born-in-roma-donna-intense.jpg"
+  },
+  {
+    "slug": "valentino-born-in-roma-yellow-dream",
+    "nombre": "Born In Roma Yellow Dream",
+    "marca": "Valentino",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Alegre",
+      "Energía"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón",
+      "Lichi"
+    ],
+    "notas_corazon": [
+      "Rosa de damasco"
+    ],
+    "notas_fondo": [
+      "Almizcle blanco"
+    ],
+    "descripcion_corta": "Alegre, Energía",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/valentino-born-in-roma-yellow-dream.jpg"
+  },
+  {
+    "slug": "valentino-born-in-roma-donna",
+    "nombre": "Born In Roma Donna",
+    "marca": "Valentino",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Urbana",
+      "Moderna",
+      "Rebeldía"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Grosella negra",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Jazmín sambac"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Madera de cachemira"
+    ],
+    "descripcion_corta": "Urbana, Moderna",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/valentino-born-in-roma-donna.jpg"
+  },
+  {
+    "slug": "yves-saint-laurent-libre",
+    "nombre": "Libre",
+    "marca": "Yves Saint Laurent",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Trabajo",
+      "Diario"
+    ],
+    "caracter": [
+      "Elegante",
+      "Segura",
+      "Moderna"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Flor de azahar",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Elegante, Segura",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/yves-saint-laurent-libre.jpg"
+  },
+  {
+    "slug": "giorgio-armani-acqua-di-gioia",
+    "nombre": "Acqua Di Gioia",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Playa",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Natural",
+      "Amante del mar"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Limón",
+      "Menta"
+    ],
+    "notas_corazon": [
+      "Jazmín acuático"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Azúcar moreno"
+    ],
+    "descripcion_corta": "Fresco, Natural",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-acqua-di-gioia.jpg"
+  },
+  {
+    "slug": "giorgio-armani-my-way",
+    "nombre": "My Way",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Libre",
+      "Espíritu"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Flor de azahar",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Tuberosa",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle blanco"
+    ],
+    "descripcion_corta": "Joven, Libre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-my-way.jpg"
+  },
+  {
+    "slug": "giorgio-armani-s",
+    "nombre": "Sì",
+    "marca": "Giorgio Armani",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Elegante",
+      "Sexy",
+      "Empoderada"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Grosella negra"
+    ],
+    "notas_corazon": [
+      "Rosa de mayo",
+      "Fresia"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Elegante, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/giorgio-armani-s.jpg"
+  },
+  {
+    "slug": "prada-prada-candy",
+    "nombre": "Prada Candy",
+    "marca": "Prada",
+    "genero": "femenino",
+    "tier": "nicho",
+    "coleccion": "Colección Nicho",
+    "precio_30ml": 45,
+    "precio_50ml": 70,
+    "precio_100ml": 88,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Joven",
+      "Dulce",
+      "Coqueta"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Caramelo"
+    ],
+    "notas_corazon": [
+      "Notas empolvadas",
+      "Almizcle"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Benjuí"
+    ],
+    "descripcion_corta": "Joven, Dulce",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/prada-prada-candy.jpg"
+  },
+  {
+    "slug": "jean-paul-gaultier-divine",
+    "nombre": "Divine",
+    "marca": "Jean Paul Gaultier",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Audaz",
+      "Radiante"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota",
+      "Bayas rojas"
+    ],
+    "notas_corazon": [
+      "Lirio",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Merengue",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Audaz, Radiante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/jean-paul-gaultier-divine.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-devotion",
+    "nombre": "Devotion",
+    "marca": "Dolce & Gabbana",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Moderna",
+      "Delicada",
+      "Inocente"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón confitado"
+    ],
+    "notas_corazon": [
+      "Azahar",
+      "Azucena"
+    ],
+    "notas_fondo": [
+      "Vainilla"
+    ],
+    "descripcion_corta": "Moderna, Delicada",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-devotion.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-light-blue",
+    "nombre": "Light Blue",
+    "marca": "Dolce & Gabbana",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Playa",
+      "Piscina"
+    ],
+    "caracter": [
+      "Activa",
+      "Natural"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Manzana verde",
+      "Limón"
+    ],
+    "notas_corazon": [
+      "Bambú",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Cedro",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Activa, Natural",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-light-blue.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-q-by-dolce-and-gabbana",
+    "nombre": "Q by Dolce & Gabbana",
+    "marca": "Dolce & Gabbana",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Moderna",
+      "Divertida",
+      "Alegre"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón siciliano",
+      "Naranja"
+    ],
+    "notas_corazon": [
+      "Cereza",
+      "Heliotropo"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Cedro"
+    ],
+    "descripcion_corta": "Moderna, Divertida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-q-by-dolce-and-gabbana.jpg"
+  },
+  {
+    "slug": "dolce-and-gabbana-the-one",
+    "nombre": "The One",
+    "marca": "Dolce & Gabbana",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Sofisticada",
+      "Glamour"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Durazno",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Azucena",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Sexy, Sofisticada",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/dolce-and-gabbana-the-one.jpg"
+  },
+  {
+    "slug": "versace-eros-pour-femme",
+    "nombre": "Eros Pour Femme",
+    "marca": "Versace",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Apasionada",
+      "Sensual"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Limón siciliano",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Peonía"
+    ],
+    "notas_fondo": [
+      "Maderas",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Apasionada, Sensual",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-eros-pour-femme.jpg"
+  },
+  {
+    "slug": "versace-bright-crystal",
+    "nombre": "Bright Crystal",
+    "marca": "Versace",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Delicadeza"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Yuzu",
+      "Granada"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Loto"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Caoba"
+    ],
+    "descripcion_corta": "Joven, Delicadeza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/versace-bright-crystal.jpg"
+  },
+  {
+    "slug": "paco-rabanne-pure-xs-for-her",
+    "nombre": "Pure XS For Her",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Atrevida"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Ylang-Ylang",
+      "Vainilla"
+    ],
+    "notas_corazon": [
+      "Palomitas de maíz",
+      "Ambreta"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Sexy, Atrevida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-pure-xs-for-her.jpg"
+  },
+  {
+    "slug": "paco-rabanne-lady-million",
+    "nombre": "Lady Million",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Citas"
+    ],
+    "caracter": [
+      "Glamurosa",
+      "Confiada",
+      "Lujo"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Frambuesa",
+      "Neroli"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Azahar"
+    ],
+    "notas_fondo": [
+      "Miel",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Glamurosa, Confiada",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-lady-million.jpg"
+  },
+  {
+    "slug": "paco-rabanne-fame",
+    "nombre": "Fame",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual"
+    ],
+    "caracter": [
+      "Moderna",
+      "Urbana",
+      "Juvenil"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mango",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Incienso"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Moderna, Urbana",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-fame.jpg"
+  },
+  {
+    "slug": "paco-rabanne-olymp-a",
+    "nombre": "Olympéa",
+    "marca": "Paco Rabanne",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Trabajo",
+      "Diario"
+    ],
+    "caracter": [
+      "Seguridad",
+      "Poder",
+      "Aura divina"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina verde",
+      "Jazmín"
+    ],
+    "notas_corazon": [
+      "Vainilla salada"
+    ],
+    "notas_fondo": [
+      "Madera de cachemira",
+      "Ámbar gris"
+    ],
+    "descripcion_corta": "Seguridad, Poder",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paco-rabanne-olymp-a.jpg"
+  },
+  {
+    "slug": "gucci-guilty",
+    "nombre": "Guilty",
+    "marca": "Gucci",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Seductor",
+      "Romántico"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Lila",
+      "Melocotón"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Sexy, Seductor",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/gucci-guilty.jpg"
+  },
+  {
+    "slug": "gucci-guilty-absolute",
+    "nombre": "Guilty Absolute",
+    "marca": "Gucci",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Madura",
+      "Fuerza"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Zarzamora",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Rosa búlgara",
+      "Ciprés"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Sofisticada, Madura",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/gucci-guilty-absolute.jpg"
+  },
+  {
+    "slug": "gucci-rush",
+    "nombre": "Rush",
+    "marca": "Gucci",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Noche"
+    ],
+    "caracter": [
+      "Atrevida",
+      "Intensa",
+      "Sexy"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Melocotón",
+      "Fresia"
+    ],
+    "notas_corazon": [
+      "Gardenia",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Atrevida, Intensa",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/gucci-rush.jpg"
+  },
+  {
+    "slug": "hugo-boss-the-scent-for-her",
+    "nombre": "The Scent For Her",
+    "marca": "Hugo Boss",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Elegante",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Durazno",
+      "Fresia"
+    ],
+    "notas_corazon": [
+      "Osmanthus"
+    ],
+    "notas_fondo": [
+      "Cacao"
+    ],
+    "descripcion_corta": "Elegante, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-the-scent-for-her.jpg"
+  },
+  {
+    "slug": "hugo-boss-boss-woman",
+    "nombre": "Boss Woman",
+    "marca": "Hugo Boss",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Oficina"
+    ],
+    "caracter": [
+      "Fresco",
+      "Confianza",
+      "Energía"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Mango",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Fresia",
+      "Violeta"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Cedro"
+    ],
+    "descripcion_corta": "Fresco, Confianza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-boss-woman.jpg"
+  },
+  {
+    "slug": "hugo-boss-hugo-xx",
+    "nombre": "Hugo XX",
+    "marca": "Hugo Boss",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Citas",
+      "Casual"
+    ],
+    "caracter": [
+      "Romántica",
+      "Moderna",
+      "Dulzura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lichi",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Arroz",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Romántica, Moderna",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/hugo-boss-hugo-xx.jpg"
+  },
+  {
+    "slug": "carolina-herrera-good-girl",
+    "nombre": "Good Girl",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Seductora",
+      "Misteriosa",
+      "Apasionada"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Almendra",
+      "Café"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Cacao"
+    ],
+    "descripcion_corta": "Seductora, Misteriosa",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-good-girl.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip",
+    "nombre": "212 VIP",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Urbana",
+      "Exclusividad"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Ron",
+      "Maracuyá"
+    ],
+    "notas_corazon": [
+      "Gardenia",
+      "Almizcle"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Urbana, Exclusividad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-ros",
+    "nombre": "212 VIP Rosé",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Chic",
+      "Fresca"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Champán rosado",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Flor de durazno",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Almizcle blanco",
+      "Madera"
+    ],
+    "descripcion_corta": "Chic, Fresca",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-ros.jpg"
+  },
+  {
+    "slug": "carolina-herrera-very-good-girl",
+    "nombre": "Very Good Girl",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Sofisticado",
+      "Juguetón"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lichi",
+      "Grosella roja"
+    ],
+    "notas_corazon": [
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Sexy, Sofisticado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-very-good-girl.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-sexy",
+    "nombre": "212 Sexy",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Envolvente",
+      "Sexy",
+      "Misterioso"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pimienta rosa",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Gardenia",
+      "Pelargonio"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Algodón de azúcar"
+    ],
+    "descripcion_corta": "Envolvente, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-sexy.jpg"
+  },
+  {
+    "slug": "carolina-herrera-good-girl-supr-me",
+    "nombre": "Good Girl Suprême",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche"
+    ],
+    "caracter": [
+      "Sofisticado",
+      "Lujo"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Frutas del bosque"
+    ],
+    "notas_corazon": [
+      "Jazmín egipcio",
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Sofisticado, Lujo",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-good-girl-supr-me.jpg"
+  },
+  {
+    "slug": "carolina-herrera-good-girl-blush",
+    "nombre": "Good Girl Blush",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Romántico",
+      "Delicado",
+      "Suavidad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Bergamota",
+      "Almendra"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Ylang-Ylang"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Cumarina"
+    ],
+    "descripcion_corta": "Romántico, Delicado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-good-girl-blush.jpg"
+  },
+  {
+    "slug": "carolina-herrera-ch-carolina-herrera",
+    "nombre": "CH Carolina Herrera",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Oficina"
+    ],
+    "caracter": [
+      "Madura",
+      "Sofisticado",
+      "Glamour"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pomelo",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Rosa",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Praliné",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Madura, Sofisticado",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-ch-carolina-herrera.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-heroes-for-her",
+    "nombre": "212 Heroes For Her",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Universidad",
+      "Casual"
+    ],
+    "caracter": [
+      "Joven",
+      "Libre",
+      "Vitalidad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Frambuesa"
+    ],
+    "notas_corazon": [
+      "Flores blancas",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Cedro"
+    ],
+    "descripcion_corta": "Joven, Libre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-heroes-for-her.jpg"
+  },
+  {
+    "slug": "carolina-herrera-good-girl-l-g-re",
+    "nombre": "Good Girl Légère",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Ligera",
+      "Versátil"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Ylang-Ylang",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Dulce de leche"
+    ],
+    "descripcion_corta": "Sofisticada, Ligera",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-good-girl-l-g-re.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-ros-red",
+    "nombre": "212 VIP Rosé Red",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "amaderado",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Fiestas"
+    ],
+    "caracter": [
+      "Extrovertida",
+      "Llamativa",
+      "Enérgica"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Licor",
+      "Tomate"
+    ],
+    "notas_corazon": [
+      "Frambuesa",
+      "Tiramisú"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Extrovertida, Llamativa",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-ros-red.jpg"
+  },
+  {
+    "slug": "carolina-herrera-212-vip-ros-elixir",
+    "nombre": "212 VIP Rosé Elixir",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Extrovertida",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cereza",
+      "Lichi"
+    ],
+    "notas_corazon": [
+      "Rosa",
+      "Almendra amarga"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Pachulí"
+    ],
+    "descripcion_corta": "Sofisticada, Extrovertida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-212-vip-ros-elixir.jpg"
+  },
+  {
+    "slug": "carolina-herrera-carolina-herrera-classic",
+    "nombre": "Carolina Herrera Classic",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Reuniones"
+    ],
+    "caracter": [
+      "Clásica",
+      "Elegante",
+      "Madura"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Notas verdes",
+      "Flor de azahar"
+    ],
+    "notas_corazon": [
+      "Nardos",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Clásica, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-carolina-herrera-classic.jpg"
+  },
+  {
+    "slug": "moschino-toy-2",
+    "nombre": "Toy 2",
+    "marca": "Moschino",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Fresco",
+      "Moderno",
+      "Juguetón"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Manzana",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Magnolia",
+      "Peonía"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Fresco, Moderno",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/moschino-toy-2.jpg"
+  },
+  {
+    "slug": "moschino-toy-2-bubble-gum",
+    "nombre": "Toy 2 Bubble Gum",
+    "marca": "Moschino",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Salidas"
+    ],
+    "caracter": [
+      "Extrovertido",
+      "Energía"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Chicle",
+      "Cítricos"
+    ],
+    "notas_corazon": [
+      "Durazno",
+      "Rosa búlgara"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Cedro"
+    ],
+    "descripcion_corta": "Extrovertido, Energía",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/moschino-toy-2-bubble-gum.jpg"
+  },
+  {
+    "slug": "moschino-funny",
+    "nombre": "Funny!",
+    "marca": "Moschino",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Espontánea",
+      "Fresca",
+      "Libre"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Naranja amarga",
+      "Pimienta rosa"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Violeta"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Cedro"
+    ],
+    "descripcion_corta": "Espontánea, Fresca",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/moschino-funny.jpg"
+  },
+  {
+    "slug": "calvin-klein-euphoria",
+    "nombre": "Euphoria",
+    "marca": "Calvin Klein",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "fresco",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Misteriosa",
+      "Sexy",
+      "Lujo"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Granada",
+      "Caqui"
+    ],
+    "notas_corazon": [
+      "Orquídea negra",
+      "Loto"
+    ],
+    "notas_fondo": [
+      "Caoba",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Misteriosa, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-euphoria.jpg"
+  },
+  {
+    "slug": "calvin-klein-eternity",
+    "nombre": "Eternity",
+    "marca": "Calvin Klein",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Citas",
+      "Bodas"
+    ],
+    "caracter": [
+      "Romántico",
+      "Elegante",
+      "Pureza"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cítricos",
+      "Fresia"
+    ],
+    "notas_corazon": [
+      "Lirio",
+      "Clavel"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Romántico, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/calvin-klein-eternity.jpg"
+  },
+  {
+    "slug": "givenchy-amarige",
+    "nombre": "Amarige",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Eventos"
+    ],
+    "caracter": [
+      "Clásica",
+      "Romántica",
+      "Elegante"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Mandarina",
+      "Flor de azahar"
+    ],
+    "notas_corazon": [
+      "Gardenia",
+      "Mimosa"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Clásica, Romántica",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/givenchy-amarige.jpg"
+  },
+  {
+    "slug": "givenchy-ange-ou-demon",
+    "nombre": "Ange ou Demon",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Misteriosa",
+      "Sexy",
+      "Dulce"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Mandarina",
+      "Azafrán"
+    ],
+    "notas_corazon": [
+      "Azucena",
+      "Orquídea"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Misteriosa, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/givenchy-ange-ou-demon.jpg"
+  },
+  {
+    "slug": "givenchy-organza",
+    "nombre": "Organza",
+    "marca": "Givenchy",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Noche"
+    ],
+    "caracter": [
+      "Elegante",
+      "Madura",
+      "Glamour"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Nuez moscada",
+      "Gardenia"
+    ],
+    "notas_corazon": [
+      "Azucena",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Elegante, Madura",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/givenchy-organza.jpg"
+  },
+  {
+    "slug": "guess-guess-for-women",
+    "nombre": "Guess For Women",
+    "marca": "Guess",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Coqueta",
+      "Fresca"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Manzana verde",
+      "Bergamota"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Magnolia"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Cedro"
+    ],
+    "descripcion_corta": "Juvenil, Coqueta",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/guess-guess-for-women.jpg"
+  },
+  {
+    "slug": "guess-guess-gold",
+    "nombre": "Guess Gold",
+    "marca": "Guess",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Eventos",
+      "Noche"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Elegante",
+      "Glamour"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Piña",
+      "Manzana"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Lirio de agua"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Sofisticada, Elegante",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/guess-guess-gold.jpg"
+  },
+  {
+    "slug": "ariana-grande-ari",
+    "nombre": "Ari",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Citas",
+      "Diario"
+    ],
+    "caracter": [
+      "Dulce",
+      "Tierna",
+      "Romántica"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pera",
+      "Pomelo"
+    ],
+    "notas_corazon": [
+      "Orquídea de vainilla",
+      "Lirio"
+    ],
+    "notas_fondo": [
+      "Malvavisco",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Dulce, Tierna",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-ari.jpg"
+  },
+  {
+    "slug": "ariana-grande-cloud",
+    "nombre": "Cloud",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Soñadora",
+      "Nube dulce",
+      "Acogedor"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lavanda",
+      "Pera"
+    ],
+    "notas_corazon": [
+      "Crema batida",
+      "Praliné"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Madera"
+    ],
+    "descripcion_corta": "Soñadora, Nube dulce",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-cloud.jpg"
+  },
+  {
+    "slug": "ariana-grande-cloud-pink",
+    "nombre": "Cloud Pink",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Diario"
+    ],
+    "caracter": [
+      "Moderna",
+      "Divertida",
+      "Sexy"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pitahaya",
+      "Bayas silvestres"
+    ],
+    "notas_corazon": [
+      "Orquídea de vainilla",
+      "Ambreta"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Praliné"
+    ],
+    "descripcion_corta": "Moderna, Divertida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-cloud-pink.jpg"
+  },
+  {
+    "slug": "ariana-grande-mod-vanilla",
+    "nombre": "Mod Vanilla",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Misteriosa",
+      "Sexy",
+      "Atrevida"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Ciruela",
+      "Almizcle"
+    ],
+    "notas_corazon": [
+      "Raíz de lirio",
+      "Praliné"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Cacao"
+    ],
+    "descripcion_corta": "Misteriosa, Sexy",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-mod-vanilla.jpg"
+  },
+  {
+    "slug": "ariana-grande-sweet-like-candy",
+    "nombre": "Sweet Like Candy",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Tierna",
+      "Divertida"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Zarzamora",
+      "Pera"
+    ],
+    "notas_corazon": [
+      "Crema batida",
+      "Malvavisco"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Madera de cachemira"
+    ],
+    "descripcion_corta": "Joven, Tierna",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-sweet-like-candy.jpg"
+  },
+  {
+    "slug": "ariana-grande-thank-u-next",
+    "nombre": "Thank U, Next",
+    "marca": "Ariana Grande",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Empoderada",
+      "Juvenil",
+      "Seguridad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Pera",
+      "Frambuesa"
+    ],
+    "notas_corazon": [
+      "Coco",
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Macarrones dulces",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Empoderada, Juvenil",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ariana-grande-thank-u-next.jpg"
+  },
+  {
+    "slug": "victoria-secret-bombshell",
+    "nombre": "Bombshell",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Citas"
+    ],
+    "caracter": [
+      "Segura",
+      "Coqueta"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Maracuyá",
+      "Piña"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Orquídea"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Notas amaderadas"
+    ],
+    "descripcion_corta": "Segura, Coqueta",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-bombshell.jpg"
+  },
+  {
+    "slug": "victoria-secret-love-spell",
+    "nombre": "Love Spell",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Alegre",
+      "Juvenil",
+      "Ligero"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Cereza",
+      "Durazno"
+    ],
+    "notas_corazon": [
+      "Flores blancas",
+      "Aloe vera"
+    ],
+    "notas_fondo": [
+      "Almizcle"
+    ],
+    "descripcion_corta": "Alegre, Juvenil",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-love-spell.jpg"
+  },
+  {
+    "slug": "victoria-secret-pure-seduction",
+    "nombre": "Pure Seduction",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Casual",
+      "Citas"
+    ],
+    "caracter": [
+      "Joven",
+      "Seductora",
+      "Pasión"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Ciruela",
+      "Melón"
+    ],
+    "notas_corazon": [
+      "Fresia"
+    ],
+    "notas_fondo": [
+      "Manzanilla"
+    ],
+    "descripcion_corta": "Joven, Seductora",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-pure-seduction.jpg"
+  },
+  {
+    "slug": "victoria-secret-coconut-passion",
+    "nombre": "Coconut Passion",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Playa",
+      "Vacaciones"
+    ],
+    "caracter": [
+      "Libre",
+      "Relajada",
+      "Sexy"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Coco",
+      "Vainilla"
+    ],
+    "notas_corazon": [
+      "Lirio de los valles"
+    ],
+    "notas_fondo": [
+      "Manzanilla",
+      "Sábila"
+    ],
+    "descripcion_corta": "Libre, Relajada",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-coconut-passion.jpg"
+  },
+  {
+    "slug": "victoria-secret-scandalous",
+    "nombre": "Scandalous",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Noche",
+      "Citas"
+    ],
+    "caracter": [
+      "Sensual"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Frambuesa"
+    ],
+    "notas_corazon": [
+      "Peonía"
+    ],
+    "notas_fondo": [
+      "Praliné"
+    ],
+    "descripcion_corta": "Sensual",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-scandalous.jpg"
+  },
+  {
+    "slug": "victoria-secret-vanilla-lace",
+    "nombre": "Vanilla Lace",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Diario",
+      "Hogar"
+    ],
+    "caracter": [
+      "Acogedor",
+      "Romántico",
+      "Cálida"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Vainilla"
+    ],
+    "notas_corazon": [
+      "Orquídea"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Acogedor, Romántico",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-vanilla-lace.jpg"
+  },
+  {
+    "slug": "victoria-secret-aqua-kiss",
+    "nombre": "Aqua Kiss",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Gimnasio",
+      "Diario"
+    ],
+    "caracter": [
+      "Activa",
+      "Natural",
+      "Frescura"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Aloe vera",
+      "Notas marinas"
+    ],
+    "notas_corazon": [
+      "Margarita",
+      "Fresia"
+    ],
+    "notas_fondo": [
+      "Notas dulces"
+    ],
+    "descripcion_corta": "Activa, Natural",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-aqua-kiss.jpg"
+  },
+  {
+    "slug": "victoria-secret-sheer-love",
+    "nombre": "Sheer Love",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Oficina",
+      "Diario"
+    ],
+    "caracter": [
+      "Delicada",
+      "Sencilla",
+      "Pureza"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Algodón blanca"
+    ],
+    "notas_corazon": [
+      "Lirio rosa",
+      "Manzanilla"
+    ],
+    "notas_fondo": [
+      "Aloe vera"
+    ],
+    "descripcion_corta": "Delicada, Sencilla",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-sheer-love.jpg"
+  },
+  {
+    "slug": "victoria-secret-mango-temptation",
+    "nombre": "Mango Temptation",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Joven",
+      "Espontánea"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Mango",
+      "Hibisco"
+    ],
+    "notas_corazon": [
+      "Manzanilla",
+      "Sábila"
+    ],
+    "notas_fondo": [
+      "Notas dulces"
+    ],
+    "descripcion_corta": "Joven, Espontánea",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-mango-temptation.jpg"
+  },
+  {
+    "slug": "victoria-secret-beauty-rush",
+    "nombre": "Beauty Rush",
+    "marca": "Victoria Secret",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario"
+    ],
+    "caracter": [
+      "Juvenil",
+      "Alegre",
+      "Divertido"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Frutales dulces",
+      "Bayas"
+    ],
+    "notas_corazon": [
+      "Notas florales ligeras"
+    ],
+    "notas_fondo": [
+      "Gourmand",
+      "Algodón de azúcar"
+    ],
+    "descripcion_corta": "Juvenil, Alegre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/victoria-secret-beauty-rush.jpg"
+  },
+  {
+    "slug": "selena-gomez-selena-gomez-eau-de-parfum",
+    "nombre": "Selena Gomez Eau de Parfum",
+    "marca": "Selena Gomez",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Romántica",
+      "Dulce"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Piña",
+      "Durazno"
+    ],
+    "notas_corazon": [
+      "Zarzamora",
+      "Almizcle"
+    ],
+    "notas_fondo": [
+      "Chocolate",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Romántica, Dulce",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/selena-gomez-selena-gomez-eau-de-parfum.jpg"
+  },
+  {
+    "slug": "ralph-lauren-big-pony-2",
+    "nombre": "Big Pony 2",
+    "marca": "Ralph Lauren",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Joven",
+      "Espontánea"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Arándano"
+    ],
+    "notas_corazon": [
+      "Notas florales"
+    ],
+    "notas_fondo": [
+      "Haba Tonka"
+    ],
+    "descripcion_corta": "Joven, Espontánea",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/ralph-lauren-big-pony-2.jpg"
+  },
+  {
+    "slug": "tommy-hilfiger-tommy-girl",
+    "nombre": "Tommy Girl",
+    "marca": "Tommy Hilfiger",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Libre",
+      "Fresca"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Grosella negra",
+      "Mandarina"
+    ],
+    "notas_corazon": [
+      "Camelia",
+      "Menta"
+    ],
+    "notas_fondo": [
+      "Sándalo",
+      "Cedro"
+    ],
+    "descripcion_corta": "Libre, Fresca",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/tommy-hilfiger-tommy-girl.jpg"
+  },
+  {
+    "slug": "paris-hilton-can-can",
+    "nombre": "Can Can",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Fiestas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sexy",
+      "Divertida",
+      "Coqueta"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Clementina",
+      "Nectarina"
+    ],
+    "notas_corazon": [
+      "Orquídea silvestre",
+      "Azahar"
+    ],
+    "notas_fondo": [
+      "Ámbar",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Sexy, Divertida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-can-can.jpg"
+  },
+  {
+    "slug": "paris-hilton-heiress",
+    "nombre": "Heiress",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Fiestas"
+    ],
+    "caracter": [
+      "Extrovertida",
+      "Glamorosa",
+      "Exclusiva"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Maracuyá",
+      "Naranja"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Flor de tiaré"
+    ],
+    "notas_fondo": [
+      "Maderas claras",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Extrovertida, Glamorosa",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-heiress.jpg"
+  },
+  {
+    "slug": "paris-hilton-ros-rush",
+    "nombre": "Rosé Rush",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Citas",
+      "Casual"
+    ],
+    "caracter": [
+      "Romántica",
+      "Soñadora",
+      "Dulzura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Lichi",
+      "Neroli"
+    ],
+    "notas_corazon": [
+      "Pétalos de rosa",
+      "Peonía"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Ámbar"
+    ],
+    "descripcion_corta": "Romántica, Soñadora",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-ros-rush.jpg"
+  },
+  {
+    "slug": "paris-hilton-paris-hilton",
+    "nombre": "Paris Hilton",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "floral",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Coqueta",
+      "Femenina",
+      "Sencilla"
+    ],
+    "intensidad": "Suave",
+    "intensidad_num": 2,
+    "proyeccion": 2,
+    "duracion": 3,
+    "notas_salida": [
+      "Manzana",
+      "Melón"
+    ],
+    "notas_corazon": [
+      "Fresia",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Ylang-Ylang",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Coqueta, Femenina",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-paris-hilton.jpg"
+  },
+  {
+    "slug": "paris-hilton-dazzle",
+    "nombre": "Dazzle",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Moderna",
+      "Coqueta",
+      "Sensual"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Cereza",
+      "Manzana"
+    ],
+    "notas_corazon": [
+      "Orquídea",
+      "Azahar"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Moderna, Coqueta",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-dazzle.jpg"
+  },
+  {
+    "slug": "paris-hilton-can-can-burlesque",
+    "nombre": "Can Can Burlesque",
+    "marca": "Paris Hilton",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Joven",
+      "Atrevida",
+      "Energía"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Clementina",
+      "Frambuesa"
+    ],
+    "notas_corazon": [
+      "Orquídea silvestre",
+      "Azahar"
+    ],
+    "notas_fondo": [
+      "Maderas blancas",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Joven, Atrevida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/paris-hilton-can-can-burlesque.jpg"
+  },
+  {
+    "slug": "lattafa-yara",
+    "nombre": "Yara",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera",
+      "Verano"
+    ],
+    "ocasion": [
+      "Diario",
+      "Casual"
+    ],
+    "caracter": [
+      "Fresca",
+      "Coqueta",
+      "Dulce"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Mandarina",
+      "Heliotropo"
+    ],
+    "notas_corazon": [
+      "Orquídea",
+      "Frutas tropicales"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Fresca, Coqueta",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-yara.jpg"
+  },
+  {
+    "slug": "lattafa-yara-moi",
+    "nombre": "Yara Moi",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera",
+      "Verano",
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Noche"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Salidas"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Jazmín",
+      "Melocotón"
+    ],
+    "notas_corazon": [
+      "Caramelo",
+      "Ámbar"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Sándalo"
+    ],
+    "descripcion_corta": "Sofisticada, Salidas",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-yara-moi.jpg"
+  },
+  {
+    "slug": "lattafa-yara-tous",
+    "nombre": "Yara Tous",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "caluroso",
+    "estacion": [
+      "Verano"
+    ],
+    "ocasion": [
+      "Vacaciones",
+      "Playa"
+    ],
+    "caracter": [
+      "Casual",
+      "Libre"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Maracuyá",
+      "Coco"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Heliotropo"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Casual, Libre",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-yara-tous.jpg"
+  },
+  {
+    "slug": "lattafa-yara-candy",
+    "nombre": "Yara Candy",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas",
+      "Fiestas"
+    ],
+    "caracter": [
+      "Sexy",
+      "Divertida"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Frutos rojos",
+      "Naranja"
+    ],
+    "notas_corazon": [
+      "Caramelo",
+      "Flores dulces"
+    ],
+    "notas_fondo": [
+      "Vainilla",
+      "Almizcle"
+    ],
+    "descripcion_corta": "Sexy, Divertida",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-yara-candy.jpg"
+  },
+  {
+    "slug": "lattafa-mayar",
+    "nombre": "Mayar",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Diario",
+      "Citas"
+    ],
+    "caracter": [
+      "Soñadora",
+      "Delicadeza",
+      "Ternura"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Frambuesa",
+      "Lichi"
+    ],
+    "notas_corazon": [
+      "Peonía",
+      "Rosa blanca"
+    ],
+    "notas_fondo": [
+      "Almizcle",
+      "Vainilla"
+    ],
+    "descripcion_corta": "Soñadora, Delicadeza",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-mayar.jpg"
+  },
+  {
+    "slug": "lacoste-red",
+    "nombre": "Red",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "cálido",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual",
+      "Diario"
+    ],
+    "caracter": [
+      "Enérgico",
+      "Rebelde",
+      "Extrovertido"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Manzana verde"
+    ],
+    "notas_corazon": [
+      "Pino",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Enérgico, Rebelde",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-red.jpg"
+  },
+  {
+    "slug": "lacoste-style-in-play",
+    "nombre": "Style In Play",
+    "marca": "Lacoste",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "fresco",
+    "clima": "fresco",
+    "estacion": [
+      "Primavera"
+    ],
+    "ocasion": [
+      "Casual"
+    ],
+    "caracter": [
+      "Enérgico",
+      "Rebelde",
+      "Extrovertido"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 3,
+    "notas_salida": [
+      "Manzana verde",
+      "Maclura"
+    ],
+    "notas_corazon": [
+      "Pino",
+      "Jazmín"
+    ],
+    "notas_fondo": [
+      "Pachulí",
+      "Vetiver"
+    ],
+    "descripcion_corta": "Enérgico, Rebelde",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lacoste-style-in-play.jpg"
+  },
+  {
+    "slug": "lattafa-khamrah-dukhan",
+    "nombre": "Khamrah Dukhan",
+    "marca": "Lattafa",
+    "genero": "masculino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "amaderado",
+    "clima": "frío",
+    "estacion": [
+      "Invierno"
+    ],
+    "ocasion": [
+      "Citas"
+    ],
+    "caracter": [
+      "Dominante",
+      "Imponente"
+    ],
+    "intensidad": "Fuerte",
+    "intensidad_num": 4,
+    "proyeccion": 4,
+    "duracion": 5,
+    "notas_salida": [
+      "Canela"
+    ],
+    "notas_corazon": [
+      "Incienso"
+    ],
+    "notas_fondo": [
+      "Ron",
+      "Maderas"
+    ],
+    "descripcion_corta": "Dominante, Imponente",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-khamrah-dukhan.jpg"
+  },
+  {
+    "slug": "carolina-herrera-good-girl-dazzling-garden",
+    "nombre": "Good Girl Dazzling Garden",
+    "marca": "Carolina Herrera",
+    "genero": "femenino",
+    "tier": "disenador",
+    "coleccion": "Colección Diseñador",
+    "precio_30ml": 42,
+    "precio_50ml": 65,
+    "precio_100ml": 84,
+    "familia": "floral",
+    "clima": "fresco",
+    "estacion": [
+      "Otoño"
+    ],
+    "ocasion": [
+      "Reuniones",
+      "Eventos"
+    ],
+    "caracter": [
+      "Sofisticada",
+      "Exclusividad"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Almendra",
+      "Notas frescas"
+    ],
+    "notas_corazon": [
+      "Jazmín",
+      "Nardos"
+    ],
+    "notas_fondo": [
+      "Haba Tonka",
+      "Cacao"
+    ],
+    "descripcion_corta": "Sofisticada, Exclusividad",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/carolina-herrera-good-girl-dazzling-garden.jpg"
+  },
+  {
+    "slug": "lattafa-noble-blush",
+    "nombre": "Noble Blush",
+    "marca": "Lattafa",
+    "genero": "femenino",
+    "tier": "clasico",
+    "coleccion": "Colección Clásico",
+    "precio_30ml": 40,
+    "precio_50ml": 60,
+    "precio_100ml": 79,
+    "familia": "dulce",
+    "clima": "frío",
+    "estacion": [
+      "Otoño",
+      "Invierno"
+    ],
+    "ocasion": [
+      "Cenas",
+      "Eventos"
+    ],
+    "caracter": [
+      "Elegante",
+      "Glamour"
+    ],
+    "intensidad": "Media",
+    "intensidad_num": 3,
+    "proyeccion": 3,
+    "duracion": 4,
+    "notas_salida": [
+      "Almendra",
+      "Cereza"
+    ],
+    "notas_corazon": [
+      "Rosa"
+    ],
+    "notas_fondo": [
+      "Vainilla"
+    ],
+    "descripcion_corta": "Elegante, Glamour",
+    "mas_vendido": false,
+    "imagen_principal": "/assets/perfumes/lattafa-noble-blush.jpg"
+  }
+]

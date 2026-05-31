@@ -1908,7 +1908,13 @@ function quizRenderResults(){
     const rank = i===0 ? 'Mejor match para ti' : (i===1 ? 'Segunda opción' : 'Tercera opción');
     const seas = p.season.slice(0,2).map(x=>sL[x]||x).join(' · ');
     const occ = p.occasion.slice(0,2).map(x=>oL[x]||x).join(' · ');
-    const productSlug = encodeURIComponent(p.brand.toLowerCase().replace(/ /g,'-') + '-' + p.name.toLowerCase().replace(/ /g,'-'));
+    // Slug = marca + nombre, en minúsculas, sin acentos/apóstrofos/símbolos,
+    // espacios → guion. Misma regla con la que se generaron los slugs del JSON.
+    const productSlug = (p.brand + ' ' + p.name)
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, '')   // elimina apóstrofos, acentos, símbolos
+      .trim()
+      .replace(/\s+/g, '-');
     return `<div class="quiz-res-card">
       <div class="quiz-res-img">
         <span class="quiz-res-rank ${i===0?'quiz-res-rank-best':''}">${i===0?'★ '+rank:rank}</span>

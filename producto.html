@@ -669,7 +669,7 @@ footer{
       <div class="size-opt active" data-size="50" data-price="65">
         <div class="size-ml">50<sub>ml</sub></div>
       </div>
-      <div class="size-opt" data-size="100" data-price="82">
+      <div class="size-opt" data-size="100" data-price="84">
         <div class="size-ml">100<sub>ml</sub></div>
       </div>
     </div>
@@ -863,6 +863,143 @@ window.addEventListener('load', () => {
   });
 });
 </script>
+
+<!-- ════════════════════════════════════════════════════
+     PRODUCTO DINÁMICO (Bloque 4): puebla la página según
+     el slug de la URL leyendo /assets/catalogo.json
+     ════════════════════════════════════════════════════ -->
+<script>
+(function(){
+  const TIER_LABEL = { nicho:'Nicho', disenador:'Diseñador', clasico:'Clásico' };
+  const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : '';
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('slug') || 'dior-sauvage';
+
+  const setText = (sel, txt) => { const el = document.querySelector(sel); if (el) el.textContent = txt; };
+  const setHtml = (sel, html) => { const el = document.querySelector(sel); if (el) el.innerHTML = html; };
+
+  function frascoDe(p){
+    if (p.tier === 'nicho') return '/assets/esencia-frasco-unisex.png';
+    return p.genero === 'femenino' ? '/assets/esencia-frasco-femenino.png' : '/assets/esencia-frasco-masculino.png';
+  }
+
+  function poblar(p){
+    const tierLbl = TIER_LABEL[p.tier] || cap(p.tier);
+
+    // SEO / título
+    document.title = `${p.nombre} · ${p.marca} — Esencia`;
+    const md = document.querySelector('meta[name="description"]');
+    if (md) md.setAttribute('content',
+      `Perfume ${p.nombre} inspirado en ${p.marca}. Notas de ${(p.notas_salida||[]).join(', ')}. Desde S/${p.precio_30ml}. Envío gratis Lima.`);
+
+    // data-* del producto (los lee carrito.js para añadir al carrito)
+    const prod = document.querySelector('.product');
+    if (prod) {
+      prod.dataset.id = p.slug; prod.dataset.slug = p.slug;
+      prod.dataset.nombre = p.nombre; prod.dataset.marca = p.marca;
+      prod.dataset.tier = p.tier; prod.dataset.genero = p.genero;
+    }
+
+    // Breadcrumb: [Inicio, Catálogo, Género, Tier] + actual
+    const bc = document.querySelectorAll('.breadcrumb a');
+    if (bc[2]) bc[2].textContent = cap(p.genero);
+    if (bc[3]) bc[3].textContent = tierLbl;
+    setText('.breadcrumb .current', p.nombre);
+
+    // Galería
+    setText('.gal-badge', 'Colección ' + tierLbl);
+    const frasco = frascoDe(p);
+    const galMain = document.querySelector('.gal-main img');
+    if (galMain) { galMain.src = frasco; galMain.alt = 'Esencia ' + p.nombre; }
+    const thumb = document.querySelector('.gal-thumb.active img');
+    if (thumb) thumb.src = frasco;
+
+    // Info
+    setText('.info-inspired', `${p.marca.toUpperCase()} · ${p.nombre.toUpperCase()}`);
+    // (mantiene el prefijo "Carácter de" del span anterior si existe)
+    const inspired = document.querySelector('.info-inspired');
+    if (inspired) inspired.innerHTML = `Carácter de <strong>${p.marca.toUpperCase()} · ${p.nombre.toUpperCase()}</strong>`;
+    setHtml('.info-name', `${p.nombre}<br><em>versión Esencia</em>`);
+
+    // Tags
+    const tags = document.querySelectorAll('.info-tags .tag');
+    const tagVals = [cap(p.genero), tierLbl, cap(p.familia), cap(p.clima), (p.ocasion && p.ocasion[0]) || ''];
+    tags.forEach((t, i) => { if (tagVals[i]) t.textContent = tagVals[i]; });
+
+    // Descripción
+    const car = (p.caracter || []).slice(0, 2).join(' y ').toLowerCase();
+    setText('.info-desc',
+      `Carácter ${car}. Apertura de ${(p.notas_salida||[]).join(', ')}, corazón de ${(p.notas_corazon||[]).join(', ')} y fondo de ${(p.notas_fondo||[]).join(', ')}.`);
+
+    // Pirámide olfativa
+    const pyr = document.querySelectorAll('.pyr-notes');
+    if (pyr[0]) pyr[0].innerHTML = (p.notas_salida || []).join('<br>');
+    if (pyr[1]) pyr[1].innerHTML = (p.notas_corazon || []).join('<br>');
+    if (pyr[2]) pyr[2].innerHTML = (p.notas_fondo || []).join('<br>');
+
+    // Barras de perfil (Intensidad / Longevidad / Estela / Versatilidad)
+    const bars = document.querySelectorAll('.profile-bars .bar-row');
+    const pct = n => Math.round((Number(n) || 0) / 5 * 100) + '%';
+    const dur = p.duracion >= 5 ? '8+ horas' : p.duracion >= 4 ? '6-8 horas' : p.duracion >= 3 ? '4-6 horas' : '2-4 horas';
+    const est = p.proyeccion >= 4 ? 'Notable' : p.proyeccion >= 3 ? 'Moderada' : 'Discreta';
+    const ver = (p.estacion || []).length >= 3 ? 'Todo el año' : (p.estacion || []).join(' · ');
+    const cfg = [
+      { w: pct(p.intensidad_num), label: 'Intensidad', val: p.intensidad || '' },
+      { w: pct(p.duracion), label: 'Longevidad', val: dur },
+      { w: pct(p.proyeccion), label: 'Estela', val: est },
+      { w: Math.round(Math.min((p.estacion || []).length / 4, 1) * 100) + '%', label: 'Versatilidad', val: ver },
+    ];
+    bars.forEach((b, i) => {
+      if (!cfg[i]) return;
+      b.style.setProperty('--w', cfg[i].w);
+      const spans = b.querySelectorAll('.bar-label span');
+      if (spans[0]) spans[0].textContent = cfg[i].label;
+      if (spans[1]) spans[1].textContent = cfg[i].val;
+    });
+
+    // Texto del bloque de perfil (evita nombres de otro producto)
+    const pl = document.querySelectorAll('.profile-left p');
+    if (pl[0]) pl[0].textContent = `${p.nombre} en versión Esencia: el mismo aroma que reconoces, con la calidad y la duración que esperas.`;
+    if (pl[1]) pl[1].textContent = 'Oler caro, sin pagar de más.';
+
+    // Selector de tallas: precios reales del JSON, 50ml por defecto
+    const precios = { 30: p.precio_30ml, 50: p.precio_50ml, 100: p.precio_100ml };
+    document.querySelectorAll('.size-opt').forEach(opt => {
+      const ml = Number(opt.dataset.size);
+      if (precios[ml] != null) {
+        opt.dataset.price = precios[ml];
+        let lbl = opt.querySelector('.size-price');
+        if (!lbl) { lbl = document.createElement('div'); lbl.className = 'size-price'; opt.appendChild(lbl); }
+        lbl.textContent = 'S/ ' + precios[ml];
+      }
+      opt.classList.toggle('active', ml === 50);
+    });
+    const tp = document.getElementById('totalPrice');
+    const ctaSub = document.querySelector('#ctaPrice sub');
+    if (tp) tp.textContent = precios[50];
+    if (ctaSub) ctaSub.textContent = ' · 50ml';
+  }
+
+  function noEncontrado(){
+    setHtml('.info-name', 'Producto no encontrado');
+    setText('.info-desc', 'Este perfume no está disponible. Explora el catálogo completo.');
+    const cta = document.querySelector('.cta-buy');
+    if (cta) { cta.textContent = 'Ver catálogo'; cta.onclick = () => location.href = '/catalogo'; }
+    const sec = document.querySelector('.cta-secondary'); if (sec) sec.style.display = 'none';
+  }
+
+  fetch('/assets/catalogo.json')
+    .then(r => r.json())
+    .then(data => {
+      // Coincidencia exacta; si no, por prefijo (recupera nombres abreviados del quiz)
+      let p = data.find(x => x.slug === slug);
+      if (!p) p = data.find(x => x.slug.startsWith(slug) || slug.startsWith(x.slug));
+      if (p) poblar(p); else noEncontrado();
+    })
+    .catch(() => {/* deja el contenido estático si falla la red */});
+})();
+</script>
+
   <!-- Carrito compartido (Bloque 2) -->
   <script src="/assets/carrito.js" defer></script>
 </body>
