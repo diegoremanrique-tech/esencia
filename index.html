@@ -1683,6 +1683,14 @@ function submitEmail(e){
   document.getElementById('emailForm').style.display = 'none';
   document.getElementById('emailSuccess').classList.add('show');
   try { localStorage.setItem('esencia_email_submitted', email); } catch(e){}
+  // Guarda el contacto en el CRM de Notion (best-effort, no bloquea la UX)
+  try {
+    fetch('/api/suscribir', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, origen: 'popup home' }),
+    }).catch(() => {});
+  } catch(e){}
   setTimeout(closeEmailPopup, 2500);
 }
 document.getElementById('emailPopup').addEventListener('click', e => {

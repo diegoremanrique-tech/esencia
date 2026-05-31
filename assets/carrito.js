@@ -370,6 +370,342 @@
     });
   }
 
+  // ═════════════════════════════════════════════
+  //  CHECKOUT (Bloque 3) — modal: datos → Culqi → resultado
+  // ═════════════════════════════════════════════
+  const DISTRITOS = ['Miraflores', 'San Isidro', 'Surco', 'La Molina', 'San Borja',
+    'Barranco', 'Pueblo Libre', 'Jesús María', 'Lince', 'Magdalena', 'San Miguel',
+    'Surquillo', 'Chorrillos', 'Otro'];
+
+  const CSS_CHECKOUT = `
+  #esCoOverlay{position:fixed;inset:0;background:rgba(0,0,0,.78);opacity:0;visibility:hidden;
+    transition:opacity .3s,visibility .3s;z-index:1100;backdrop-filter:blur(3px)}
+  #esCoOverlay.open{opacity:1;visibility:visible}
+  #esCoModal{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%);opacity:0;visibility:hidden;
+    width:460px;max-width:calc(100% - 32px);max-height:calc(100% - 48px);overflow-y:auto;
+    background:#0a0a0a;border:1px solid #1a1a1a;z-index:1101;
+    transition:opacity .3s cubic-bezier(.22,1,.36,1),transform .3s cubic-bezier(.22,1,.36,1),visibility .3s;
+    font-family:'Montserrat',sans-serif;color:#f5f0eb}
+  #esCoModal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
+  .esco-x{position:absolute;top:16px;right:16px;width:32px;height:32px;display:flex;align-items:center;
+    justify-content:center;background:transparent;border:1px solid #1a1a1a;color:#a09888;font-size:18px;
+    cursor:pointer;transition:all .3s;z-index:2}
+  .esco-x:hover{border-color:#c9a96e;color:#c9a96e}
+  .esco-pad{padding:34px 32px 30px}
+  .esco-steps{display:flex;gap:8px;align-items:center;font-size:9px;letter-spacing:.22em;
+    text-transform:uppercase;color:#5a5248;margin-bottom:8px}
+  .esco-steps b{color:#c9a96e;font-weight:600}
+  .esco-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:#f5f0eb;
+    margin-bottom:6px;line-height:1.1}
+  .esco-sub{font-size:12px;color:#a09888;margin-bottom:24px}
+  .esco-field{margin-bottom:14px}
+  .esco-field label{display:block;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:#a09888;margin-bottom:7px}
+  .esco-field input,.esco-field select{width:100%;background:#050505;border:1px solid #1a1a1a;color:#f5f0eb;
+    padding:13px 14px;font-family:'Montserrat',sans-serif;font-size:13.5px;transition:border-color .25s;outline:none}
+  .esco-field input:focus,.esco-field select:focus{border-color:#c9a96e}
+  .esco-field input::placeholder{color:#3a342e}
+  .esco-field select{appearance:none;cursor:pointer}
+  .esco-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .esco-err{color:#c84545;font-size:11.5px;margin:4px 0 0;min-height:14px}
+  .esco-resumen{display:flex;justify-content:space-between;align-items:baseline;
+    padding:14px 0;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;margin:18px 0 22px}
+  .esco-resumen .lbl{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a09888}
+  .esco-resumen .val{font-family:'Cormorant Garamond',serif;font-size:28px;color:#f5f0eb}
+  .esco-btn{width:100%;padding:16px;background:#c9a96e;color:#000;border:1px solid #c9a96e;
+    font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:all .3s}
+  .esco-btn:hover{background:#d9b878;box-shadow:0 8px 24px rgba(201,169,110,.25)}
+  .esco-btn:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
+  .esco-back{width:100%;margin-top:10px;padding:13px;background:transparent;border:1px solid #1a1a1a;
+    color:#a09888;font-size:10px;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:all .3s}
+  .esco-back:hover{border-color:#5a5248;color:#f5f0eb}
+  .esco-note{font-size:12px;color:#a09888;line-height:1.6;text-align:center;margin:10px 0 0}
+  .esco-center{text-align:center;padding:18px 0}
+  .esco-spinner{width:46px;height:46px;margin:0 auto 22px;border:2px solid #1a1a1a;border-top-color:#c9a96e;
+    border-radius:50%;animation:escoSpin .9s linear infinite}
+  @keyframes escoSpin{to{transform:rotate(360deg)}}
+  .esco-check{width:58px;height:58px;margin:0 auto 18px;border:2px solid #c9a96e;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:#c9a96e;font-size:28px}
+  .esco-pedido{font-family:'Cormorant Garamond',serif;font-size:20px;color:#c9a96e;letter-spacing:.04em;margin:6px 0 16px}
+  .esco-aviso{background:#0f0f0f;border:1px solid #1a1a1a;padding:14px 16px;font-size:12px;color:#a09888;
+    line-height:1.6;margin-bottom:18px}
+  @media(max-width:480px){.esco-pad{padding:28px 22px 26px}.esco-row{grid-template-columns:1fr}}
+  `;
+
+  let coBuilt = false;
+  let coConfig = null;     // { culqiPublicKey, pagosActivos }
+  let coDatos = null;      // datos validados del cliente
+
+  function buildCheckout() {
+    if (coBuilt) return;
+    const style = document.createElement('style');
+    style.id = 'esCoStyles';
+    style.textContent = CSS_CHECKOUT;
+    document.head.appendChild(style);
+
+    const wrap = document.createElement('div');
+    wrap.innerHTML = `
+      <div id="esCoOverlay"></div>
+      <div id="esCoModal" role="dialog" aria-modal="true" aria-label="Finalizar compra">
+        <button class="esco-x" id="escoX" aria-label="Cerrar">&times;</button>
+        <div id="escoBody"></div>
+      </div>`;
+    document.body.appendChild(wrap);
+    document.getElementById('esCoOverlay').addEventListener('click', cerrarCheckout);
+    document.getElementById('escoX').addEventListener('click', cerrarCheckout);
+    coBuilt = true;
+  }
+
+  function abrirCheckout() {
+    document.getElementById('esCoOverlay').classList.add('open');
+    document.getElementById('esCoModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function cerrarCheckout() {
+    if (!coBuilt) return;
+    document.getElementById('esCoOverlay').classList.remove('open');
+    document.getElementById('esCoModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  // ── Paso 1: datos del cliente ──
+  function renderDatos() {
+    const body = document.getElementById('escoBody');
+    const d = coDatos || {};
+    body.innerHTML = `
+      <div class="esco-pad">
+        <div class="esco-steps"><b>1 · Datos</b> <span>→</span> <span>2 · Pago</span></div>
+        <div class="esco-title">Finalizar compra</div>
+        <div class="esco-sub">${countItems()} producto(s) · Envío gratis a Lima</div>
+        <form id="escoForm" novalidate>
+          <div class="esco-field">
+            <label>Nombre completo</label>
+            <input name="nombre" type="text" value="${esc(d.nombre)}" placeholder="Tu nombre y apellido">
+          </div>
+          <div class="esco-row">
+            <div class="esco-field">
+              <label>Email</label>
+              <input name="email" type="email" value="${esc(d.email)}" placeholder="tucorreo@email.com">
+            </div>
+            <div class="esco-field">
+              <label>Teléfono (9 dígitos)</label>
+              <input name="telefono" type="tel" inputmode="numeric" maxlength="9" value="${esc(d.telefono)}" placeholder="9XXXXXXXX">
+            </div>
+          </div>
+          <div class="esco-field">
+            <label>Distrito</label>
+            <select name="distrito">
+              <option value="">Selecciona tu distrito</option>
+              ${DISTRITOS.map((x) => `<option value="${esc(x)}"${d.distrito === x ? ' selected' : ''}>${esc(x)}</option>`).join('')}
+            </select>
+          </div>
+          <div class="esco-field">
+            <label>Dirección completa</label>
+            <input name="direccion" type="text" value="${esc(d.direccion)}" placeholder="Av. / Calle, número, dpto.">
+          </div>
+          <div class="esco-field">
+            <label>Referencia (opcional)</label>
+            <input name="referencia" type="text" value="${esc(d.referencia)}" placeholder="Cerca de…">
+          </div>
+          <div class="esco-resumen">
+            <span class="lbl">Total</span><span class="val">${money(getTotal())}</span>
+          </div>
+          <p class="esco-err" id="escoErr"></p>
+          <button class="esco-btn" type="submit">Continuar al pago</button>
+        </form>
+      </div>`;
+
+    document.getElementById('escoForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.target;
+      const datos = {
+        nombre: f.nombre.value.trim(),
+        email: f.email.value.trim(),
+        telefono: f.telefono.value.replace(/\s/g, ''),
+        distrito: f.distrito.value,
+        direccion: f.direccion.value.trim(),
+        referencia: f.referencia.value.trim(),
+      };
+      const err = document.getElementById('escoErr');
+      if (!datos.nombre) return (err.textContent = 'Ingresa tu nombre completo.');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.email)) return (err.textContent = 'Ingresa un email válido.');
+      if (!/^\d{9}$/.test(datos.telefono)) return (err.textContent = 'El teléfono debe tener 9 dígitos.');
+      if (!datos.distrito) return (err.textContent = 'Selecciona tu distrito.');
+      if (!datos.direccion) return (err.textContent = 'Ingresa tu dirección.');
+      err.textContent = '';
+      coDatos = datos;
+      renderPago();
+    });
+  }
+
+  // ── Paso 2: pago con Culqi ──
+  async function renderPago() {
+    const body = document.getElementById('escoBody');
+    body.innerHTML = `
+      <div class="esco-pad">
+        <div class="esco-steps"><span>1 · Datos</span> <span>→</span> <b>2 · Pago</b></div>
+        <div class="esco-title">Pago seguro</div>
+        <div class="esco-sub">Tarjeta de crédito o débito · Culqi</div>
+        <div class="esco-resumen"><span class="lbl">Total a pagar</span><span class="val">${money(getTotal())}</span></div>
+        <div id="escoPagoArea"></div>
+        <button class="esco-back" id="escoBack">← Volver a mis datos</button>
+      </div>`;
+    document.getElementById('escoBack').addEventListener('click', renderDatos);
+
+    const area = document.getElementById('escoPagoArea');
+    // Cargar config (llave pública) si aún no
+    if (!coConfig) {
+      try {
+        coConfig = await (await fetch('/api/config', { cache: 'no-store' })).json();
+      } catch (e) { coConfig = { culqiPublicKey: '', pagosActivos: false }; }
+    }
+
+    if (!coConfig.culqiPublicKey) {
+      area.innerHTML = `
+        <div class="esco-aviso">💳 Estamos activando los pagos con tarjeta. Tus datos quedaron listos;
+        vuelve muy pronto para completar tu compra, o escríbenos por WhatsApp al
+        <strong style="color:#c9a96e">+51 901 875 125</strong> para coordinarlo ahora.</div>`;
+      return;
+    }
+
+    area.innerHTML = `<button class="esco-btn" id="escoPay">Pagar ${money(getTotal())} con tarjeta</button>
+      <p class="esco-note" id="escoPayNote">Se abrirá la ventana segura de Culqi.</p>`;
+    document.getElementById('escoPay').addEventListener('click', abrirCulqi);
+  }
+
+  function loadCulqi() {
+    return new Promise((resolve, reject) => {
+      if (window.Culqi) return resolve();
+      const s = document.createElement('script');
+      s.src = 'https://checkout.culqi.com/js/v4';
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error('No se pudo cargar Culqi'));
+      document.head.appendChild(s);
+    });
+  }
+
+  async function abrirCulqi() {
+    const note = document.getElementById('escoPayNote');
+    try {
+      if (note) note.textContent = 'Abriendo pago seguro…';
+      await loadCulqi();
+      window.Culqi.publicKey = coConfig.culqiPublicKey;
+      window.Culqi.settings({
+        title: 'Esencia',
+        currency: 'PEN',
+        amount: Math.round(getTotal() * 100), // en céntimos
+      });
+      // Callback global que Culqi invoca al cerrar su modal
+      window.culqi = function () {
+        if (window.Culqi.token) {
+          procesarPago(window.Culqi.token.id);
+        } else if (window.Culqi.error) {
+          const msg = window.Culqi.error.user_message || 'No se pudo procesar el pago.';
+          if (note) note.textContent = msg;
+        }
+      };
+      window.Culqi.open();
+    } catch (e) {
+      if (note) note.textContent = 'No se pudo iniciar el pago. Revisa tu conexión.';
+    }
+  }
+
+  function renderProcesando() {
+    document.getElementById('escoBody').innerHTML = `
+      <div class="esco-pad esco-center">
+        <div class="esco-spinner"></div>
+        <div class="esco-title">Procesando tu pedido…</div>
+        <div class="esco-sub">No cierres esta ventana.</div>
+      </div>`;
+  }
+
+  async function procesarPago(token) {
+    renderProcesando();
+    let resp;
+    try {
+      resp = await fetch('/api/pagar', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          token,
+          monto: getTotal(),
+          nombre: coDatos.nombre,
+          email: coDatos.email,
+          telefono: coDatos.telefono,
+          distrito: coDatos.distrito,
+          direccion: coDatos.direccion,
+          referencia: coDatos.referencia,
+          items: getCart(),
+        }),
+      });
+    } catch (e) {
+      return renderError('Hubo un problema de conexión. Tu tarjeta NO fue cobrada.');
+    }
+    let data = {};
+    try { data = await resp.json(); } catch (e) {}
+    if (resp.ok && data.ok) {
+      renderExito(data);
+    } else {
+      renderError(data.error || 'No se pudo completar el pedido. Intenta nuevamente.');
+    }
+  }
+
+  function renderExito(data) {
+    const items = getCart();
+    const total = getTotal();
+    const resumen = items.map((it) =>
+      `<div style="display:flex;justify-content:space-between;font-size:13px;color:#a09888;padding:6px 0">
+         <span>${esc(it.nombre)} · ${it.talla}ml ×${it.cantidad}</span>
+         <span style="color:#c9a96e">${money(it.precio * it.cantidad)}</span>
+       </div>`).join('');
+    document.getElementById('escoBody').innerHTML = `
+      <div class="esco-pad esco-center">
+        <div class="esco-check">✓</div>
+        <div class="esco-title">¡Pedido confirmado!</div>
+        <div class="esco-pedido">${esc(data.pedido_id)}</div>
+        <div style="text-align:left;margin:8px 0 18px">${resumen}
+          <div style="display:flex;justify-content:space-between;border-top:1px solid #1a1a1a;margin-top:8px;padding-top:10px">
+            <span style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a09888">Total</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#f5f0eb">${money(total)}</span>
+          </div>
+        </div>
+        <p class="esco-note">Recibirás un email de confirmación en <strong style="color:#f5f0eb">${esc(coDatos.email)}</strong>.
+        Te contactaremos para coordinar la entrega gratuita en Lima.</p>
+        <button class="esco-btn" id="escoDone" style="margin-top:20px">Seguir explorando</button>
+      </div>`;
+    clearCart();             // vacía el carrito tras el pago exitoso
+    document.getElementById('escoDone').addEventListener('click', () => {
+      cerrarCheckout();
+      closeCart();
+    });
+  }
+
+  function renderError(mensaje) {
+    document.getElementById('escoBody').innerHTML = `
+      <div class="esco-pad esco-center">
+        <div class="esco-check" style="border-color:#c84545;color:#c84545">!</div>
+        <div class="esco-title">No se completó el pago</div>
+        <p class="esco-note" style="margin:10px 0 20px">${esc(mensaje)}</p>
+        <button class="esco-btn" id="escoRetry">Reintentar</button>
+        <button class="esco-back" id="escoCancel">Cerrar</button>
+      </div>`;
+    document.getElementById('escoRetry').addEventListener('click', renderPago);
+    document.getElementById('escoCancel').addEventListener('click', cerrarCheckout);
+  }
+
+  // Punto de entrada (lo llama el botón "Finalizar compra" del mini-carrito)
+  function iniciarCheckout() {
+    if (getCart().length === 0) return;
+    buildCheckout();
+    closeCart();
+    renderDatos();
+    abrirCheckout();
+  }
+  window.iniciarCheckout = iniciarCheckout;
+
   // ─────────────────────────────────────────────
   //  API pública (la usará el checkout del Bloque 3)
   // ─────────────────────────────────────────────
