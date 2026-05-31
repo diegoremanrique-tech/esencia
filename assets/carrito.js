@@ -162,6 +162,15 @@
   .size-price{font-family:'Montserrat',sans-serif;font-size:12px;color:#a09888;
     margin-top:8px;letter-spacing:.04em;transition:color .3s}
   .size-opt.active .size-price{color:#c9a96e}
+  /* Animación: el producto "vuela" al ícono del carrito */
+  .es-fly{position:fixed;z-index:1200;pointer-events:none;object-fit:contain;
+    filter:drop-shadow(0 10px 20px rgba(0,0,0,.5));
+    transition:left .85s cubic-bezier(.5,-0.25,.4,1),top .85s cubic-bezier(.5,-0.25,.4,1),width .85s ease,height .85s ease,opacity .85s ease,transform .85s ease;}
+  /* El ícono del carrito crece y decrece al recibir un producto */
+  .nav-cart.es-bump{animation:esBump .55s cubic-bezier(.22,1,.36,1)}
+  @keyframes esBump{0%{transform:scale(1)}30%{transform:scale(1.22)}55%{transform:scale(.94)}100%{transform:scale(1)}}
+  .nav-cart-count.es-bump{animation:esBumpCount .55s ease}
+  @keyframes esBumpCount{0%{transform:scale(1)}30%{transform:scale(1.5)}100%{transform:scale(1)}}
   @media(max-width:480px){#esCartSidebar{width:100%}}
   `;
 
@@ -218,6 +227,42 @@
     document.getElementById('esCartSidebar').classList.remove('open');
     document.getElementById('esCartSidebar').setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+  }
+
+  // ─────────────────────────────────────────────
+  //  ANIMACIÓN: el producto vuela al carrito + bump del ícono
+  // ─────────────────────────────────────────────
+  function bumpCart() {
+    document.querySelectorAll('.nav-cart').forEach((c) => {
+      c.classList.remove('es-bump'); void c.offsetWidth; c.classList.add('es-bump');
+    });
+    document.querySelectorAll('.nav-cart-count').forEach((c) => {
+      c.classList.remove('es-bump'); void c.offsetWidth; c.classList.add('es-bump');
+    });
+  }
+  function animarAlCarrito(srcImg) {
+    const cart = document.querySelector('.nav-cart');
+    if (!srcImg || !cart || !srcImg.src) { bumpCart(); return; }
+    const a = srcImg.getBoundingClientRect();
+    const b = cart.getBoundingClientRect();
+    const fly = document.createElement('img');
+    fly.src = srcImg.src;
+    fly.className = 'es-fly';
+    fly.style.left = a.left + 'px';
+    fly.style.top = a.top + 'px';
+    fly.style.width = a.width + 'px';
+    fly.style.height = a.height + 'px';
+    fly.style.opacity = '0.95';
+    document.body.appendChild(fly);
+    requestAnimationFrame(() => {
+      fly.style.left = (b.left + b.width / 2 - 22) + 'px';
+      fly.style.top = (b.top + b.height / 2 - 22) + 'px';
+      fly.style.width = '44px';
+      fly.style.height = '44px';
+      fly.style.opacity = '0.15';
+      fly.style.transform = 'rotate(14deg)';
+    });
+    setTimeout(() => { fly.remove(); bumpCart(); }, 850);
   }
 
   // ─────────────────────────────────────────────
@@ -331,8 +376,9 @@
     const btnAdd = document.querySelector('.cta-secondary');
     const btnBuy = document.querySelector('.cta-buy');
     if (btnAdd) btnAdd.addEventListener('click', () => {
+      animarAlCarrito(document.querySelector('.gal-main img')); // vuela al ícono
       addToCart(lineaSeleccionada());
-      openCart();
+      setTimeout(openCart, 880); // abre el mini-carrito cuando el producto "llega"
     });
     if (btnBuy) btnBuy.addEventListener('click', () => {
       addToCart(lineaSeleccionada());
