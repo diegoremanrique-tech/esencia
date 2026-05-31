@@ -3,7 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ESENCIA — Sauvage · Inspirado en Dior</title>
+<title>Producto — Esencia</title>
+<!-- title y description se generan dinámicamente según el slug (ver script al final) -->
+<meta name="description" content="Perfume de equivalencia luxury. Envío gratis a Lima.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" id="canonicalLink" href="https://esencia-eight.vercel.app/producto">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Esencia">
+<meta property="og:title" id="ogTitle" content="Esencia">
+<meta property="og:description" id="ogDesc" content="Perfume de equivalencia luxury. Envío gratis a Lima.">
+<meta property="og:url" id="ogUrl" content="https://esencia-eight.vercel.app/producto">
+<meta property="og:image" id="ogImage" content="https://esencia-eight.vercel.app/assets/esencia-frasco-femenino.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json" id="productSchema">{}</script>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -887,11 +899,36 @@ window.addEventListener('load', () => {
   function poblar(p){
     const tierLbl = TIER_LABEL[p.tier] || cap(p.tier);
 
-    // SEO / título
-    document.title = `${p.nombre} · ${p.marca} — Esencia`;
-    const md = document.querySelector('meta[name="description"]');
-    if (md) md.setAttribute('content',
-      `Perfume ${p.nombre} inspirado en ${p.marca}. Notas de ${(p.notas_salida||[]).join(', ')}. Desde S/${p.precio_30ml}. Envío gratis Lima.`);
+    // SEO / título + descripción dinámicos
+    const titulo = `${p.nombre} · ${p.marca} — Esencia`;
+    const desc = `Perfume ${p.nombre} inspirado en ${p.marca}. Notas de ${(p.notas_salida||[]).join(', ')}. Desde S/${p.precio_30ml}. Envío gratis Lima.`;
+    const url = `https://esencia-eight.vercel.app/producto?slug=${p.slug}`;
+    const img = `https://esencia-eight.vercel.app${frascoDe(p)}`;
+    document.title = titulo;
+    const setAttr = (sel, attr, val) => { const el = document.querySelector(sel); if (el) el.setAttribute(attr, val); };
+    setAttr('meta[name="description"]', 'content', desc);
+    setAttr('#canonicalLink', 'href', url);
+    setAttr('#ogTitle', 'content', titulo);
+    setAttr('#ogDesc', 'content', desc);
+    setAttr('#ogUrl', 'content', url);
+    setAttr('#ogImage', 'content', img);
+    // Schema.org Product
+    const schema = document.getElementById('productSchema');
+    if (schema) schema.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: `${p.nombre} — versión Esencia`,
+      brand: { '@type': 'Brand', name: p.marca },
+      description: desc,
+      image: img,
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'PEN',
+        lowPrice: p.precio_30ml,
+        highPrice: p.precio_100ml,
+        availability: 'https://schema.org/InStock',
+      },
+    });
 
     // data-* del producto (los lee carrito.js para añadir al carrito)
     const prod = document.querySelector('.product');
