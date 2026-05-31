@@ -1513,7 +1513,8 @@ let bestGender = 'masculino';
 let bestIdx = 0;
 
 function getFrasco(p){
-  if(p.tier==='nicho') return FRASCO_NICHO;
+  // Imagen SIEMPRE por género: mujer = tapa dorada (FRASCO_FEM), hombre = FRASCO_MASC.
+  // (Antes los 'nicho' usaban el frasco unisex, lo que creaba incoherencias.)
   return p.genero==='femenino' ? FRASCO_FEM : FRASCO_MASC;
 }
 

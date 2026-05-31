@@ -879,7 +879,8 @@ window.addEventListener('load', () => {
   const setHtml = (sel, html) => { const el = document.querySelector(sel); if (el) el.innerHTML = html; };
 
   function frascoDe(p){
-    if (p.tier === 'nicho') return '/assets/esencia-frasco-unisex.png';
+    // Imagen SIEMPRE por género: mujer = tapa dorada, hombre = masculino.
+    // (Coherente con la imagen del match del quiz, que también va por género.)
     return p.genero === 'femenino' ? '/assets/esencia-frasco-femenino.png' : '/assets/esencia-frasco-masculino.png';
   }
 
