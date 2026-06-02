@@ -206,6 +206,11 @@
     document.getElementById('escCheckout').addEventListener('click', onFinalizarCompra);
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCart(); });
 
+    // Página estática: bloquea el zoom por gesto (pellizco) en iOS Safari,
+    // que a veces ignora maximum-scale del viewport.
+    ['gesturestart', 'gesturechange', 'gestureend'].forEach((ev) =>
+      document.addEventListener(ev, (e) => e.preventDefault(), { passive: false }));
+
     // El ícono de carrito del nav abre el mini-carrito (en las 3 páginas)
     document.querySelectorAll('.nav-cart').forEach((btn) => {
       btn.addEventListener('click', (e) => { e.preventDefault(); openCart(); });
@@ -446,7 +451,29 @@
   .esco-pedido{font-family:'Cormorant Garamond',serif;font-size:20px;color:#c9a96e;letter-spacing:.04em;margin:6px 0 16px}
   .esco-aviso{background:#0f0f0f;border:1px solid #1a1a1a;padding:14px 16px;font-size:12px;color:#a09888;
     line-height:1.6;margin-bottom:18px}
+  /* Checkout en 2 columnas (paso "Datos"): resumen visual a la izquierda */
+  #esCoModal.esco-wide{width:780px}
+  .esco-cols{display:grid;grid-template-columns:290px 1fr}
+  .esco-sum{background:#070707;border-right:1px solid #1a1a1a;padding:30px 24px;display:flex;flex-direction:column}
+  .esco-sum-head{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a09888;margin-bottom:18px}
+  .esco-sum-list{flex:1;overflow-y:auto;max-height:340px}
+  .esco-sum-item{display:grid;grid-template-columns:46px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #141414}
+  .esco-sum-thumb{width:46px;height:58px;background:#000;border:1px solid #1a1a1a;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .esco-sum-thumb img{max-width:100%;max-height:100%;object-fit:contain}
+  .esco-sum-name{font-family:'Cormorant Garamond',serif;font-size:15px;color:#f5f0eb;line-height:1.15}
+  .esco-sum-meta{font-size:10px;color:#a09888;letter-spacing:.04em;margin-top:3px}
+  .esco-sum-price{font-size:12.5px;color:#c9a96e;white-space:nowrap}
+  .esco-sum-total{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;margin-top:10px;border-top:1px solid #1a1a1a}
+  .esco-sum-total span:first-child{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a09888}
+  .esco-sum-total span:last-child{font-family:'Cormorant Garamond',serif;font-size:26px;color:#f5f0eb}
+  .esco-sum-ship{font-size:10px;letter-spacing:.06em;color:#5a5248;margin-top:12px;text-transform:uppercase}
   @media(max-width:480px){.esco-pad{padding:28px 22px 26px}.esco-row{grid-template-columns:1fr}}
+  @media(max-width:680px){
+    #esCoModal.esco-wide{width:460px}
+    .esco-cols{grid-template-columns:1fr}
+    .esco-sum{border-right:none;border-bottom:1px solid #1a1a1a;padding:24px 22px}
+    .esco-sum-list{max-height:170px}
+  }
   `;
 
   let coBuilt = false;
@@ -491,48 +518,70 @@
   // ── Paso 1: datos del cliente ──
   function renderDatos() {
     const body = document.getElementById('escoBody');
+    document.getElementById('esCoModal').classList.add('esco-wide');
     const d = coDatos || {};
+    // Columna izquierda: visualización de lo que se va a comprar
+    const resumen = getCart().map((it) => {
+      const col = ETIQUETA_COLECCION[normalizarTier(it.coleccion)] || '';
+      const img = it.imagen ? `<img src="${it.imagen}" alt="${esc(it.nombre)}">` : '';
+      return `
+        <div class="esco-sum-item">
+          <div class="esco-sum-thumb">${img}</div>
+          <div class="esco-sum-info">
+            <div class="esco-sum-name">${esc(it.nombre)}</div>
+            <div class="esco-sum-meta">${it.talla}ml${col ? ' · ' + col : ''} × ${it.cantidad}</div>
+          </div>
+          <div class="esco-sum-price">${money(it.precio * it.cantidad)}</div>
+        </div>`;
+    }).join('');
     body.innerHTML = `
-      <div class="esco-pad">
-        <div class="esco-steps"><b>1 · Datos</b> <span>→</span> <span>2 · Pago</span></div>
-        <div class="esco-title">Finalizar compra</div>
-        <div class="esco-sub">${countItems()} producto(s) · Envío gratis a Lima</div>
-        <form id="escoForm" novalidate>
-          <div class="esco-field">
-            <label>Nombre completo</label>
-            <input name="nombre" type="text" value="${esc(d.nombre)}" placeholder="Tu nombre y apellido">
+      <div class="esco-cols">
+        <aside class="esco-sum">
+          <div class="esco-sum-head">Tu pedido</div>
+          <div class="esco-sum-list">${resumen}</div>
+          <div class="esco-sum-total"><span>Total</span><span>${money(getTotal())}</span></div>
+          <div class="esco-sum-ship">✓ Envío gratis a todo Lima</div>
+        </aside>
+        <div class="esco-formcol">
+          <div class="esco-pad">
+            <div class="esco-steps"><b>1 · Datos</b> <span>→</span> <span>2 · Pago</span></div>
+            <div class="esco-title">Finalizar compra</div>
+            <div class="esco-sub">Completa tus datos de entrega</div>
+            <form id="escoForm" novalidate>
+              <div class="esco-field">
+                <label>Nombre completo</label>
+                <input name="nombre" type="text" value="${esc(d.nombre)}" placeholder="Tu nombre y apellido">
+              </div>
+              <div class="esco-row">
+                <div class="esco-field">
+                  <label>Email</label>
+                  <input name="email" type="email" value="${esc(d.email)}" placeholder="tucorreo@email.com">
+                </div>
+                <div class="esco-field">
+                  <label>Teléfono (9 dígitos)</label>
+                  <input name="telefono" type="tel" inputmode="numeric" maxlength="9" value="${esc(d.telefono)}" placeholder="9XXXXXXXX">
+                </div>
+              </div>
+              <div class="esco-field">
+                <label>Distrito</label>
+                <select name="distrito">
+                  <option value="">Selecciona tu distrito</option>
+                  ${DISTRITOS.map((x) => `<option value="${esc(x)}"${d.distrito === x ? ' selected' : ''}>${esc(x)}</option>`).join('')}
+                </select>
+              </div>
+              <div class="esco-field">
+                <label>Dirección completa</label>
+                <input name="direccion" type="text" value="${esc(d.direccion)}" placeholder="Av. / Calle, número, dpto.">
+              </div>
+              <div class="esco-field">
+                <label>Referencia (opcional)</label>
+                <input name="referencia" type="text" value="${esc(d.referencia)}" placeholder="Cerca de…">
+              </div>
+              <p class="esco-err" id="escoErr"></p>
+              <button class="esco-btn" type="submit">Continuar al pago</button>
+            </form>
           </div>
-          <div class="esco-row">
-            <div class="esco-field">
-              <label>Email</label>
-              <input name="email" type="email" value="${esc(d.email)}" placeholder="tucorreo@email.com">
-            </div>
-            <div class="esco-field">
-              <label>Teléfono (9 dígitos)</label>
-              <input name="telefono" type="tel" inputmode="numeric" maxlength="9" value="${esc(d.telefono)}" placeholder="9XXXXXXXX">
-            </div>
-          </div>
-          <div class="esco-field">
-            <label>Distrito</label>
-            <select name="distrito">
-              <option value="">Selecciona tu distrito</option>
-              ${DISTRITOS.map((x) => `<option value="${esc(x)}"${d.distrito === x ? ' selected' : ''}>${esc(x)}</option>`).join('')}
-            </select>
-          </div>
-          <div class="esco-field">
-            <label>Dirección completa</label>
-            <input name="direccion" type="text" value="${esc(d.direccion)}" placeholder="Av. / Calle, número, dpto.">
-          </div>
-          <div class="esco-field">
-            <label>Referencia (opcional)</label>
-            <input name="referencia" type="text" value="${esc(d.referencia)}" placeholder="Cerca de…">
-          </div>
-          <div class="esco-resumen">
-            <span class="lbl">Total</span><span class="val">${money(getTotal())}</span>
-          </div>
-          <p class="esco-err" id="escoErr"></p>
-          <button class="esco-btn" type="submit">Continuar al pago</button>
-        </form>
+        </div>
       </div>`;
 
     document.getElementById('escoForm').addEventListener('submit', (e) => {
@@ -561,6 +610,7 @@
   // ── Paso 2: pago con Culqi ──
   async function renderPago() {
     const body = document.getElementById('escoBody');
+    document.getElementById('esCoModal').classList.remove('esco-wide');
     body.innerHTML = `
       <div class="esco-pad">
         <div class="esco-steps"><span>1 · Datos</span> <span>→</span> <b>2 · Pago</b></div>
@@ -631,6 +681,7 @@
   }
 
   function renderProcesando() {
+    document.getElementById('esCoModal').classList.remove('esco-wide');
     document.getElementById('escoBody').innerHTML = `
       <div class="esco-pad esco-center">
         <div class="esco-spinner"></div>
@@ -671,6 +722,7 @@
   }
 
   function renderExito(data) {
+    document.getElementById('esCoModal').classList.remove('esco-wide');
     const items = getCart();
     const total = getTotal();
     const resumen = items.map((it) =>
@@ -701,6 +753,7 @@
   }
 
   function renderError(mensaje) {
+    document.getElementById('esCoModal').classList.remove('esco-wide');
     document.getElementById('escoBody').innerHTML = `
       <div class="esco-pad esco-center">
         <div class="esco-check" style="border-color:#c84545;color:#c84545">!</div>

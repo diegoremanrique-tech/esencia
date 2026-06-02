@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Catálogo de perfumes — Esencia Lima</title>
 <meta name="description" content="Más de 50 perfumes masculinos y femeninos. Nicho, Diseñador y Clásico. Filtra por género, ocasión y familia olfativa.">
 <meta name="robots" content="index, follow">
@@ -915,6 +915,13 @@ fetch('/assets/catalogo.json')
   .then(r => r.json())
   .then(data => {
     CATALOGO = adaptarCatalogo(data);
+    // Filtro inicial por colección si viene en la URL (?tier=nicho|disenador|clasico)
+    const tierParam = new URLSearchParams(location.search).get('tier');
+    if (['nicho','disenador','clasico'].includes(tierParam)) {
+      state.tier = tierParam;
+      const radio = document.querySelector(`input[name="tier"][value="${tierParam}"]`);
+      if (radio) radio.checked = true;
+    }
     renderMarcas();
     render();
   })
