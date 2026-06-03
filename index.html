@@ -483,6 +483,8 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 .quiz-res-img{position:relative;display:flex;align-items:center;justify-content:center;padding:30px;background:radial-gradient(ellipse at center,rgba(201,169,110,.07) 0%,transparent 70%);overflow:hidden}
 .quiz-res-img::before{content:'';position:absolute;bottom:10%;left:15%;right:15%;height:30%;background:radial-gradient(ellipse 60% 100% at 50% 50%,rgba(201,169,110,.18) 0%,transparent 70%);filter:blur(30px);z-index:0}
 .quiz-res-img img{position:relative;z-index:1;max-height:340px;width:auto;object-fit:contain;filter:drop-shadow(0 0 80px rgba(201,169,110,.3))}
+/* Foto real del perfume en el resultado del quiz: llena el cuadro */
+.quiz-res-img img.qr-photo{width:100%;height:clamp(220px,42vw,340px);max-height:none;object-fit:cover;filter:none}
 .quiz-res-rank{position:absolute;top:18px;left:18px;font-size:9px;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);padding:6px 12px;border:.5px solid var(--gold2);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);z-index:3}
 .quiz-res-rank-best{color:var(--black);background:var(--gold);border-color:var(--gold)}
 .quiz-res-body{padding:42px 40px 36px;display:flex;flex-direction:column;justify-content:space-between}
@@ -1903,6 +1905,8 @@ function quizRenderResults(){
   const oL = {diario:'Diario',trabajo:'Trabajo',citas:'Citas y noche',deportivo:'Deportivo',noche:'Noche'};
   const a = QS_STATE.a;
   const img = QUIZ_IMG[a.gender] || QUIZ_IMG.unisex;
+  // Fallback (frasco por género) si el perfume aún no tiene foto real
+  const fallbackImg = a.gender === 'femenino' ? '/assets/esencia-frasco-femenino.png' : '/assets/esencia-frasco-masculino.png';
   const profile = quizGetProfile();
 
   document.getElementById('qResTitle').innerHTML = profile.t;
@@ -1917,7 +1921,8 @@ function quizRenderResults(){
     return `<div class="quiz-res-card">
       <div class="quiz-res-img">
         <span class="quiz-res-rank ${i===0?'quiz-res-rank-best':''}">${i===0?'★ '+rank:rank}</span>
-        <img src="${img}" alt="${p.brand} ${p.name}">
+        <img src="/assets/perfumes/${p.slug}.jpg" class="qr-photo" alt="${p.brand} ${p.name}"
+             onerror="this.onerror=null;this.src='${fallbackImg}';this.className=''">
       </div>
       <div class="quiz-res-body">
         <div>
