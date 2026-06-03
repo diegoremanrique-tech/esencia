@@ -192,7 +192,7 @@ nav.scrolled .nav-logo{height:46px}
 /* ─── GALERÍA ─── */
 .gallery{position:sticky;top:120px}
 .gal-main{
-  position:relative;aspect-ratio:3/4;
+  position:relative;aspect-ratio:1/1;
   background:
     radial-gradient(ellipse 50% 50% at 50% 50%,#101010 0%,#020202 100%);
   border:.5px solid var(--border);
@@ -214,7 +214,11 @@ nav.scrolled .nav-logo{height:46px}
   transition:transform .5s ease;
   position:relative;z-index:1;
 }
+/* Foto real de producto: llena el cuadro */
+.gal-main img.gal-photo{width:100%;height:100%;object-fit:cover;filter:none}
 .gal-main:hover img{transform:scale(1.03)}
+/* 1 sola imagen por perfume: se ocultan las miniaturas */
+.gal-thumbs{display:none}
 .gal-badge{
   position:absolute;top:24px;left:24px;
   font-size:9px;letter-spacing:.32em;text-transform:uppercase;
@@ -946,11 +950,14 @@ window.addEventListener('load', () => {
 
     // Galería
     setText('.gal-badge', 'Colección ' + tierLbl);
-    const frasco = frascoDe(p);
+    // Imagen principal: foto real del perfume; si no existe, cae al frasco genérico
     const galMain = document.querySelector('.gal-main img');
-    if (galMain) { galMain.src = frasco; galMain.alt = 'Esencia ' + p.nombre; }
-    const thumb = document.querySelector('.gal-thumb.active img');
-    if (thumb) thumb.src = frasco;
+    if (galMain) {
+      galMain.alt = 'Esencia ' + p.nombre;
+      galMain.className = 'gal-photo';
+      galMain.onerror = function () { this.onerror = null; this.src = frascoDe(p); this.className = ''; };
+      galMain.src = p.imagen_principal || frascoDe(p);
+    }
 
     // Info
     setText('.info-inspired', `${p.marca.toUpperCase()} · ${p.nombre.toUpperCase()}`);
