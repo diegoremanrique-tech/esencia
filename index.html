@@ -777,28 +777,18 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 }
 .test-quote::before{content:'\201C';margin-right:3px;vertical-align:-12px}
 .test-quote::after{content:'\201D';margin-left:3px;vertical-align:-12px}
-/* ─── POSTS ESTILO INSTAGRAM (testimonios reales) ─── */
-.ig-post{background:#0a0a0a;border:1px solid #1a1a1a;display:flex;flex-direction:column;text-align:left;overflow:hidden;transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease}
-.ig-post:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(0,0,0,.5),0 0 0 1px rgba(201,169,110,.18)}
-.ig-top{display:flex;align-items:center;gap:10px;padding:12px 14px}
-.ig-ava{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c9a96e,#8a6f42);color:#0a0a0a;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:13px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;letter-spacing:.02em}
-.ig-id{flex:1;min-width:0}
-.ig-user{display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;color:#f5f0eb;letter-spacing:.02em}
-.ig-user svg{width:13px;height:13px;flex:0 0 auto}
-.ig-loc{font-size:10.5px;color:#a09888;margin-top:1px}
-.ig-more{width:18px;height:18px;color:#a09888;flex:0 0 auto}
-.ig-img{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;background:#000}
-.ig-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.22,1,.36,1)}
-.ig-post:hover .ig-img img{transform:scale(1.04)}
-.ig-acts{display:flex;align-items:center;gap:15px;padding:13px 14px 7px}
-.ig-acts svg{width:23px;height:23px;color:#f5f0eb}
-.ig-acts .ig-heart{color:#c9a96e}
-.ig-acts .ig-save{margin-left:auto}
-.ig-likes{padding:0 14px;font-size:12px;font-weight:600;color:#f5f0eb;letter-spacing:.02em}
-.ig-cap{padding:6px 14px 0;font-size:12.5px;line-height:1.55;color:#a09888}
-.ig-cap strong{color:#f5f0eb;font-weight:600;margin-right:5px}
-.ig-tag{color:#c9a96e}
-.ig-date{padding:9px 14px 15px;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#5a5248}
+/* ─── RESEÑAS CON FOTO 1:1 (testimonios reales) ─── */
+.rev-card{background:#0a0a0a;border:1px solid #1a1a1a;display:flex;flex-direction:column;text-align:left;overflow:hidden;transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease}
+.rev-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(0,0,0,.5),0 0 0 1px rgba(201,169,110,.18)}
+.rev-img{width:100%;aspect-ratio:1/1;overflow:hidden;background:#000}
+.rev-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.rev-card:hover .rev-img img{transform:scale(1.04)}
+.rev-content{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.rev-stars{display:flex;gap:3px;margin-bottom:14px}
+.rev-stars svg{width:15px;height:15px;color:#c9a96e;fill:#c9a96e}
+.rev-quote{font-size:14px;line-height:1.65;color:#d8d0c4;flex:1;margin-bottom:18px}
+.rev-name{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;color:var(--gold);margin-bottom:5px}
+.rev-prod{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
 .test-divider{width:30px;height:1px;background:var(--gold2);margin-bottom:16px;opacity:.5}
 .test-name{
   font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;
@@ -1400,50 +1390,32 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
       <h2 class="section-title reveal rd1">Quienes ya llevan <em>su esencia</em></h2>
     </div>
     <div class="test-grid">
-      <article class="ig-post reveal-scale rd1">
-        <div class="ig-top">
-          <div class="ig-ava">ES</div>
-          <div class="ig-id">
-            <div class="ig-user">somosesencia.pe <svg viewBox="0 0 24 24" fill="#c9a96e"><circle cx="12" cy="12" r="10"/><path d="M8 12.2l2.6 2.6L16 9" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="ig-loc">Lima, Perú</div>
-          </div>
-          <svg class="ig-more" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+      <article class="rev-card reveal-scale rd1">
+        <div class="rev-img"><img src="/assets/testimonio-1.jpg" alt="Mayomi Ore, cliente de Esencia" loading="lazy"></div>
+        <div class="rev-content">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></div>
+          <p class="rev-quote">Huele idéntica a la original y la fijación me dura todo el día. El frasco se ve elegante, de verdad parece premium. Mi Very Good Girl ahora es de Esencia, sin dudarlo.</p>
+          <div class="rev-name">Mayomi Ore</div>
+          <div class="rev-prod">CH Very Good Girl</div>
         </div>
-        <div class="ig-img"><img src="/assets/testimonio-1.jpg" alt="Mayomi Ore — clienta/cliente Esencia" loading="lazy"></div>
-        <div class="ig-acts"><svg class="ig-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2.6A4 4 0 0119 10c0 6.5-7 11-7 11z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.3 7.6L3 21l1.9-5.6A8.5 8.5 0 1121 11.5z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg><svg class="ig-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></div>
-        <div class="ig-likes">214 Me gusta</div>
-        <div class="ig-cap"><strong>Mayomi Ore</strong>Me llegó en 2 días y huele idéntica a la original 😍 Ya me preguntaron como tres veces qué perfume uso esta semana. Mi Very Good Girl ahora es de Esencia, sin dudarlo. <span class="ig-tag">#CHVeryGoodGirl</span></div>
-        <div class="ig-date">Hace 3 días</div>
       </article>
-      <article class="ig-post reveal-scale rd2">
-        <div class="ig-top">
-          <div class="ig-ava">ES</div>
-          <div class="ig-id">
-            <div class="ig-user">somosesencia.pe <svg viewBox="0 0 24 24" fill="#c9a96e"><circle cx="12" cy="12" r="10"/><path d="M8 12.2l2.6 2.6L16 9" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="ig-loc">Lima, Perú</div>
-          </div>
-          <svg class="ig-more" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+      <article class="rev-card reveal-scale rd2">
+        <div class="rev-img"><img src="/assets/testimonio-2.png" alt="Fernando Carbonel, cliente de Esencia" loading="lazy"></div>
+        <div class="rev-content">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></div>
+          <p class="rev-quote">La durabilidad me sorprendió: me lo pongo temprano y al final del día sigue ahí. Tiene el carácter fresco justo para el verano. Pura calidad por lo que cuesta.</p>
+          <div class="rev-name">Fernando Carbonel</div>
+          <div class="rev-prod">Acqua di Gio</div>
         </div>
-        <div class="ig-img"><img src="/assets/testimonio-2.png" alt="Fernando Carbonel — clienta/cliente Esencia" loading="lazy"></div>
-        <div class="ig-acts"><svg class="ig-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2.6A4 4 0 0119 10c0 6.5-7 11-7 11z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.3 7.6L3 21l1.9-5.6A8.5 8.5 0 1121 11.5z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg><svg class="ig-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></div>
-        <div class="ig-likes">168 Me gusta</div>
-        <div class="ig-cap"><strong>Fernando Carbonel</strong>No suelo dejar reseñas, pero esta se la merece. El Acqua di Gio me dura toda la jornada de trabajo y me costó la mitad. Calidad real y envío al toque. <span class="ig-tag">#AcquaDiGio</span></div>
-        <div class="ig-date">Hace 1 semana</div>
       </article>
-      <article class="ig-post reveal-scale rd3">
-        <div class="ig-top">
-          <div class="ig-ava">ES</div>
-          <div class="ig-id">
-            <div class="ig-user">somosesencia.pe <svg viewBox="0 0 24 24" fill="#c9a96e"><circle cx="12" cy="12" r="10"/><path d="M8 12.2l2.6 2.6L16 9" fill="none" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <div class="ig-loc">Lima, Perú</div>
-          </div>
-          <svg class="ig-more" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+      <article class="rev-card reveal-scale rd3">
+        <div class="rev-img"><img src="/assets/testimonio-3.jpg" alt="Mery Oroya, cliente de Esencia" loading="lazy"></div>
+        <div class="rev-content">
+          <div class="rev-stars"><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg><svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg></div>
+          <p class="rev-quote">Compramos dos en pareja: mi Miss Dior y el Bleu de Chanel para él. Los dos huelen increíble y se sienten de lujo, con una estética que enamora. Repetiremos seguro.</p>
+          <div class="rev-name">Mery Oroya</div>
+          <div class="rev-prod">Miss Dior EDP 2017 · Bleu de Chanel</div>
         </div>
-        <div class="ig-img"><img src="/assets/testimonio-3.jpg" alt="Mery Oroya — clienta/cliente Esencia" loading="lazy"></div>
-        <div class="ig-acts"><svg class="ig-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2.6A4 4 0 0119 10c0 6.5-7 11-7 11z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.3 7.6L3 21l1.9-5.6A8.5 8.5 0 1121 11.5z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg><svg class="ig-save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg></div>
-        <div class="ig-likes">192 Me gusta</div>
-        <div class="ig-cap"><strong>Mery Oroya</strong>Pedí el Miss Dior para mí y terminé comprando otro para mi mamá 🤍 La fijación es increíble y el frasco es precioso. Clientas fieles desde ya. <span class="ig-tag">#MissDior</span></div>
-        <div class="ig-date">Hace 5 días</div>
       </article>
     </div>
   </div>
