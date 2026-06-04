@@ -3,12 +3,16 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/catalogo", "destination": "/catalogo.html" },
-    { "source": "/producto", "destination": "/producto.html" }
+    { "source": "/producto", "destination": "/producto.html" },
+    { "source": "/terminos", "destination": "/terminos.html" },
+    { "source": "/libro-de-reclamaciones", "destination": "/libro-reclamaciones.html" }
   ],
   "redirects": [
     { "source": "/index.html", "destination": "/", "statusCode": 301 },
     { "source": "/catalogo.html", "destination": "/catalogo", "statusCode": 301 },
-    { "source": "/producto.html", "destination": "/producto", "statusCode": 301 }
+    { "source": "/producto.html", "destination": "/producto", "statusCode": 301 },
+    { "source": "/terminos.html", "destination": "/terminos", "statusCode": 301 },
+    { "source": "/libro-reclamaciones.html", "destination": "/libro-de-reclamaciones", "statusCode": 301 }
   ],
   "headers": [
     {

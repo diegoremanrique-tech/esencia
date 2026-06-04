@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Libro de Reclamaciones — Esencia</title>
+<meta name="description" content="Libro de Reclamaciones de Esencia conforme al Código de Protección y Defensa del Consumidor (Ley N° 29571).">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://esencia-eight.vercel.app/libro-de-reclamaciones">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#000;--near:#050505;--surf:#0a0a0a;--surf2:#0f0f0f;--border:#1a1a1a;--border2:#252525;
+  --text:#f5f0eb;--text2:#a09888;--text3:#5a5248;--gold:#c9a96e;--gold2:#8a6f42;--red:#c84545;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--black);color:var(--text);font-family:'Montserrat',sans-serif;font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.lg-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:rgba(3,3,3,.95);border-bottom:.5px solid var(--border);backdrop-filter:blur(10px)}
+.lg-logo{font-family:'Cormorant Garamond',serif;font-size:24px;letter-spacing:.32em;color:var(--gold);font-weight:500}
+.lg-nav-links{display:flex;gap:22px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--text2)}
+.lg-nav-links a:hover{color:var(--gold)}
+.lg-wrap{max-width:760px;margin:0 auto;padding:64px 24px 90px}
+.lg-eyebrow{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;text-align:center}
+.lg-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,5vw,48px);font-weight:300;line-height:1.1;text-align:center;margin-bottom:14px}
+.lg-title em{font-style:italic;color:var(--gold)}
+.lg-sub{text-align:center;font-size:13px;color:var(--text2);max-width:560px;margin:0 auto 50px;line-height:1.65}
+/* FORM */
+.rc-form{background:var(--surf);border:.5px solid var(--border);padding:38px 34px}
+.rc-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rc-field{margin-bottom:18px}
+.rc-field label{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text2);margin-bottom:8px}
+.rc-field label .req{color:var(--gold)}
+.rc-field input,.rc-field select,.rc-field textarea{width:100%;background:var(--near);border:.5px solid var(--border2);color:var(--text);padding:13px 14px;font-family:'Montserrat',sans-serif;font-size:13.5px;transition:border-color .25s;outline:none;resize:vertical}
+.rc-field input:focus,.rc-field select:focus,.rc-field textarea:focus{border-color:var(--gold)}
+.rc-field input::placeholder,.rc-field textarea::placeholder{color:var(--text3)}
+.rc-field select{appearance:none;cursor:pointer}
+.rc-field textarea{min-height:110px;line-height:1.6}
+.rc-hint{font-size:11px;color:var(--text3);margin-top:6px}
+.rc-tipo-desc{font-size:11.5px;color:var(--text3);margin-top:8px;line-height:1.5}
+.rc-legal{background:var(--surf2);border:.5px solid var(--border);border-left:2px solid var(--gold);padding:16px 18px;font-size:12px;color:var(--text2);line-height:1.6;margin:8px 0 22px}
+.rc-err{color:var(--red);font-size:12.5px;margin:4px 0 14px;min-height:16px}
+.rc-btn{width:100%;padding:16px;background:var(--gold);color:#000;border:1px solid var(--gold);font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:all .3s}
+.rc-btn:hover{background:#d9b878;box-shadow:0 8px 24px rgba(201,169,110,.25)}
+.rc-btn:disabled{opacity:.5;cursor:not-allowed;box-shadow:none}
+.rc-spinner{width:20px;height:20px;border:2px solid rgba(0,0,0,.3);border-top-color:#000;border-radius:50%;display:inline-block;vertical-align:-4px;margin-right:8px;animation:rcSpin .8s linear infinite}
+@keyframes rcSpin{to{transform:rotate(360deg)}}
+/* SUCCESS */
+.rc-ok{display:none;text-align:center;padding:30px 10px}
+.rc-ok.show{display:block;animation:rcFade .5s ease}
+@keyframes rcFade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.rc-ok-check{width:64px;height:64px;margin:0 auto 22px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:30px}
+.rc-ok h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:10px}
+.rc-ok .rc-caso{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold);letter-spacing:.05em;margin:6px 0 18px}
+.rc-ok p{font-size:13.5px;color:var(--text2);line-height:1.7;max-width:480px;margin:0 auto 8px}
+/* FOOTER */
+.lg-foot{border-top:.5px solid var(--border);background:var(--near);padding:48px 24px 40px;text-align:center}
+.lg-foot-links{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;margin-bottom:22px;font-size:12px}
+.lg-foot-links a{color:var(--text2);transition:color .3s}
+.lg-foot-links a:hover{color:var(--gold)}
+.lg-foot-links a.libro{color:var(--gold)}
+.lg-foot-contact{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:12px;color:var(--text2);margin-bottom:20px}
+.lg-foot-contact a:hover{color:var(--gold)}
+.lg-foot-copy{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text3)}
+@media(max-width:600px){.lg-nav{padding:16px 20px}.rc-row{grid-template-columns:1fr}.rc-form{padding:28px 20px}}
+</style>
+</head>
+<body>
+<nav class="lg-nav">
+  <a href="/" class="lg-logo">ESENCIA</a>
+  <div class="lg-nav-links">
+    <a href="/">Inicio</a>
+    <a href="/catalogo">Catálogo</a>
+  </div>
+</nav>
+
+<main class="lg-wrap">
+  <div class="lg-eyebrow">📋 Libro de Reclamaciones</div>
+  <h1 class="lg-title">Reclamos y <em>Quejas</em></h1>
+  <p class="lg-sub">Conforme al Código de Protección y Defensa del Consumidor (Ley N° 29571). Completa el formulario y recibirás un número de caso por email.</p>
+
+  <form class="rc-form" id="rcForm" novalidate>
+    <div class="rc-row">
+      <div class="rc-field">
+        <label>Nombre completo <span class="req">*</span></label>
+        <input name="nombre" type="text" placeholder="Nombre y apellido">
+      </div>
+      <div class="rc-field">
+        <label>DNI <span class="req">*</span></label>
+        <input name="dni" type="text" inputmode="numeric" maxlength="8" placeholder="8 dígitos">
+      </div>
+    </div>
+    <div class="rc-row">
+      <div class="rc-field">
+        <label>Email <span class="req">*</span></label>
+        <input name="email" type="email" placeholder="tucorreo@email.com">
+      </div>
+      <div class="rc-field">
+        <label>Teléfono <span class="req">*</span></label>
+        <input name="telefono" type="tel" inputmode="numeric" placeholder="Número de contacto">
+      </div>
+    </div>
+    <div class="rc-field">
+      <label>Tipo <span class="req">*</span></label>
+      <select name="tipo">
+        <option value="">Selecciona…</option>
+        <option value="Reclamo">Reclamo</option>
+        <option value="Queja">Queja</option>
+      </select>
+      <div class="rc-tipo-desc"><strong>Reclamo:</strong> disconformidad con el producto o servicio. &nbsp; <strong>Queja:</strong> disconformidad con la atención.</div>
+    </div>
+    <div class="rc-field">
+      <label>Producto o pedido relacionado</label>
+      <input name="producto" type="text" placeholder="Ej: Sauvage 100ml, pedido ESC-… (opcional)">
+    </div>
+    <div class="rc-field">
+      <label>Descripción detallada <span class="req">*</span></label>
+      <textarea name="descripcion" placeholder="Describe lo ocurrido con el mayor detalle posible."></textarea>
+      <div class="rc-hint">Mínimo 20 caracteres.</div>
+    </div>
+    <div class="rc-field">
+      <label>Detalle de lo solicitado como solución <span class="req">*</span></label>
+      <textarea name="solucion" placeholder="¿Qué solución esperas? (cambio, reembolso, etc.)"></textarea>
+    </div>
+
+    <div class="rc-legal">
+      De acuerdo con el Código de Protección y Defensa del Consumidor (Ley N° 29571), Esencia atenderá tu reclamo o queja en un plazo máximo de <strong>30 días calendario</strong>.
+    </div>
+
+    <p class="rc-err" id="rcErr"></p>
+    <button class="rc-btn" type="submit" id="rcBtn">Enviar reclamo</button>
+  </form>
+
+  <div class="rc-ok" id="rcOk">
+    <div class="rc-ok-check">✓</div>
+    <h3>Reclamo registrado</h3>
+    <div class="rc-caso" id="rcCaso">REC-…</div>
+    <p>Hemos recibido tu reclamo y te enviamos una copia a tu email. Te responderemos en un plazo máximo de <strong>30 días calendario</strong>, según INDECOPI.</p>
+    <p>Cualquier consulta: <a href="https://wa.me/51901875125" style="color:var(--gold)">+51 901 875 125</a> · <a href="mailto:infoesencia.pe@gmail.com" style="color:var(--gold)">infoesencia.pe@gmail.com</a></p>
+  </div>
+</main>
+
+<footer class="lg-foot">
+  <div class="lg-foot-links">
+    <a href="/terminos">Términos y Condiciones</a>
+    <a href="/libro-de-reclamaciones" class="libro">📋 Libro de Reclamaciones</a>
+  </div>
+  <div class="lg-foot-contact">
+    <a href="https://wa.me/51901875125">+51 901 875 125</a>
+    <a href="mailto:infoesencia.pe@gmail.com">infoesencia.pe@gmail.com</a>
+    <span>Lima, Perú</span>
+    <a href="https://www.instagram.com/somosesencia.pe/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@somosesencia.pe" target="_blank" rel="noopener">TikTok</a>
+  </div>
+  <div class="lg-foot-copy">Esencia · Lima, Perú · © 2026 · Todos los derechos reservados</div>
+</footer>
+
+<script>
+(function(){
+  const form = document.getElementById('rcForm');
+  const err = document.getElementById('rcErr');
+  const btn = document.getElementById('rcBtn');
+  const isEmail = e => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const f = e.target;
+    const datos = {
+      nombre: f.nombre.value.trim(),
+      dni: f.dni.value.replace(/\D/g,''),
+      email: f.email.value.trim(),
+      telefono: f.telefono.value.trim(),
+      tipo: f.tipo.value,
+      producto: f.producto.value.trim(),
+      descripcion: f.descripcion.value.trim(),
+      solucion: f.solucion.value.trim(),
+    };
+    if (!datos.nombre) return err.textContent = 'Ingresa tu nombre completo.';
+    if (!/^\d{8}$/.test(datos.dni)) return err.textContent = 'El DNI debe tener 8 dígitos.';
+    if (!isEmail(datos.email)) return err.textContent = 'Ingresa un email válido.';
+    if (!datos.telefono) return err.textContent = 'Ingresa tu teléfono.';
+    if (!datos.tipo) return err.textContent = 'Selecciona si es un Reclamo o una Queja.';
+    if (datos.descripcion.length < 20) return err.textContent = 'La descripción debe tener al menos 20 caracteres.';
+    if (!datos.solucion) return err.textContent = 'Indica qué solución esperas.';
+    err.textContent = '';
+    btn.disabled = true;
+    btn.innerHTML = '<span class="rc-spinner"></span>Enviando…';
+
+    let resp, data = {};
+    try {
+      resp = await fetch('/api/reclamacion', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(datos),
+      });
+      data = await resp.json();
+    } catch (ex) {
+      btn.disabled = false; btn.textContent = 'Enviar reclamo';
+      return err.textContent = 'Hubo un problema de conexión. Intenta nuevamente.';
+    }
+    if (resp.ok && data.ok) {
+      document.getElementById('rcCaso').textContent = data.caso_id;
+      form.style.display = 'none';
+      document.getElementById('rcOk').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      btn.disabled = false; btn.textContent = 'Enviar reclamo';
+      err.textContent = (data && data.error) || 'No se pudo registrar tu reclamo. Intenta nuevamente.';
+    }
+  });
+
+  // Solo dígitos en DNI
+  document.querySelector('input[name="dni"]').addEventListener('input', function(){
+    this.value = this.value.replace(/\D/g,'').slice(0,8);
+  });
+})();
+</script>
+</body>
+</html>
