@@ -8,10 +8,10 @@
      4. Envía email de confirmación al cliente (Resend)
      5. Devuelve { ok, caso_id } o { ok:false, error }
    Env: NOTION_API_KEY, RESEND_API_KEY, DOMAIN
-   Opcionales: EMAIL_FROM, NOTION_RECLAMOS_PAGE_ID (default = CRM)
+   Opcionales: EMAIL_FROM, NOTION_RECLAMACIONES_PAGE_ID (default = CRM)
    ============================================================ */
 const NOTION_PAGE_ID =
-  process.env.NOTION_RECLAMOS_PAGE_ID || process.env.NOTION_CRM_PAGE_ID || '37099375-f8fb-815e-bc62-e4262bb4012f';
+  process.env.NOTION_RECLAMACIONES_PAGE_ID || process.env.NOTION_CRM_PAGE_ID || '37099375-f8fb-815e-bc62-e4262bb4012f';
 const NOTION_VERSION = '2022-06-28';
 const EMAIL_FROM = process.env.EMAIL_FROM || 'Esencia <pedidos@esencia.pe>';
 
