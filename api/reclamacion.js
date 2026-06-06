@@ -7,11 +7,12 @@
      3. Guarda en Notion (colección Reclamaciones)
      4. Envía email de confirmación al cliente (Resend)
      5. Devuelve { ok, caso_id } o { ok:false, error }
-   Env: NOTION_API_KEY, RESEND_API_KEY, DOMAIN
-   Opcionales: EMAIL_FROM, NOTION_RECLAMACIONES_PAGE_ID (default = CRM)
+   Env: NOTION_API_KEY, NOTION_RECLAMOS_DB_ID, RESEND_API_KEY, DOMAIN
+   Opcionales: EMAIL_FROM
    ============================================================ */
-const NOTION_PAGE_ID =
-  process.env.NOTION_RECLAMACIONES_PAGE_ID || process.env.NOTION_CRM_PAGE_ID || '37099375-f8fb-815e-bc62-e4262bb4012f';
+// Base de datos de Notion donde se guarda cada reclamo (como fila/entrada)
+const NOTION_RECLAMOS_DB_ID =
+  process.env.NOTION_RECLAMOS_DB_ID || '831b3c81-ae0a-4acf-b360-13044a7e6da0';
 const NOTION_VERSION = '2022-06-28';
 const EMAIL_FROM = process.env.EMAIL_FROM || 'Esencia <pedidos@esencia.pe>';
 
@@ -36,34 +37,26 @@ function generarCasoId() {
 }
 
 const esc = (s) => String(s == null ? '' : s);
-function rt(s) { return [{ type: 'text', text: { content: esc(s) } }]; }
-function tableRow(cells) { return { type: 'table_row', table_row: { cells: cells.map(rt) } }; }
+const rtxt = (s) => ({ rich_text: [{ type: 'text', text: { content: esc(s).slice(0, 2000) } }] });
 
+// Guarda el reclamo como una ENTRADA (fila) en la base de datos de Notion.
+// Las columnas deben coincidir EXACTAMENTE con las de la base de datos.
 async function guardarNotion({ casoId, datos }) {
-  const fecha = new Date().toLocaleString('es-PE', { timeZone: 'America/Lima' });
-  const rows = [
-    tableRow(['Campo', 'Valor']),
-    tableRow(['N° de caso', casoId]),
-    tableRow(['Fecha', fecha]),
-    tableRow(['Tipo', datos.tipo]),
-    tableRow(['Nombre', datos.nombre]),
-    tableRow(['DNI', datos.dni]),
-    tableRow(['Email', datos.email]),
-    tableRow(['Teléfono', datos.telefono]),
-    tableRow(['Producto/Pedido', datos.producto || '—']),
-    tableRow(['Estado', '🟡 Pendiente']),
-  ];
   const body = {
-    parent: { type: 'page_id', page_id: NOTION_PAGE_ID },
-    properties: { title: { title: rt(`📋 ${datos.tipo} ${casoId} — ${datos.nombre}`) } },
-    children: [
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('Datos del reclamante') } },
-      { object: 'block', type: 'table', table: { table_width: 2, has_column_header: true, has_row_header: false, children: rows } },
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('Descripción del ' + datos.tipo.toLowerCase()) } },
-      { object: 'block', type: 'paragraph', paragraph: { rich_text: rt(datos.descripcion) } },
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('Solución solicitada') } },
-      { object: 'block', type: 'paragraph', paragraph: { rich_text: rt(datos.solucion) } },
-    ],
+    parent: { database_id: NOTION_RECLAMOS_DB_ID },
+    properties: {
+      'Número de Caso': { title: [{ type: 'text', text: { content: casoId } }] },
+      'Tipo': { select: { name: datos.tipo } },
+      'Estado': { select: { name: '🟡 Pendiente' } },
+      'Nombre Cliente': rtxt(datos.nombre),
+      'DNI': rtxt(datos.dni),
+      'Email': { email: datos.email },
+      'Teléfono': { phone_number: datos.telefono },
+      'Producto o Pedido': rtxt(datos.producto || '—'),
+      'Descripción del Reclamo': rtxt(datos.descripcion),
+      'Solución Solicitada': rtxt(datos.solucion),
+      // "Fecha" se genera sola (CREATED_TIME), no se envía.
+    },
   };
   const r = await fetch('https://api.notion.com/v1/pages', {
     method: 'POST',
