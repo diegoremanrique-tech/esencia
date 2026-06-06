@@ -1542,6 +1542,8 @@ function slugBest(p){
   if (p.slug) return p.slug;
   return (p.marca + ' ' + p.nombre).toLowerCase().replace(/[^a-z0-9\s]/g,'').trim().replace(/\s+/g,'-');
 }
+// Precio ancla 50ml por colección (tabla oficial)
+const PRECIO_50 = { nicho: 70, disenador: 65, clasico: 60 };
 function renderBest(){
   const items = DESTACADOS.filter(p => p.genero === bestGender);
   const track = document.getElementById('bestTrack');
@@ -1570,8 +1572,8 @@ function renderBest(){
         </div>
         <div class="best-slide-footer">
           <div>
-            <div class="best-slide-price-from">Desde</div>
-            <div class="best-slide-price">S/ ${p.precio_min}<sub> / 30ml</sub></div>
+            <div class="best-slide-price-from">Frasco 50 ml</div>
+            <div class="best-slide-price">S/ ${PRECIO_50[p.tier] || p.precio_min}<sub> / 50ml</sub></div>
           </div>
           <button class="best-slide-cta" onclick="location.href='/producto?slug=${slugBest(p)}'"><span>Ver más →</span></button>
         </div>
