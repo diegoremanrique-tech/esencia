@@ -784,8 +784,8 @@ function render(){
         <div class="card-notes">${p.notas.join(' · ')}</div>
         <div class="card-foot">
           <div>
-            <div class="card-price-from">Desde</div>
-            <div class="card-price">S/ ${p.precio_min}<sub> / 30ml</sub></div>
+            <div class="card-price-from">Frasco 50 ml</div>
+            <div class="card-price">S/ ${p.precio_50ml}<sub> / 50ml</sub></div>
           </div>
         </div>
         <button class="card-cta" onclick="event.stopPropagation(); goToProduct('${p.id}', event)">
@@ -828,7 +828,7 @@ function adaptarCatalogo(raw){
       p.notas_corazon && p.notas_corazon[0],
       p.notas_fondo && p.notas_fondo[0],
     ].filter(Boolean),
-    precio_min: p.precio_30ml,                 // precio "Desde" (30ml)
+    precio_min: p.precio_50ml,                 // precio ancla mostrado (50ml)
   }));
 }
 
