@@ -668,6 +668,9 @@
       // Callback global que Culqi invoca al cerrar su modal
       window.culqi = function () {
         if (window.Culqi.token) {
+          // Cierra el modal de Culqi para que se vea de inmediato nuestra
+          // pantalla de "Procesando…" y luego la confirmación del pedido.
+          try { window.Culqi.close(); } catch (e) {}
           procesarPago(window.Culqi.token.id);
         } else if (window.Culqi.error) {
           const msg = window.Culqi.error.user_message || 'No se pudo procesar el pago.';
