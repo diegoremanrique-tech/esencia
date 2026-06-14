@@ -21,9 +21,8 @@ const PRECIOS = {
 };
 const ETIQUETA_COLECCION = { nicho: 'Nicho', disenador: 'Diseñador', clasico: 'Clásico' };
 
-// Base de datos de Notion donde se crea cada pedido (como fila/entrada)
-const NOTION_PEDIDOS_DB_ID =
-  process.env.NOTION_PEDIDOS_DB_ID || 'f2775d02-9768-4f4a-9a82-2171ae6dd3cf';
+// Base de datos de Notion donde se crea cada pedido (📦 Pedidos).
+// Se lee desde la variable de entorno NOTION_PEDIDOS_DB_ID.
 const NOTION_VERSION = '2022-06-28';
 const EMAIL_FROM = process.env.EMAIL_FROM || 'Esencia <pedidos@esencia.pe>';
 
@@ -145,7 +144,7 @@ function resumenProductos(items) {
 
 async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
   const body = {
-    parent: { database_id: NOTION_PEDIDOS_DB_ID },
+    parent: { database_id: process.env.NOTION_PEDIDOS_DB_ID },
     properties: {
       'Número de Pedido': { title: [{ type: 'text', text: { content: pedidoId } }] },
       'Estado': { select: { name: '🟡 Pendiente' } },
