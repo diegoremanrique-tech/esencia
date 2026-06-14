@@ -198,11 +198,13 @@ function emailHtml({ pedidoId, datos, items, total }) {
   }).join('');
 
   return `<!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#000;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#000;padding:32px 16px">
-    <tr><td align="center">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#050505;border:1px solid #1a1a1a">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="supported-color-schemes" content="dark light"></head>
+<body bgcolor="#0a0a0a" style="margin:0;padding:0;background-color:#0a0a0a;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#0a0a0a" style="background-color:#0a0a0a;padding:32px 16px">
+    <tr><td align="center" bgcolor="#0a0a0a" style="background-color:#0a0a0a">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#050505" style="max-width:560px;background-color:#050505;border:1px solid #1a1a1a">
         <tr><td style="padding:40px 36px 28px;text-align:center;border-bottom:1px solid #1a1a1a">
           <div style="font-family:Georgia,serif;font-size:30px;letter-spacing:8px;color:#c9a96e">ESENCIA</div>
           <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#5a5248;margin-top:8px">Perfumes luxury · Lima</div>
@@ -235,7 +237,7 @@ function emailHtml({ pedidoId, datos, items, total }) {
         <tr><td style="padding:24px 36px;text-align:center;border-top:1px solid #1a1a1a">
           <div style="color:#5a5248;font-size:12px;line-height:1.8">
             WhatsApp +51 901 875 125 · @somosesencia.pe<br>
-            hola@esencia.pe · Lima, Perú
+            <a href="mailto:infoesencia.pe@gmail.com" style="color:#5a5248;text-decoration:none">infoesencia.pe@gmail.com</a> · Lima, Perú
           </div>
         </td></tr>
       </table>
