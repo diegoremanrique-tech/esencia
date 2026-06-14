@@ -8,8 +8,8 @@
      4. Devuelve { ok, pedido_id } o { ok:false, error }
    Variables de entorno (NUNCA hardcodear):
      CULQI_SECRET_KEY, CULQI_PUBLIC_KEY, NOTION_API_KEY,
-     NOTION_PEDIDOS_DB_ID, RESEND_API_KEY, DOMAIN
-   Opcionales: EMAIL_FROM
+     RESEND_API_KEY, DOMAIN
+   Opcionales: EMAIL_FROM, NOTION_CRM_PAGE_ID
    ============================================================ */
 
 // ── Precios oficiales (espejo del frontend, para recalcular en
@@ -128,37 +128,60 @@ async function crearCargoCulqi({ token, montoCents, email, descripcion }) {
 }
 
 // ─────────────────────────────────────────────
-//  NOTION — crea cada pedido como ENTRADA en la base de datos.
-//  Las columnas deben coincidir EXACTAMENTE con las de la DB.
+//  NOTION — crea cada pedido como SUBPÁGINA dentro de la página
+//  padre (NOTION_CRM_PAGE_ID), con tablas legibles para el equipo.
 // ─────────────────────────────────────────────
-const rtxt = (s) => ({ rich_text: [{ type: 'text', text: { content: String(s == null ? '' : s).slice(0, 2000) } }] });
+const NOTION_CRM_PAGE_ID =
+  process.env.NOTION_CRM_PAGE_ID || '37099375-f8fb-815e-bc62-e4262bb4012f';
 
-// Resumen de productos: "Nombre — Marca (50ml) x 2, Nombre2 — Marca2 (30ml) x 1"
-function resumenProductos(items) {
-  return items.map((it) => {
-    const ml = Number(it.talla);
-    const cant = Number(it.cantidad) || 1;
-    return `${it.nombre || ''}${it.marca ? ' — ' + it.marca : ''} (${ml}ml) x ${cant}`;
-  }).join(', ');
+function rt(s) { return [{ type: 'text', text: { content: String(s == null ? '' : s).slice(0, 2000) } }]; }
+function tableRow(cells) { return { type: 'table_row', table_row: { cells: cells.map(rt) } }; }
+function tableBlock(width, rows) {
+  return {
+    object: 'block', type: 'table',
+    table: { table_width: width, has_column_header: true, has_row_header: false, children: rows },
+  };
 }
 
 async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
+  const fecha = new Date().toLocaleString('es-PE', { timeZone: 'America/Lima' });
+
+  // Tabla 1: datos del pedido (Campo | Valor)
+  const datosRows = [
+    tableRow(['Campo', 'Valor']),
+    tableRow(['Fecha y hora', fecha]),
+    tableRow(['Cliente', datos.nombre]),
+    tableRow(['Email', datos.email]),
+    tableRow(['Teléfono', datos.telefono]),
+    tableRow(['Distrito', datos.distrito]),
+    tableRow(['Dirección', datos.direccion]),
+    tableRow(['Referencia', datos.referencia || '—']),
+    tableRow(['Total', `S/ ${total}`]),
+    tableRow(['Culqi Charge ID', chargeId]),
+    tableRow(['Estado', '🟡 Pendiente']),
+  ];
+
+  // Tabla 2: productos (Producto | Talla | Cantidad | Subtotal)
+  const itemsRows = [tableRow(['Producto', 'Talla', 'Cantidad', 'Subtotal'])];
+  for (const it of items) {
+    const tier = normalizarTier(it.coleccion);
+    const ml = Number(it.talla);
+    const precio = (PRECIOS[tier] && PRECIOS[tier][ml]) || Number(it.precio) || 0;
+    const cant = Number(it.cantidad) || 1;
+    const nombre = `${it.nombre || ''}${it.marca ? ' — ' + it.marca : ''}`;
+    itemsRows.push(tableRow([nombre, `${ml}ml`, String(cant), `S/ ${precio * cant}`]));
+  }
+
   const body = {
-    parent: { database_id: process.env.NOTION_PEDIDOS_DB_ID },
-    properties: {
-      'Número de Pedido': { title: [{ type: 'text', text: { content: pedidoId } }] },
-      'Estado': { select: { name: '🟡 Pendiente' } },
-      'Cliente': rtxt(datos.nombre),
-      'Email': { email: datos.email },
-      'Teléfono': { phone_number: datos.telefono },
-      'Distrito': rtxt(datos.distrito),
-      'Dirección': rtxt(datos.direccion),
-      'Referencia': rtxt(datos.referencia || '—'),
-      'Total': { number: Number(total) },
-      'Productos': rtxt(resumenProductos(items)),
-      'Culqi Charge ID': rtxt(chargeId),
-      // "Fecha" se genera sola (created_time), no se envía.
-    },
+    parent: { page_id: NOTION_CRM_PAGE_ID },
+    properties: { title: { title: rt(`${pedidoId} — ${datos.nombre} — ${datos.distrito}`) } },
+    children: [
+      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('🟡 Pedido ' + pedidoId) } },
+      { object: 'block', type: 'heading_3', heading_3: { rich_text: rt('Datos del pedido') } },
+      tableBlock(2, datosRows),
+      { object: 'block', type: 'heading_3', heading_3: { rich_text: rt('Productos') } },
+      tableBlock(4, itemsRows),
+    ],
   };
 
   const r = await fetch('https://api.notion.com/v1/pages', {
