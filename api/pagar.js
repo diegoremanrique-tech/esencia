@@ -144,12 +144,19 @@ function tableBlock(width, rows) {
 }
 
 async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
-  const fecha = new Date().toLocaleString('es-PE', { timeZone: 'America/Lima' });
+  // Fecha en formato DD/MM/YYYY HH:mm (hora de Lima)
+  const p = new Intl.DateTimeFormat('es-PE', {
+    timeZone: 'America/Lima', day: '2-digit', month: '2-digit', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', hour12: false,
+  }).formatToParts(new Date()).reduce((a, x) => (a[x.type] = x.value, a), {});
+  const fecha = `${p.day}/${p.month}/${p.year} ${p.hour}:${p.minute}`;
 
   // Tabla 1: datos del pedido (Campo | Valor)
   const datosRows = [
     tableRow(['Campo', 'Valor']),
-    tableRow(['Fecha y hora', fecha]),
+    tableRow(['Número de Pedido', pedidoId]),
+    tableRow(['Fecha', fecha]),
+    tableRow(['Estado', '🟡 Pendiente']),
     tableRow(['Cliente', datos.nombre]),
     tableRow(['Email', datos.email]),
     tableRow(['Teléfono', datos.telefono]),
@@ -158,7 +165,7 @@ async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
     tableRow(['Referencia', datos.referencia || '—']),
     tableRow(['Total', `S/ ${total}`]),
     tableRow(['Culqi Charge ID', chargeId]),
-    tableRow(['Estado', '🟡 Pendiente']),
+    tableRow(['Email confirmación', '✅ Enviado']),
   ];
 
   // Tabla 2: productos (Producto | Talla | Cantidad | Subtotal)
@@ -176,11 +183,14 @@ async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
     parent: { page_id: NOTION_CRM_PAGE_ID },
     properties: { title: { title: rt(`${pedidoId} — ${datos.nombre} — ${datos.distrito}`) } },
     children: [
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('🟡 Pedido ' + pedidoId) } },
-      { object: 'block', type: 'heading_3', heading_3: { rich_text: rt('Datos del pedido') } },
+      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('📦 Datos del Pedido') } },
       tableBlock(2, datosRows),
-      { object: 'block', type: 'heading_3', heading_3: { rich_text: rt('Productos') } },
+      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('🛍️ Productos') } },
       tableBlock(4, itemsRows),
+      { object: 'block', type: 'callout', callout: {
+        icon: { type: 'emoji', emoji: '💡' },
+        rich_text: rt('Solo actualizar Estado y añadir número de tracking cuando el pedido sea enviado. No modificar los demás campos.'),
+      } },
     ],
   };
 
