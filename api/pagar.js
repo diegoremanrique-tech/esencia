@@ -152,58 +152,60 @@ async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
   const charge_id = chargeId;
   const productosResumen = resumenProductos(items);
 
-  const notionRes = await fetch('https://api.notion.com/v1/pages', {
+  const _notionDbId = process.env.NOTION_PEDIDOS_DB_ID
+    || 'ae3a466c68dd4c2399247e7260f11598';
+
+  const _notionBody = {
+    parent: { database_id: _notionDbId },
+    properties: {
+      "Número de Pedido": {
+        title: [{ text: { content: String(pedido_id || 'SIN-ID') } }]
+      },
+      "Estado": { select: { name: "🟡 Pendiente" } },
+      "Cliente": {
+        rich_text: [{ text: { content: String(nombre || '') } }]
+      },
+      "Email": { email: email || null },
+      "Teléfono": { phone_number: telefono || null },
+      "Distrito": {
+        rich_text: [{ text: { content: String(distrito || '') } }]
+      },
+      "Dirección": {
+        rich_text: [{ text: { content: String(direccion || '') } }]
+      },
+      "Referencia": {
+        rich_text: [{ text: { content: String(referencia || '—') } }]
+      },
+      "S/Total": { number: parseFloat(total) || 0 },
+      "Productos": {
+        rich_text: [{ text: { content: String(productosResumen || '') } }]
+      },
+      "Culqi Charge ID": {
+        rich_text: [{ text: { content: String(charge_id || chargeId || '') } }]
+      }
+    }
+  };
+
+  console.log('[pagar] Enviando a Notion DB:', _notionDbId);
+  console.log('[pagar] Payload:', JSON.stringify(_notionBody).slice(0, 200));
+
+  const _notionRes = await fetch('https://api.notion.com/v1/pages', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${process.env.NOTION_API_KEY}`,
+      'Authorization': 'Bearer ' + process.env.NOTION_API_KEY,
       'Notion-Version': '2022-06-28',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({
-      parent: { database_id: process.env.NOTION_PEDIDOS_DB_ID },
-      properties: {
-        "Número de Pedido": {
-          title: [{ text: { content: pedido_id } }]
-        },
-        "Estado": {
-          select: { name: "🟡 Pendiente" }
-        },
-        "Cliente": {
-          rich_text: [{ text: { content: nombre || "" } }]
-        },
-        "Email": {
-          email: email || null
-        },
-        "Teléfono": {
-          phone_number: telefono || null
-        },
-        "Distrito": {
-          rich_text: [{ text: { content: distrito || "" } }]
-        },
-        "Dirección": {
-          rich_text: [{ text: { content: direccion || "" } }]
-        },
-        "Referencia": {
-          rich_text: [{ text: { content: referencia || "" } }]
-        },
-        "Total": {
-          number: parseFloat(total) || 0
-        },
-        "Productos": {
-          rich_text: [{ text: { content: productosResumen || "" } }]
-        },
-        "Culqi Charge ID": {
-          rich_text: [{ text: { content: charge_id || "" } }]
-        }
-      }
-    })
+    body: JSON.stringify(_notionBody)
   });
 
-  const notionData = await notionRes.json();
-  if (!notionRes.ok) {
-    console.error('[pagar] Notion falló:', JSON.stringify(notionData));
+  const _notionJson = await _notionRes.json();
+  if (!_notionRes.ok) {
+    console.error('[pagar] Notion FALLÓ:', JSON.stringify(_notionJson));
+  } else {
+    console.log('[pagar] Notion OK — ID:', _notionJson.id);
   }
-  return notionData;
+  return _notionJson;
 }
 
 // ─────────────────────────────────────────────
