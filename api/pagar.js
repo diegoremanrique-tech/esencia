@@ -8,8 +8,8 @@
      4. Devuelve { ok, pedido_id } o { ok:false, error }
    Variables de entorno (NUNCA hardcodear):
      CULQI_SECRET_KEY, CULQI_PUBLIC_KEY, NOTION_API_KEY,
-     RESEND_API_KEY, DOMAIN
-   Opcionales: EMAIL_FROM, NOTION_CRM_PAGE_ID
+     NOTION_PEDIDOS_DB_ID, RESEND_API_KEY, DOMAIN
+   Opcionales: EMAIL_FROM
    ============================================================ */
 
 // ── Precios oficiales (espejo del frontend, para recalcular en
@@ -128,86 +128,82 @@ async function crearCargoCulqi({ token, montoCents, email, descripcion }) {
 }
 
 // ─────────────────────────────────────────────
-//  NOTION — crea cada pedido como SUBPÁGINA dentro de la página
-//  padre (NOTION_CRM_PAGE_ID), con tablas legibles para el equipo.
+//  NOTION — crea cada pedido como ENTRADA en la base de datos
+//  del CRM (NOTION_PEDIDOS_DB_ID). Columnas exactas de la DB.
 // ─────────────────────────────────────────────
-const NOTION_CRM_PAGE_ID =
-  process.env.NOTION_CRM_PAGE_ID || '37099375-f8fb-815e-bc62-e4262bb4012f';
-
-function rt(s) { return [{ type: 'text', text: { content: String(s == null ? '' : s).slice(0, 2000) } }]; }
-function tableRow(cells) { return { type: 'table_row', table_row: { cells: cells.map(rt) } }; }
-function tableBlock(width, rows) {
-  return {
-    object: 'block', type: 'table',
-    table: { table_width: width, has_column_header: true, has_row_header: false, children: rows },
-  };
+// Resumen de productos: "Nombre — Marca (50ml) x 2, Nombre2 — Marca2 (30ml) x 1"
+function resumenProductos(items) {
+  return (items || []).map((it) => {
+    const ml = Number(it.talla);
+    const cant = Number(it.cantidad) || 1;
+    return `${it.nombre || ''}${it.marca ? ' — ' + it.marca : ''} (${ml}ml) x ${cant}`;
+  }).join(', ');
 }
 
 async function crearPedidoNotion({ pedidoId, datos, items, total, chargeId }) {
-  // Fecha en formato DD/MM/YYYY HH:mm (hora de Lima)
-  const p = new Intl.DateTimeFormat('es-PE', {
-    timeZone: 'America/Lima', day: '2-digit', month: '2-digit', year: 'numeric',
-    hour: '2-digit', minute: '2-digit', hour12: false,
-  }).formatToParts(new Date()).reduce((a, x) => (a[x.type] = x.value, a), {});
-  const fecha = `${p.day}/${p.month}/${p.year} ${p.hour}:${p.minute}`;
+  // Variables disponibles en el scope del bloque que escribe en Notion
+  const pedido_id = pedidoId;
+  const nombre = datos.nombre;
+  const email = datos.email;
+  const telefono = datos.telefono;
+  const distrito = datos.distrito;
+  const direccion = datos.direccion;
+  const referencia = datos.referencia;
+  const charge_id = chargeId;
+  const productosResumen = resumenProductos(items);
 
-  // Tabla 1: datos del pedido (Campo | Valor)
-  const datosRows = [
-    tableRow(['Campo', 'Valor']),
-    tableRow(['Número de Pedido', pedidoId]),
-    tableRow(['Fecha', fecha]),
-    tableRow(['Estado', '🟡 Pendiente']),
-    tableRow(['Cliente', datos.nombre]),
-    tableRow(['Email', datos.email]),
-    tableRow(['Teléfono', datos.telefono]),
-    tableRow(['Distrito', datos.distrito]),
-    tableRow(['Dirección', datos.direccion]),
-    tableRow(['Referencia', datos.referencia || '—']),
-    tableRow(['Total', `S/ ${total}`]),
-    tableRow(['Culqi Charge ID', chargeId]),
-    tableRow(['Email confirmación', '✅ Enviado']),
-  ];
-
-  // Tabla 2: productos (Producto | Talla | Cantidad | Subtotal)
-  const itemsRows = [tableRow(['Producto', 'Talla', 'Cantidad', 'Subtotal'])];
-  for (const it of items) {
-    const tier = normalizarTier(it.coleccion);
-    const ml = Number(it.talla);
-    const precio = (PRECIOS[tier] && PRECIOS[tier][ml]) || Number(it.precio) || 0;
-    const cant = Number(it.cantidad) || 1;
-    const nombre = `${it.nombre || ''}${it.marca ? ' — ' + it.marca : ''}`;
-    itemsRows.push(tableRow([nombre, `${ml}ml`, String(cant), `S/ ${precio * cant}`]));
-  }
-
-  const body = {
-    parent: { page_id: NOTION_CRM_PAGE_ID },
-    properties: { title: { title: rt(`${pedidoId} — ${datos.nombre} — ${datos.distrito}`) } },
-    children: [
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('📦 Datos del Pedido') } },
-      tableBlock(2, datosRows),
-      { object: 'block', type: 'heading_2', heading_2: { rich_text: rt('🛍️ Productos') } },
-      tableBlock(4, itemsRows),
-      { object: 'block', type: 'callout', callout: {
-        icon: { type: 'emoji', emoji: '💡' },
-        rich_text: rt('Solo actualizar Estado y añadir número de tracking cuando el pedido sea enviado. No modificar los demás campos.'),
-      } },
-    ],
-  };
-
-  const r = await fetch('https://api.notion.com/v1/pages', {
+  const notionRes = await fetch('https://api.notion.com/v1/pages', {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.NOTION_API_KEY}`,
-      'Notion-Version': NOTION_VERSION,
-      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${process.env.NOTION_API_KEY}`,
+      'Notion-Version': '2022-06-28',
+      'Content-Type': 'application/json'
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      parent: { database_id: process.env.NOTION_PEDIDOS_DB_ID },
+      properties: {
+        "Número de Pedido": {
+          title: [{ text: { content: pedido_id } }]
+        },
+        "Estado": {
+          select: { name: "🟡 Pendiente" }
+        },
+        "Cliente": {
+          rich_text: [{ text: { content: nombre || "" } }]
+        },
+        "Email": {
+          email: email || null
+        },
+        "Teléfono": {
+          phone_number: telefono || null
+        },
+        "Distrito": {
+          rich_text: [{ text: { content: distrito || "" } }]
+        },
+        "Dirección": {
+          rich_text: [{ text: { content: direccion || "" } }]
+        },
+        "Referencia": {
+          rich_text: [{ text: { content: referencia || "" } }]
+        },
+        "Total": {
+          number: parseFloat(total) || 0
+        },
+        "Productos": {
+          rich_text: [{ text: { content: productosResumen || "" } }]
+        },
+        "Culqi Charge ID": {
+          rich_text: [{ text: { content: charge_id || "" } }]
+        }
+      }
+    })
   });
-  if (!r.ok) {
-    const err = await r.text().catch(() => '');
-    throw new Error(`Notion ${r.status}: ${err}`);
+
+  const notionData = await notionRes.json();
+  if (!notionRes.ok) {
+    console.error('[pagar] Notion falló:', JSON.stringify(notionData));
   }
-  return r.json();
+  return notionData;
 }
 
 // ─────────────────────────────────────────────
