@@ -149,7 +149,10 @@ nav.scrolled{
   height:100%;width:auto;
   object-fit:contain;
   filter:brightness(1.05);
+  image-rendering:-webkit-optimize-contrast;
+  transition:opacity .3s ease;
 }
+.nav-logo:hover img{opacity:.8}
 nav.scrolled .nav-logo{height:40px}
 .nav-links{display:flex;gap:0;list-style:none;align-items:center}
 .nav-links a{
@@ -574,7 +577,7 @@ footer{
   .pyr-level{padding:36px 24px}
   .cta-price{font-size:36px}
   .breadcrumb{font-size:9px;flex-wrap:wrap}
-  .nav-logo{height:40px}
+  .nav-logo{height:34px}
 }
 </style>
 </head>

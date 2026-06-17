@@ -78,7 +78,8 @@ nav{
 }
 nav.scrolled{background:rgba(3,3,3,.97);border-bottom:.5px solid var(--border);padding:12px 60px}
 .nav-logo{display:flex;align-items:center;height:44px}
-.nav-logo img{height:100%;width:auto;object-fit:contain;filter:brightness(1.05)}
+.nav-logo img{height:100%;width:auto;object-fit:contain;filter:brightness(1.05);image-rendering:-webkit-optimize-contrast;transition:opacity .3s ease}
+.nav-logo:hover img{opacity:.8}
 nav.scrolled .nav-logo{height:40px}
 .nav-links{display:flex;gap:0;list-style:none;align-items:center}
 .nav-links a{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--text2);padding:8px 18px;transition:color .3s}
@@ -524,7 +525,7 @@ footer{
   .grid{grid-template-columns:1fr;gap:1px}
   .card-img{height:280px}
   .card-name{font-size:20px}
-  .nav-logo{height:40px}
+  .nav-logo{height:34px}
   .shipping-strip span{gap:8px}
 }
 </style>
