@@ -36,4 +36,12 @@
   --note:#9c8f76;
   --red:#c84545;
   --red-deep:#8a2f2f;
+}/* Ajuste personalizado para el logo flotante de Esencia */
+img[src*="esencia-logo"] {
+    width: 160px !important; /* Cambia este número si lo quieres más grande o pequeño */
+    height: auto !important;
+    position: absolute !important;
+    top: 15px !important;    /* Controla la altura dentro del menú */
+    left: 4% !important;     /* Controla la distancia desde el borde izquierdo */
+    z-index: 9999 !important; /* Asegura que flote sobre todo */
 }
