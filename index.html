@@ -85,6 +85,39 @@ nav.scrolled .nav-logo{height:22px}
 .nav-cart:hover svg{transform:scale(1.1)}
 .nav-cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;background:var(--gold);color:var(--black);font-size:9px;font-weight:600;letter-spacing:0;border-radius:50%;padding:0 5px}
 
+/* ─── MENÚ LATERAL MÓVIL ─── */
+.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-burger{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;padding:0 9px;background:none;border:none;cursor:pointer;
+}
+.nav-burger span{display:block;height:1px;width:100%;background:var(--text);transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .25s}
+.nav-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.drawer-backdrop{position:fixed;inset:0;z-index:190;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .35s ease}
+.drawer-backdrop.open{opacity:1;pointer-events:auto}
+.mobile-drawer{
+  position:fixed;top:0;right:0;bottom:0;z-index:200;
+  width:min(78vw,320px);
+  background:linear-gradient(180deg,#080808 0%,#020202 100%);
+  border-left:.5px solid var(--border2);
+  transform:translateX(100%);visibility:hidden;
+  transition:transform .42s cubic-bezier(.22,1,.36,1),visibility 0s .42s;
+  display:flex;flex-direction:column;padding:22px 0 30px;overflow-y:auto;
+}
+.mobile-drawer.open{transform:translateX(0);visibility:visible;transition:transform .42s cubic-bezier(.22,1,.36,1),visibility 0s}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:0 24px 20px;border-bottom:.5px solid var(--border)}
+.drawer-head span{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--text3)}
+.drawer-close{background:none;border:none;color:var(--text2);cursor:pointer;padding:4px;line-height:0;transition:color .3s}
+.drawer-close:hover{color:var(--gold)}
+.drawer-close svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
+.drawer-links{list-style:none;display:flex;flex-direction:column;padding:12px 0}
+.drawer-links a{display:block;padding:15px 24px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--text2);border-left:2px solid transparent;transition:color .3s,border-color .3s,background .3s}
+.drawer-links a:hover,.drawer-links a.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,169,110,.05)}
+body.drawer-open{overflow:hidden}
+@media(max-width:1024px){.nav-burger{display:flex}}
+
 /* BANDA */
 .shipping-strip{position:fixed;top:78px;left:0;right:0;z-index:99;background:linear-gradient(90deg,var(--gold-deep) 0%,var(--gold) 50%,var(--gold-deep) 100%);background-size:200% 100%;color:#fff;text-align:center;padding:9px 24px;font-size:10px;letter-spacing:.32em;text-transform:uppercase;font-weight:500;border-bottom:.5px solid rgba(0,0,0,.15);transition:top .4s ease,padding .4s ease,font-size .4s ease,opacity .5s ease,transform .5s ease;overflow:hidden;animation:shimmerStrip 12s linear infinite;opacity:0;transform:translateY(-100%)}
 .shipping-strip.visible{opacity:1;transform:translateY(0)}
@@ -134,17 +167,26 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 /* ─── PRUEBA SOCIAL: SLIDER DE CLIENTES (HONESTO) ─── */
 .proof-sect{position:relative;z-index:2;padding:90px 60px;max-width:1320px;margin:0 auto}
 .proof-head{text-align:center;margin-bottom:50px}
+/* Slider deslizable: scroll nativo con snap (swipe con inercia en móvil,
+   trackpad en desktop). Las flechas/puntos quedan como apoyo, no obligatorios. */
 .proof-slider{
   position:relative;
   max-width:1100px;margin:0 auto 50px;
-  overflow:hidden;
+  overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;-ms-overflow-style:none;
+  cursor:grab;
 }
+.proof-slider::-webkit-scrollbar{display:none}
+.proof-slider.is-dragging{cursor:grabbing;scroll-snap-type:none}
 .proof-track{
   display:flex;gap:20px;
-  transition:transform .7s cubic-bezier(.22,1,.36,1);
 }
 .proof-slide{
   flex:0 0 calc(33.333% - 14px);
+  scroll-snap-align:start;
   aspect-ratio:3/4;
   background:linear-gradient(165deg,#0c0c0c 0%,#040404 100%);
   border:.5px solid var(--border2);
@@ -588,17 +630,25 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 .best-tab.active{color:var(--gold)}
 .best-tab.active::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:1px;background:var(--gold)}
 
+/* Slider deslizable: scroll nativo con snap (swipe con inercia en móvil). */
 .best-slider{
   position:relative;
   max-width:1180px;margin:0 auto;
-  overflow:hidden;
+  overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;-ms-overflow-style:none;
+  cursor:grab;
 }
+.best-slider::-webkit-scrollbar{display:none}
+.best-slider.is-dragging{cursor:grabbing;scroll-snap-type:none}
 .best-track{
   display:flex;
-  transition:transform .8s cubic-bezier(.22,1,.36,1);
 }
 .best-slide{
   flex:0 0 100%;
+  scroll-snap-align:start;
   display:grid;grid-template-columns:1fr 1.2fr;gap:60px;
   align-items:center;
   padding:20px 24px;
@@ -976,12 +1026,36 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
     <li><a href="/catalogo">Catálogo</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
-  <button class="nav-cart" id="navCart">
-    <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.5 11.5a2 2 0 01-2 1.5h-7a2 2 0 01-2-1.5L5 8z"/><path d="M9 8V5a3 3 0 016 0v3"/></svg>
-    <span>Carrito</span>
-    <span class="nav-cart-count" id="cartCount">0</span>
-  </button>
+  <div class="nav-actions">
+    <button class="nav-cart" id="navCart">
+      <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.5 11.5a2 2 0 01-2 1.5h-7a2 2 0 01-2-1.5L5 8z"/><path d="M9 8V5a3 3 0 016 0v3"/></svg>
+      <span>Carrito</span>
+      <span class="nav-cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileDrawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<!-- MENÚ LATERAL MÓVIL -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Menú de secciones">
+  <div class="drawer-head">
+    <span>Secciones</span>
+    <button class="drawer-close" id="drawerClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <ul class="drawer-links">
+    <li><a href="/" class="active">Inicio</a></li>
+    <li><a href="#colecciones">Colecciones</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="/catalogo">Catálogo</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</aside>
 
 <div class="shipping-strip" id="shipStrip">
   <span><span class="dot"></span>Envío gratuito a todo Lima<span class="dot"></span>Pago seguro con tarjeta o Yape<span class="dot"></span></span>
@@ -1591,28 +1665,42 @@ function renderBest(){
     </div>
   `).join('');
   
-  const dots = document.getElementById('bestDots');
-  dots.innerHTML = items.map((_,i) => `<div class="best-dot ${i===0?'active':''}" onclick="bestGoTo(${i})"></div>`).join('');
   bestIdx = 0;
-  updateBestSlider();
+  renderBestDots();
+  // Al cambiar de pestaña, volver al inicio sin animación
+  const slider = bestSliderEl();
+  if(slider) slider.scrollTo({left:0, behavior:'auto'});
+  setBestIdx(0);
 }
 
-function updateBestSlider(){
-  document.getElementById('bestTrack').style.transform = `translateX(-${bestIdx*100}%)`;
-  document.querySelectorAll('.best-dot').forEach((d,i) => d.classList.toggle('active', i===bestIdx));
+const bestSliderEl = () => document.querySelector('.best-slider');
+const bestTrackEl  = () => document.getElementById('bestTrack');
+function setBestIdx(i){
+  bestIdx = i;
+  document.querySelectorAll('.best-dot').forEach((d,k) => d.classList.toggle('active', k===bestIdx));
 }
-
+function renderBestDots(){
+  const dots = document.getElementById('bestDots');
+  if(!dots) return;
+  const n = sliderPages(bestSliderEl(), bestTrackEl());
+  dots.innerHTML = Array.from({length:n}).map((_,i) => `<div class="best-dot ${i===bestIdx?'active':''}" onclick="bestGoTo(${i})"></div>`).join('');
+}
+function bestGoTo(i){ sliderScrollTo(bestSliderEl(), bestTrackEl(), i); }
+// Las flechas mantienen el ciclo (del último vuelve al primero)
 function bestNext(){
-  const items = DESTACADOS.filter(p => p.genero === bestGender);
-  bestIdx = (bestIdx + 1) % items.length;
-  updateBestSlider();
+  const n = sliderPages(bestSliderEl(), bestTrackEl());
+  bestGoTo(bestIdx + 1 >= n ? 0 : bestIdx + 1);
 }
 function bestPrev(){
-  const items = DESTACADOS.filter(p => p.genero === bestGender);
-  bestIdx = (bestIdx - 1 + items.length) % items.length;
-  updateBestSlider();
+  const n = sliderPages(bestSliderEl(), bestTrackEl());
+  bestGoTo(bestIdx - 1 < 0 ? n - 1 : bestIdx - 1);
 }
-function bestGoTo(i){ bestIdx = i; updateBestSlider(); }
+(function initBestSlider(){
+  const slider = bestSliderEl(), track = bestTrackEl();
+  if(!slider || !track) return;
+  enableDragScroll(slider);
+  bindSliderDots(slider, track, renderBestDots, setBestIdx);
+})();
 
 document.querySelectorAll('.best-tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -1623,33 +1711,120 @@ document.querySelectorAll('.best-tab').forEach(tab => {
   });
 });
 
+// ═════════════════════════════════════════════════
+// MENÚ LATERAL MÓVIL (drawer)
+// ═════════════════════════════════════════════════
+(function initDrawer(){
+  const burger   = document.getElementById('navBurger');
+  const drawer   = document.getElementById('mobileDrawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+  const closeBtn = document.getElementById('drawerClose');
+  if(!burger || !drawer || !backdrop) return;
+  const setOpen = (open) => {
+    drawer.classList.toggle('open', open);
+    backdrop.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('drawer-open', open);
+  };
+  burger.addEventListener('click', () => setOpen(!drawer.classList.contains('open')));
+  backdrop.addEventListener('click', () => setOpen(false));
+  if(closeBtn) closeBtn.addEventListener('click', () => setOpen(false));
+  // Al tocar una sección se cierra (el ancla navega igual)
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') setOpen(false); });
+  // Si se pasa a desktop con el menú abierto, cerrarlo
+  window.addEventListener('resize', () => { if(window.innerWidth > 1024) setOpen(false); });
+})();
+
+// ═════════════════════════════════════════════════
+// SLIDERS DESLIZABLES (scroll nativo con snap)
+// El swipe táctil y el trackpad los mueve el navegador (con inercia).
+// Este helper sólo añade arrastre con mouse en desktop.
+// ═════════════════════════════════════════════════
+function sliderStep(track){
+  const s = track.children;
+  if(!s.length) return 1;
+  if(s.length < 2) return s[0].getBoundingClientRect().width || 1;
+  const step = s[1].getBoundingClientRect().left - s[0].getBoundingClientRect().left;
+  return step || s[0].getBoundingClientRect().width || 1;
+}
+function sliderPages(slider, track){
+  const max = slider.scrollWidth - slider.clientWidth;
+  if(max <= 1) return 1;
+  return Math.max(1, Math.round(max / sliderStep(track)) + 1);
+}
+function sliderIndex(slider, track){
+  return Math.round(slider.scrollLeft / sliderStep(track));
+}
+function sliderScrollTo(slider, track, i){
+  slider.scrollTo({left: i * sliderStep(track), behavior:'smooth'});
+}
+// Arrastre con mouse (el táctil ya funciona nativo). Al soltar, el snap reacomoda.
+function enableDragScroll(slider){
+  let down=false, startX=0, startLeft=0, moved=false;
+  slider.addEventListener('pointerdown', e => {
+    if(e.pointerType === 'touch') return;
+    down=true; moved=false; startX=e.clientX; startLeft=slider.scrollLeft;
+    slider.classList.add('is-dragging');
+  });
+  slider.addEventListener('pointermove', e => {
+    if(!down) return;
+    const dx = e.clientX - startX;
+    if(Math.abs(dx) > 3) moved = true;
+    slider.scrollLeft = startLeft - dx;
+    e.preventDefault();
+  });
+  const end = () => {
+    if(!down) return;
+    down=false;
+    slider.classList.remove('is-dragging'); // restaurar snap -> reacomoda solo
+  };
+  slider.addEventListener('pointerup', end);
+  slider.addEventListener('pointercancel', end);
+  slider.addEventListener('pointerleave', end);
+  // Un arrastre no debe disparar el click de la slide
+  slider.addEventListener('click', e => {
+    if(moved){ e.preventDefault(); e.stopPropagation(); }
+  }, true);
+}
+// Mantiene los puntos sincronizados con el scroll (con rAF para no saturar)
+function bindSliderDots(slider, track, renderDots, onIdx){
+  let raf = null;
+  slider.addEventListener('scroll', () => {
+    if(raf) return;
+    raf = requestAnimationFrame(() => { raf = null; onIdx(sliderIndex(slider, track)); });
+  }, {passive:true});
+  let rt = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(rt);
+    rt = setTimeout(() => { renderDots(); onIdx(sliderIndex(slider, track)); }, 150);
+  });
+}
+
 // PROOF SLIDER
 let proofIdx = 0;
-const proofTotal = 6;
+const proofSliderEl = () => document.querySelector('.proof-slider');
+const proofTrackEl  = () => document.getElementById('proofTrack');
+function setProofIdx(i){
+  proofIdx = i;
+  document.querySelectorAll('.proof-dot').forEach((d,k) => d.classList.toggle('active', k===proofIdx));
+}
 function renderProofDots(){
   const dots = document.getElementById('proofDots');
-  const visibleSlides = window.innerWidth < 1024 ? 1 : (window.innerWidth < 1200 ? 2 : 3);
-  const maxIdx = Math.max(0, proofTotal - visibleSlides);
-  dots.innerHTML = Array.from({length:maxIdx+1}).map((_,i)=>`<div class="proof-dot ${i===0?'active':''}" onclick="proofGoTo(${i})"></div>`).join('');
+  if(!dots) return;
+  const n = sliderPages(proofSliderEl(), proofTrackEl());
+  dots.innerHTML = Array.from({length:n}).map((_,i)=>`<div class="proof-dot ${i===proofIdx?'active':''}" onclick="proofGoTo(${i})"></div>`).join('');
 }
-function updateProofSlider(){
-  const visibleSlides = window.innerWidth < 1024 ? 1 : (window.innerWidth < 1200 ? 2 : 3);
-  const offset = (100/visibleSlides) * proofIdx;
-  document.getElementById('proofTrack').style.transform = `translateX(-${offset}%)`;
-  document.querySelectorAll('.proof-dot').forEach((d,i) => d.classList.toggle('active', i===proofIdx));
-}
-function proofNext(){
-  const visibleSlides = window.innerWidth < 1024 ? 1 : (window.innerWidth < 1200 ? 2 : 3);
-  const maxIdx = Math.max(0, proofTotal - visibleSlides);
-  proofIdx = Math.min(proofIdx + 1, maxIdx);
-  updateProofSlider();
-}
-function proofPrev(){
-  proofIdx = Math.max(0, proofIdx - 1);
-  updateProofSlider();
-}
-function proofGoTo(i){ proofIdx = i; updateProofSlider(); }
-window.addEventListener('resize', () => { proofIdx = 0; renderProofDots(); updateProofSlider(); });
+function proofGoTo(i){ sliderScrollTo(proofSliderEl(), proofTrackEl(), i); }
+function proofNext(){ proofGoTo(Math.min(proofIdx + 1, sliderPages(proofSliderEl(), proofTrackEl()) - 1)); }
+function proofPrev(){ proofGoTo(Math.max(0, proofIdx - 1)); }
+(function initProofSlider(){
+  const slider = proofSliderEl(), track = proofTrackEl();
+  if(!slider || !track) return;
+  enableDragScroll(slider);
+  bindSliderDots(slider, track, renderProofDots, setProofIdx);
+})();
 
 // COMPARATIVA: rotación entre original y esencia
 let cmpPhase = 0;
@@ -1991,6 +2166,9 @@ function quizGetProfile(){
 // INIT
 renderBest();
 renderProofDots();
+// Los puntos dependen del layout (scrollWidth): recalcular al terminar de cargar
+// fuentes/imágenes, por si el ancho real cambió.
+window.addEventListener('load', () => { renderProofDots(); renderBestDots(); });
 </script>
   <!-- Carrito compartido (Bloque 2) -->
   <script src="/assets/carrito.js" defer></script>

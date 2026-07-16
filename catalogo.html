@@ -528,6 +528,39 @@ footer{
   .nav-logo{height:22px}
   .shipping-strip span{gap:8px}
 }
+
+/* ─── MENÚ LATERAL MÓVIL ─── */
+.nav-actions{display:flex;align-items:center;gap:8px}
+.nav-burger{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:40px;height:40px;padding:0 9px;background:none;border:none;cursor:pointer;
+}
+.nav-burger span{display:block;height:1px;width:100%;background:var(--text);transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .25s}
+.nav-burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.drawer-backdrop{position:fixed;inset:0;z-index:190;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .35s ease}
+.drawer-backdrop.open{opacity:1;pointer-events:auto}
+.mobile-drawer{
+  position:fixed;top:0;right:0;bottom:0;z-index:200;
+  width:min(78vw,320px);
+  background:linear-gradient(180deg,#080808 0%,#020202 100%);
+  border-left:.5px solid var(--border2);
+  transform:translateX(100%);visibility:hidden;
+  transition:transform .42s cubic-bezier(.22,1,.36,1),visibility 0s .42s;
+  display:flex;flex-direction:column;padding:22px 0 30px;overflow-y:auto;
+}
+.mobile-drawer.open{transform:translateX(0);visibility:visible;transition:transform .42s cubic-bezier(.22,1,.36,1),visibility 0s}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:0 24px 20px;border-bottom:.5px solid var(--border)}
+.drawer-head span{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--text3)}
+.drawer-close{background:none;border:none;color:var(--text2);cursor:pointer;padding:4px;line-height:0;transition:color .3s}
+.drawer-close:hover{color:var(--gold)}
+.drawer-close svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
+.drawer-links{list-style:none;display:flex;flex-direction:column;padding:12px 0}
+.drawer-links a{display:block;padding:15px 24px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--text2);border-left:2px solid transparent;transition:color .3s,border-color .3s,background .3s}
+.drawer-links a:hover,.drawer-links a.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,169,110,.05)}
+body.drawer-open{overflow:hidden}
+@media(max-width:1024px){.nav-burger{display:flex}}
 </style>
 </head>
 <body>
@@ -551,12 +584,34 @@ footer{
     <li><a href="/#colecciones">Colecciones</a></li>
     <li><a href="/#proceso">Nosotros</a></li>
   </ul>
-  <button class="nav-cart" id="navCart">
-    <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.5 11.5a2 2 0 01-2 1.5h-7a2 2 0 01-2-1.5L5 8z"/><path d="M9 8V5a3 3 0 016 0v3"/></svg>
-    <span>Carrito</span>
-    <span class="nav-cart-count" id="cartCount">0</span>
-  </button>
+  <div class="nav-actions">
+    <button class="nav-cart" id="navCart">
+      <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.5 11.5a2 2 0 01-2 1.5h-7a2 2 0 01-2-1.5L5 8z"/><path d="M9 8V5a3 3 0 016 0v3"/></svg>
+      <span>Carrito</span>
+      <span class="nav-cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileDrawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+<!-- MENÚ LATERAL MÓVIL -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Menú de secciones">
+  <div class="drawer-head">
+    <span>Secciones</span>
+    <button class="drawer-close" id="drawerClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <ul class="drawer-links">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/catalogo" class="active">Catálogo</a></li>
+    <li><a href="/#colecciones">Colecciones</a></li>
+    <li><a href="/#proceso">Nosotros</a></li>
+  </ul>
+</aside>
+
 
 <!-- BANDA DORADA -->
 <div class="shipping-strip">
@@ -955,5 +1010,28 @@ fetch('/assets/catalogo.json')
 </script>
   <!-- Carrito compartido (Bloque 2) -->
   <script src="/assets/carrito.js" defer></script>
+<script>
+// MENÚ LATERAL MÓVIL (drawer)
+(function initDrawer(){
+  const burger   = document.getElementById('navBurger');
+  const drawer   = document.getElementById('mobileDrawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+  const closeBtn = document.getElementById('drawerClose');
+  if(!burger || !drawer || !backdrop) return;
+  const setOpen = (open) => {
+    drawer.classList.toggle('open', open);
+    backdrop.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.classList.toggle('drawer-open', open);
+  };
+  burger.addEventListener('click', () => setOpen(!drawer.classList.contains('open')));
+  backdrop.addEventListener('click', () => setOpen(false));
+  if(closeBtn) closeBtn.addEventListener('click', () => setOpen(false));
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') setOpen(false); });
+  window.addEventListener('resize', () => { if(window.innerWidth > 1024) setOpen(false); });
+})();
+</script>
 </body>
 </html>
