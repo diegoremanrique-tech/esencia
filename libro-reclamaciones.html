@@ -64,6 +64,18 @@ a{color:inherit;text-decoration:none}
 .lg-foot-contact a:hover{color:var(--gold)}
 .lg-foot-copy{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text3)}
 @media(max-width:600px){.lg-nav{padding:16px 20px}.rc-row{grid-template-columns:1fr}.rc-form{padding:28px 20px}}
+
+/* ─── MÓVIL: sin zoom accidental ───
+   touch-action:manipulation desactiva el zoom por doble toque (la causa real
+   del zoom al navegar). Mantiene el desplazamiento y los sliders intactos.
+   Nota: iOS ignora user-scalable=no del meta viewport desde iOS 10. */
+html{touch-action:manipulation}
+
+/* iOS hace zoom automático al enfocar un campo con font-size < 16px.
+   Sólo en móvil: en desktop se mantiene el tamaño de diseño. */
+@media(max-width:1024px){
+  .rc-field input,.rc-field select,.rc-field textarea{font-size:16px}
+}
 </style>
 </head>
 <body>

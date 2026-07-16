@@ -47,6 +47,12 @@ a{color:inherit;text-decoration:none}
 .lg-foot-contact a:hover{color:var(--gold)}
 .lg-foot-copy{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text3)}
 @media(max-width:600px){.lg-nav{padding:16px 20px}.lg-nav-links{gap:14px;font-size:9.5px}}
+
+/* ─── MÓVIL: sin zoom accidental ───
+   touch-action:manipulation desactiva el zoom por doble toque (la causa real
+   del zoom al navegar). Mantiene el desplazamiento y los sliders intactos.
+   Nota: iOS ignora user-scalable=no del meta viewport desde iOS 10. */
+html{touch-action:manipulation}
 </style>
 </head>
 <body>

@@ -612,6 +612,12 @@ footer{
 .drawer-links a:hover,.drawer-links a.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,169,110,.05)}
 body.drawer-open{overflow:hidden}
 @media(max-width:1024px){.nav-burger{display:flex}}
+
+/* ─── MÓVIL: sin zoom accidental ───
+   touch-action:manipulation desactiva el zoom por doble toque (la causa real
+   del zoom al navegar). Mantiene el desplazamiento y los sliders intactos.
+   Nota: iOS ignora user-scalable=no del meta viewport desde iOS 10. */
+html{touch-action:manipulation}
 </style>
 </head>
 <body>
