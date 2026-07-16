@@ -528,9 +528,20 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 .quiz-results-title em{font-style:italic;color:var(--gold)}
 .quiz-results-sub{font-size:13px;color:var(--note);line-height:1.65;max-width:520px;margin:0 auto}
 .quiz-results-slider{position:relative;width:100%;max-width:100%;display:flex;align-items:center;gap:18px;overflow:hidden;min-width:0}
-.quiz-results-track{flex:1 1 0;overflow:hidden;position:relative;width:100%;max-width:100%;min-width:0}
-.quiz-results-track-inner{display:flex;transition:transform .55s cubic-bezier(.22,1,.36,1)}
-.quiz-res-card{flex:0 0 100%;width:100%;display:grid;grid-template-columns:1fr 1.2fr;gap:0;background:linear-gradient(165deg,#0c0c0c 0%,#060606 100%);border:.5px solid var(--border2);min-height:420px;position:relative;overflow:hidden;min-width:0}
+/* Deslizable: scroll nativo con snap (swipe con inercia en móvil). */
+.quiz-results-track{
+  flex:1 1 0;position:relative;width:100%;max-width:100%;min-width:0;
+  overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;-ms-overflow-style:none;
+  cursor:grab;
+}
+.quiz-results-track::-webkit-scrollbar{display:none}
+.quiz-results-track.is-dragging{cursor:grabbing;scroll-snap-type:none}
+.quiz-results-track-inner{display:flex}
+.quiz-res-card{flex:0 0 100%;width:100%;scroll-snap-align:start;display:grid;grid-template-columns:1fr 1.2fr;gap:0;background:linear-gradient(165deg,#0c0c0c 0%,#060606 100%);border:.5px solid var(--border2);min-height:420px;position:relative;overflow:hidden;min-width:0}
 .quiz-res-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);opacity:.7;z-index:2}
 .quiz-res-img{position:relative;display:flex;align-items:center;justify-content:center;padding:30px;background:radial-gradient(ellipse at center,rgba(201,169,110,.07) 0%,transparent 70%);overflow:hidden}
 .quiz-res-img::before{content:'';position:absolute;bottom:10%;left:15%;right:15%;height:30%;background:radial-gradient(ellipse 60% 100% at 50% 50%,rgba(201,169,110,.18) 0%,transparent 70%);filter:blur(30px);z-index:0}
@@ -2134,17 +2145,39 @@ function quizRenderResults(){
     `<button class="quiz-res-dot ${i===0?'active':''}" onclick="quizResGo(${i})" aria-label="Ver opción ${i+1}"></button>`
   ).join('');
 
-  quizResGo(0);
+  // Resultados nuevos: volver al inicio sin animación
+  const t0 = qResTrackEl();
+  if(t0) t0.scrollTo({left:0, behavior:'auto'});
+  setQuizResIdx(0);
 }
 
-function quizResGo(i){
+const qResTrackEl = () => document.getElementById('qResTrack');      // contenedor con scroll
+const qResInnerEl = () => document.getElementById('qResTrackInner'); // flex interno (se regenera en cada render)
+function setQuizResIdx(i){
   QS_STATE.resIdx = i;
-  const inner = document.getElementById('qResTrackInner');
-  if(inner) inner.style.transform = `translateX(-${i*100}%)`;
   document.querySelectorAll('.quiz-res-dot').forEach((d,k)=>d.classList.toggle('active', k===i));
+}
+function quizResGo(i){
+  const t = qResTrackEl(), inner = qResInnerEl();
+  if(!t || !inner) return;
+  sliderScrollTo(t, inner, i);
 }
 function quizResNext(){ quizResGo((QS_STATE.resIdx+1) % QS_STATE.results.length); }
 function quizResPrev(){ quizResGo((QS_STATE.resIdx-1+QS_STATE.results.length) % QS_STATE.results.length); }
+(function initQuizResSlider(){
+  const t = qResTrackEl();
+  if(!t) return;
+  enableDragScroll(t);
+  let raf = null;
+  t.addEventListener('scroll', () => {
+    if(raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = null;
+      const inner = qResInnerEl();
+      if(inner && QS_STATE.results.length) setQuizResIdx(sliderIndex(t, inner));
+    });
+  }, {passive:true});
+})();
 
 function quizRestart(){
   QS_STATE.q=0; QS_STATE.a={}; QS_STATE.results=[]; QS_STATE.resIdx=0;
