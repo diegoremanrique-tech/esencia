@@ -166,48 +166,38 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 
 /* ─── PRUEBA SOCIAL: SLIDER DE CLIENTES (HONESTO) ─── */
 .proof-sect{position:relative;z-index:2;padding:90px 60px;max-width:1320px;margin:0 auto}
-.proof-head{text-align:center;margin-bottom:50px}
-/* Slider deslizable: scroll nativo con snap (swipe con inercia en móvil,
-   trackpad en desktop). Las flechas/puntos quedan como apoyo, no obligatorios. */
+/* Slider de video: grid de 3 columnas en desktop; slider táctil en móvil. */
 .proof-slider{
   position:relative;
   max-width:1100px;margin:0 auto 50px;
-  overflow-x:auto;overflow-y:hidden;
-  scroll-snap-type:x mandatory;
-  -webkit-overflow-scrolling:touch;
-  overscroll-behavior-x:contain;
-  scrollbar-width:none;-ms-overflow-style:none;
-  cursor:grab;
+  overflow:hidden;
 }
-.proof-slider::-webkit-scrollbar{display:none}
-.proof-slider.is-dragging{cursor:grabbing;scroll-snap-type:none}
 .proof-track{
-  display:flex;gap:20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
 }
 .proof-slide{
-  flex:0 0 calc(33.333% - 14px);
-  scroll-snap-align:start;
   aspect-ratio:3/4;
   background:linear-gradient(165deg,#0c0c0c 0%,#040404 100%);
   border:.5px solid var(--border2);
   position:relative;overflow:hidden;
-  display:flex;flex-direction:column;justify-content:flex-end;
-  padding:24px;cursor:pointer;
   transition:border-color .3s;
 }
 .proof-slide:hover{border-color:var(--gold2)}
-.proof-slide-placeholder{
+.proof-slide-img{
   position:absolute;inset:0;
-  display:flex;align-items:center;justify-content:center;
-  color:var(--text3);
-  font-size:10px;letter-spacing:.3em;text-transform:uppercase;
-  text-align:center;padding:24px;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
 }
-.proof-slide-placeholder svg{
-  width:48px;height:48px;margin-bottom:16px;
-  stroke:currentColor;fill:none;stroke-width:.8;opacity:.5;
+.proof-slide:hover .proof-slide-img{
+  transform:scale(1.04);
+  transition:transform 0.6s cubic-bezier(0.22,1,0.36,1);
 }
-.proof-slide-placeholder p{line-height:1.5}
+.proof-slide-placeholder-dark{
+  position:absolute;inset:0;
+  background:#080808;
+}
 .proof-slide-overlay{
   position:absolute;bottom:0;left:0;right:0;
   padding:24px 24px 22px;
@@ -222,24 +212,17 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 .proof-slide-meta{
   font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
 }
-.proof-controls{
-  display:flex;justify-content:center;align-items:center;gap:24px;margin-top:32px;
-}
-.proof-arrow{
-  width:42px;height:42px;
-  border:.5px solid var(--border2);
+/* Navegación móvil (oculta en desktop) */
+.proof-nav-mobile{display:none}
+.proof-arrow-mobile{
+  width:40px;height:40px;
+  border:.5px solid rgba(201,169,110,0.4);
+  background:transparent;
+  color:#c9a96e;
+  border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  color:var(--text2);cursor:pointer;
-  transition:all .3s;
+  cursor:pointer;
 }
-.proof-arrow:hover{border-color:var(--gold);color:var(--gold)}
-.proof-arrow svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.4}
-.proof-dots{display:flex;gap:8px}
-.proof-dot{
-  width:24px;height:1px;background:var(--border3);
-  cursor:pointer;transition:all .3s;
-}
-.proof-dot.active{background:var(--gold);width:36px}
 
 /* PROOF: 3 promesas (envío / pago / 5 días) */
 .proof-promises{
@@ -975,7 +958,6 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
 
 /* RESPONSIVE */
 @media(max-width:1200px){
-  .proof-slide{flex:0 0 calc(50% - 10px)}
   .guarantee-grid{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1.5fr 1fr 1fr;gap:40px}
 }
@@ -986,7 +968,6 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
   .hero{padding:120px 24px 70px}
   .hero-img-wrap{max-width:420px;margin-bottom:-46px}
   .proof-sect,.compare-sect,.coll-sect,.quiz-sect,.howto-sect,.best-sect,.faq-sect,.guarantee-sect,.test-sect{padding:72px 24px}
-  .proof-slide{flex:0 0 calc(100% - 10px)}
   .promise-icon{width:42px;height:42px}
   .compare-grid{grid-template-columns:1fr;gap:60px}.compare-visual{height:400px}
   .coll-grid{grid-template-columns:1fr;gap:24px}
@@ -1002,6 +983,27 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
   .nav-cart span:not(.nav-cart-count){display:none}
   .nav-cart{padding:10px 12px}
   .shipping-strip{font-size:9px;letter-spacing:.22em;padding:8px 16px}
+}
+@media(max-width:768px){
+  .proof-track{
+    display:flex;
+    overflow:hidden;
+    gap:0;
+    position:relative;
+    transition:transform 0.4s cubic-bezier(0.22,1,0.36,1);
+  }
+  .proof-slide{
+    flex:0 0 100%;
+    width:100%;
+    transition:transform 0.4s cubic-bezier(0.22,1,0.36,1);
+  }
+  .proof-nav-mobile{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin-top:12px;
+    gap:10px;
+  }
 }
 @media(max-width:640px){
   .hero-ctas{flex-direction:column;width:100%;max-width:300px;margin:0 auto}
@@ -1103,79 +1105,45 @@ html{touch-action:manipulation}
 
 <!-- PRUEBA SOCIAL: SLIDER + 3 PROMESAS -->
 <section class="proof-sect">
-  <div class="proof-head">
-    <div class="eyebrow reveal">La elección de Lima</div>
-    <h2 class="section-title reveal rd1">Ellos ya tienen <em>su Esencia</em></h2>
-  </div>
   <div class="proof-slider reveal rd1">
     <div class="proof-track" id="proofTrack">
-      
+
       <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 1</p>
-        </div>
+        <video class="proof-slide-img" autoplay loop muted playsinline>
+          <source src="assets/Experiencia_3_web_1.mp4" type="video/mp4">
+        </video>
         <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Carla</div>
-          <div class="proof-slide-meta">Cliente · Surco</div>
+          <div class="proof-slide-name">Tu ritual</div>
+          <div class="proof-slide-meta">Elaborado para ti · Entregado a tu puerta</div>
         </div>
       </div>
-      <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 2</p>
-        </div>
+      <div class="proof-slide proof-slide--pending">
+        <div class="proof-slide-placeholder-dark"></div>
         <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Andrés</div>
-          <div class="proof-slide-meta">Cliente · San Isidro</div>
+          <div class="proof-slide-name">Calidad EDP</div>
+          <div class="proof-slide-meta">4 días de maceración · Solo para ti</div>
         </div>
       </div>
-      <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 3</p>
-        </div>
+      <div class="proof-slide proof-slide--pending">
+        <div class="proof-slide-placeholder-dark"></div>
         <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Valeria</div>
-          <div class="proof-slide-meta">Cliente · Miraflores</div>
-        </div>
-      </div>
-      <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 4</p>
-        </div>
-        <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Rodrigo</div>
-          <div class="proof-slide-meta">Cliente · La Molina</div>
-        </div>
-      </div>
-      <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 5</p>
-        </div>
-        <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Camila</div>
-          <div class="proof-slide-meta">Cliente · Barranco</div>
-        </div>
-      </div>
-      <div class="proof-slide">
-        <div class="proof-slide-placeholder">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M3 21c0-5 4-8 9-8s9 3 9 8"/></svg>
-          <p>Foto<br>Cliente 6</p>
-        </div>
-        <div class="proof-slide-overlay">
-          <div class="proof-slide-name">Luis</div>
-          <div class="proof-slide-meta">Cliente · Chorrillos</div>
+          <div class="proof-slide-name">190+ fragancias</div>
+          <div class="proof-slide-meta">Clásico · Diseñador · Nicho</div>
         </div>
       </div>
     </div>
   </div>
-  <div class="proof-controls reveal rd2">
-    <button class="proof-arrow" onclick="proofPrev()"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-    <div class="proof-dots" id="proofDots"></div>
-    <button class="proof-arrow" onclick="proofNext()"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="proof-nav-mobile">
+    <button class="proof-arrow-mobile" onclick="proofMobilePrev()">
+      <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="1.5">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="proof-arrow-mobile" onclick="proofMobileNext()">
+      <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="1.5">
+        <path d="M9 6l6 6-6 6"/>
+      </svg>
+    </button>
   </div>
   <div class="proof-promises reveal rd3" style="margin-top:60px">
     <div class="promise-card">
@@ -1825,28 +1793,59 @@ function bindSliderDots(slider, track, renderDots, onIdx){
   });
 }
 
-// PROOF SLIDER
-let proofIdx = 0;
-const proofSliderEl = () => document.querySelector('.proof-slider');
-const proofTrackEl  = () => document.getElementById('proofTrack');
-function setProofIdx(i){
-  proofIdx = i;
-  document.querySelectorAll('.proof-dot').forEach((d,k) => d.classList.toggle('active', k===proofIdx));
+// PROOF SLIDER (solo móvil: swipe + botones, circular)
+let proofMobileIdx = 0;
+function proofMobileTrack(){ return document.getElementById('proofTrack'); }
+function proofMobileCount(){
+  const t = proofMobileTrack();
+  return t ? t.querySelectorAll('.proof-slide').length : 0;
 }
-function renderProofDots(){
-  const dots = document.getElementById('proofDots');
-  if(!dots) return;
-  const n = sliderPages(proofSliderEl(), proofTrackEl());
-  dots.innerHTML = Array.from({length:n}).map((_,i)=>`<div class="proof-dot ${i===proofIdx?'active':''}" onclick="proofGoTo(${i})"></div>`).join('');
+function proofMobileApply(){
+  const t = proofMobileTrack();
+  if(!t) return;
+  if(window.innerWidth <= 768){
+    t.style.transform = `translateX(-${proofMobileIdx * 100}%)`;
+  } else {
+    t.style.transform = '';
+  }
 }
-function proofGoTo(i){ sliderScrollTo(proofSliderEl(), proofTrackEl(), i); }
-function proofNext(){ proofGoTo(Math.min(proofIdx + 1, sliderPages(proofSliderEl(), proofTrackEl()) - 1)); }
-function proofPrev(){ proofGoTo(Math.max(0, proofIdx - 1)); }
-(function initProofSlider(){
-  const slider = proofSliderEl(), track = proofTrackEl();
-  if(!slider || !track) return;
-  enableDragScroll(slider);
-  bindSliderDots(slider, track, renderProofDots, setProofIdx);
+function proofMobileNext(){
+  const n = proofMobileCount();
+  if(!n) return;
+  proofMobileIdx = (proofMobileIdx + 1) % n;
+  proofMobileApply();
+}
+function proofMobilePrev(){
+  const n = proofMobileCount();
+  if(!n) return;
+  proofMobileIdx = (proofMobileIdx - 1 + n) % n;
+  proofMobileApply();
+}
+(function initProofMobile(){
+  const t = proofMobileTrack();
+  if(!t) return;
+  let startX = 0, startY = 0, touching = false;
+  t.addEventListener('touchstart', e => {
+    if(window.innerWidth > 768) return;
+    const p = e.changedTouches[0];
+    startX = p.clientX; startY = p.clientY; touching = true;
+  }, {passive:true});
+  t.addEventListener('touchend', e => {
+    if(!touching || window.innerWidth > 768) return;
+    touching = false;
+    const p = e.changedTouches[0];
+    const dx = p.clientX - startX;
+    const dy = p.clientY - startY;
+    if(Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)){
+      if(dx < 0) proofMobileNext(); else proofMobilePrev();
+    }
+  }, {passive:true});
+  let rt = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(rt);
+    rt = setTimeout(proofMobileApply, 150);
+  });
+  proofMobileApply();
 })();
 
 // COMPARATIVA: rotación entre original y esencia
@@ -2210,10 +2209,9 @@ function quizGetProfile(){
 
 // INIT
 renderBest();
-renderProofDots();
-// Los puntos dependen del layout (scrollWidth): recalcular al terminar de cargar
-// fuentes/imágenes, por si el ancho real cambió.
-window.addEventListener('load', () => { renderProofDots(); renderBestDots(); });
+// Los puntos del best-slider dependen del layout (scrollWidth): recalcular al
+// terminar de cargar fuentes/imágenes, por si el ancho real cambió.
+window.addEventListener('load', () => { renderBestDots(); });
 </script>
   <!-- Carrito compartido (Bloque 2) -->
   <script src="/assets/carrito.js" defer></script>
