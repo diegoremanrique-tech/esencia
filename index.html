@@ -1109,7 +1109,7 @@ html{touch-action:manipulation}
     <div class="proof-track" id="proofTrack">
 
       <div class="proof-slide">
-        <video class="proof-slide-img" autoplay loop muted playsinline>
+        <video class="proof-slide-img" autoplay loop muted playsinline preload="auto">
           <source src="assets/Experiencia_3_web_1.mp4" type="video/mp4">
         </video>
         <div class="proof-slide-overlay">
@@ -1118,7 +1118,7 @@ html{touch-action:manipulation}
         </div>
       </div>
       <div class="proof-slide">
-        <video class="proof-slide-img" autoplay loop muted playsinline>
+        <video class="proof-slide-img" autoplay loop muted playsinline preload="auto">
           <source src="assets/Experiencia_3_web_2.mp4" type="video/mp4">
         </video>
         <div class="proof-slide-overlay">
@@ -1126,11 +1126,13 @@ html{touch-action:manipulation}
           <div class="proof-slide-meta">4 días de maceración · Solo para ti</div>
         </div>
       </div>
-      <div class="proof-slide proof-slide--pending">
-        <div class="proof-slide-placeholder-dark"></div>
+      <div class="proof-slide">
+        <video class="proof-slide-img" autoplay loop muted playsinline preload="auto">
+          <source src="assets/Experiencia_3_web_3.mp4" type="video/mp4">
+        </video>
         <div class="proof-slide-overlay">
-          <div class="proof-slide-name">190+ fragancias</div>
-          <div class="proof-slide-meta">Clásico · Diseñador · Nicho</div>
+          <div class="proof-slide-name">Gran Atomizador</div>
+          <div class="proof-slide-meta">Máxima fijación en tu piel</div>
         </div>
       </div>
     </div>
@@ -1807,9 +1809,29 @@ function proofMobileApply(){
   if(!t) return;
   if(window.innerWidth <= 768){
     t.style.transform = `translateX(-${proofMobileIdx * 100}%)`;
+    proofPlayActiveVideo();
   } else {
     t.style.transform = '';
   }
+}
+// En móvil, los navegadores (iOS Safari sobre todo) no reproducen ni pintan un
+// <video autoplay> que está fuera de pantalla; y como el carrusel se mueve con
+// transform (no scroll), no lo detectan al entrar en vista. Forzamos play() del
+// video del slide activo (el swipe/tap cuenta como gesto de usuario).
+function proofPlayActiveVideo(){
+  const t = proofMobileTrack();
+  if(!t) return;
+  const slides = t.querySelectorAll('.proof-slide');
+  slides.forEach((s, i) => {
+    const v = s.querySelector('video');
+    if(!v) return;
+    if(i === proofMobileIdx){
+      const p = v.play();
+      if(p && p.catch) p.catch(()=>{});
+    } else {
+      v.pause(); // ahorra batería/decodificadores en los que no se ven
+    }
+  });
 }
 function proofMobileNext(){
   const n = proofMobileCount();
