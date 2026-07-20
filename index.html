@@ -359,10 +359,12 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
   100%{opacity:0;transform:translateY(-120px) scale(1.5)}
 }
 
-/* Indicador de fase */
+/* Indicador de fase (oculto: la línea/punto dorado caía justo sobre el nombre
+   "Le Male Elixir · 100 ml" y se veía como un tachado). La comparativa igual
+   rota sola entre original y Esencia. */
 .compare-phase{
   position:absolute;bottom:-32px;left:50%;transform:translateX(-50%);
-  display:flex;gap:10px;z-index:3;
+  display:none;gap:10px;z-index:3;
 }
 .compare-phase-dot{width:20px;height:1px;background:var(--border3);transition:all .5s}
 .compare-phase-dot.active{background:var(--gold);width:36px;box-shadow:0 0 8px var(--gold)}
