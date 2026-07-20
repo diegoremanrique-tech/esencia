@@ -987,7 +987,9 @@ footer{position:relative;z-index:2;background:var(--black);border-top:.5px solid
 @media(max-width:768px){
   .proof-track{
     display:flex;
-    overflow:hidden;
+    /* SIN overflow:hidden aquí: este elemento recibe el translateX y su recorte
+       se movería con él, ocultando el slide que se intenta mostrar. El recorte
+       lo hace el contenedor estático .proof-slider (que ya tiene overflow:hidden). */
     gap:0;
     position:relative;
     transition:transform 0.4s cubic-bezier(0.22,1,0.36,1);
