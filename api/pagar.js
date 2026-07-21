@@ -237,14 +237,14 @@ function emailHtml({ pedidoId, datos, items, total }) {
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#050505" style="max-width:560px;background-color:#050505;border:1px solid #1a1a1a">
         <tr><td style="padding:40px 36px 28px;text-align:center;border-bottom:1px solid #1a1a1a">
           <div style="font-family:Georgia,serif;font-size:30px;letter-spacing:8px;color:#c9a96e">ESENCIA</div>
-          <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#5a5248;margin-top:8px">Perfumes luxury · Lima</div>
+          <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#5a5248;margin-top:8px">Perfumes inspirados · Lima</div>
         </td></tr>
         <tr><td style="padding:36px 36px 8px">
           <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px">Pedido confirmado ✓</div>
           <div style="font-family:Georgia,serif;font-size:24px;color:#f5f0eb;line-height:1.3">Gracias, ${datos.nombre}.</div>
           <p style="color:#a09888;font-size:14px;line-height:1.7;margin:14px 0 0">
-            Tu pedido <strong style="color:#c9a96e">#${pedidoId}</strong> fue confirmado. Lo preparamos con cuidado y te llega
-            <strong style="color:#f5f0eb">gratis a todo Lima</strong>. Te contactaremos para coordinar la entrega.
+            Tu pedido <strong style="color:#c9a96e">#${pedidoId}</strong> fue confirmado, tu nueva identidad olfativa está en proceso.
+            Te contactaremos para coordinar la entrega.
           </p>
         </td></tr>
         <tr><td style="padding:24px 36px 8px">

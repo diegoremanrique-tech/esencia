@@ -397,7 +397,8 @@
   // ═════════════════════════════════════════════
   const DISTRITOS = ['Miraflores', 'San Isidro', 'Surco', 'La Molina', 'San Borja',
     'Barranco', 'Pueblo Libre', 'Jesús María', 'Lince', 'Magdalena', 'San Miguel',
-    'Surquillo', 'Chorrillos', 'Otro'];
+    'Surquillo', 'Chorrillos', 'Ate', 'Chaclacayo', 'Chosica',
+    'San Juan de Lurigancho', 'San Juan de Miraflores', 'Otro'];
 
   const CSS_CHECKOUT = `
   #esCoOverlay{position:fixed;inset:0;background:rgba(0,0,0,.78);opacity:0;visibility:hidden;
