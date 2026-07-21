@@ -150,8 +150,8 @@
   .esc-foot{padding:22px 26px;border-top:1px solid #1a1a1a;background:#0a0a0a}
   .esc-total-row{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:4px}
   .esc-total-row span:first-child{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#a09888}
-  .esc-total-row span:last-child{font-family:'Cormorant Garamond',serif;font-size:30px;color:#f5f0eb}
-  .esc-ship{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#5a5248;margin-bottom:18px}
+  .esc-total-row span:last-child{font-family:'Cormorant Garamond',serif;font-size:34px;color:#fff}
+  .esc-ship{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#c9a96e;margin-bottom:18px}
   .esc-checkout{width:100%;padding:16px;background:#c9a96e;color:#000;border:1px solid #c9a96e;
     font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:600;cursor:pointer;
     transition:all .3s}
@@ -465,8 +465,10 @@
   .esco-sum-price{font-size:12.5px;color:#c9a96e;white-space:nowrap}
   .esco-sum-total{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;margin-top:10px;border-top:1px solid #1a1a1a}
   .esco-sum-total span:first-child{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a09888}
-  .esco-sum-total span:last-child{font-family:'Cormorant Garamond',serif;font-size:26px;color:#f5f0eb}
-  .esco-sum-ship{font-size:10px;letter-spacing:.06em;color:#5a5248;margin-top:12px;text-transform:uppercase}
+  .esco-sum-total span:last-child{font-family:'Cormorant Garamond',serif;font-size:30px;color:#fff}
+  .esco-sum-benefits{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+  .esco-sum-benefits li{position:relative;padding-left:22px;font-size:11px;letter-spacing:.05em;color:#c9a96e;line-height:1.35}
+  .esco-sum-benefits li::before{content:'\\2713';position:absolute;left:0;top:0;color:#c9a96e;font-weight:700}
   @media(max-width:480px){.esco-pad{padding:28px 22px 26px}.esco-row{grid-template-columns:1fr}}
   @media(max-width:680px){
     #esCoModal.esco-wide{width:460px}
@@ -540,7 +542,12 @@
           <div class="esco-sum-head">Tu pedido</div>
           <div class="esco-sum-list">${resumen}</div>
           <div class="esco-sum-total"><span>Total</span><span>${money(getTotal())}</span></div>
-          <div class="esco-sum-ship">✓ Envío gratis a todo Lima</div>
+          <ul class="esco-sum-benefits">
+            <li>Envío gratis a todo Lima</li>
+            <li>Pago 100% seguro vía Culqi</li>
+            <li>Recíbelo en 5 días</li>
+            <li>Garantía 24h</li>
+          </ul>
         </aside>
         <div class="esco-formcol">
           <div class="esco-pad">
