@@ -602,7 +602,7 @@ nav.scrolled ~ .shipping-strip{top:60px;padding:7px 24px;font-size:9px}
 .howto-step.active .howto-icon-circle{box-shadow:0 0 30px rgba(201,169,110,.4);border-color:var(--gold)}
 .howto-step.active .howto-icon-circle::before{opacity:1;inset:-12px}
 .howto-icon{width:42px;height:42px;color:var(--gold);stroke:currentColor;fill:none;stroke-width:1.2}
-.howto-num{position:absolute;top:-4px;right:-4px;width:34px;height:34px;border-radius:50%;background:var(--black);border:.5px solid var(--gold2);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);font-weight:500;z-index:3}
+.howto-num{position:absolute;top:-4px;right:-4px;width:34px;height:34px;border-radius:50%;background:var(--black);border:.5px solid var(--gold2);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold);font-weight:500;z-index:3;transition:all .5s}
 .howto-step.active .howto-num{background:var(--gold);color:var(--black);border-color:var(--gold)}
 .howto-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:var(--text);margin-bottom:12px}
 .howto-text{font-size:13px;color:var(--note);line-height:1.7;max-width:240px;margin:0 auto;letter-spacing:.02em}
@@ -1914,15 +1914,44 @@ const io = new IntersectionObserver((entries) => {
 }, {threshold: 0.12, rootMargin: '0px 0px -50px 0px'});
 revealEls.forEach(el => io.observe(el));
 
-// Howto timeline
+// Howto timeline — bucle continuo (toque luxury): la línea se rellena y los
+// pasos se encienden en secuencia, se mantiene un momento, se desvanece suave
+// y vuelve a empezar. Corre mientras la sección está en pantalla.
+const howtoFill = document.getElementById('howtoLineFill');
+const howtoSteps = [...document.querySelectorAll('.howto-step')];
+let howtoLoopId = null;
+let howtoStepTimers = [];
+function howtoClearTimers(){ howtoStepTimers.forEach(clearTimeout); howtoStepTimers = []; }
+function howtoCycle(){
+  howtoClearTimers();
+  // Reinicio instantáneo (sin transición) para "recargar" desde vacío, no retroceder
+  howtoFill.style.transition = 'none';
+  howtoFill.classList.remove('animate');           // ancho -> 0 al instante
+  howtoFill.style.opacity = '1';
+  howtoSteps.forEach(s => s.classList.remove('active'));
+  void howtoFill.offsetWidth;                       // fuerza reflow
+  howtoFill.style.transition = '';                  // restaura la transición de ancho (2s)
+  // Rellena la línea y enciende los pasos en secuencia
+  howtoFill.classList.add('animate');
+  howtoSteps.forEach((s,i) => howtoStepTimers.push(setTimeout(()=> s.classList.add('active'), 700 + i*250)));
+  // Tras mantenerlo encendido, desvanece todo suavemente antes del siguiente ciclo
+  howtoStepTimers.push(setTimeout(()=>{
+    howtoFill.style.transition = 'opacity .7s ease';
+    howtoFill.style.opacity = '0';
+    howtoSteps.forEach(s => s.classList.remove('active'));
+  }, 4200));
+}
+function startHowtoLoop(){
+  if(howtoLoopId) return;
+  howtoCycle();
+  howtoLoopId = setInterval(howtoCycle, 5400);      // ciclo total ~5.4s
+}
+function stopHowtoLoop(){
+  clearInterval(howtoLoopId); howtoLoopId = null;
+  howtoClearTimers();
+}
 const howtoIO = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if(e.isIntersecting){
-      document.getElementById('howtoLineFill').classList.add('animate');
-      document.querySelectorAll('.howto-step').forEach((s,i) => setTimeout(()=>s.classList.add('active'), 700 + i*250));
-      howtoIO.unobserve(e.target);
-    }
-  });
+  entries.forEach(e => { if(e.isIntersecting) startHowtoLoop(); else stopHowtoLoop(); });
 }, {threshold: 0.3});
 howtoIO.observe(document.getElementById('howtoGrid'));
 
