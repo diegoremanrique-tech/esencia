@@ -13,9 +13,9 @@
 
   // ── Tabla de precios oficial (por colección y tamaño) ──
   const PRECIOS = {
-    nicho:     { 30: 1, 50: 70, 100: 88 },
-    disenador: { 30: 1, 50: 65, 100: 84 },
-    clasico:   { 30: 1, 50: 60, 100: 79 },
+    nicho:     { 30: 45, 50: 70, 100: 88 },
+    disenador: { 30: 42, 50: 65, 100: 84 },
+    clasico:   { 30: 40, 50: 60, 100: 79 },
   };
   // Etiqueta visible de cada colección
   const ETIQUETA_COLECCION = {
