@@ -15,9 +15,9 @@
 // ── Precios oficiales (espejo del frontend, para recalcular en
 //    el servidor y NO confiar en el monto enviado por el cliente) ──
 const PRECIOS = {
-  nicho:     { 30: 45, 50: 70, 100: 88 },
-  disenador: { 30: 42, 50: 65, 100: 84 },
-  clasico:   { 30: 40, 50: 60, 100: 79 },
+  nicho:     { 30: 1, 50: 70, 100: 88 },
+  disenador: { 30: 1, 50: 65, 100: 84 },
+  clasico:   { 30: 1, 50: 60, 100: 79 },
 };
 const ETIQUETA_COLECCION = { nicho: 'Nicho', disenador: 'Diseñador', clasico: 'Clásico' };
 
