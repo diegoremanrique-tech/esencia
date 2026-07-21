@@ -834,7 +834,7 @@ function render(){
   }
   
   grid.innerHTML = filtered.map((p,i) => `
-    <article class="card" style="animation-delay:${i*0.04}s" data-id="${p.id}">
+    <article class="card" style="animation-delay:${i*0.04}s" data-id="${p.id}" onclick="goToProduct('${p.id}')">
       <div class="card-img">
         <span class="card-badge tier-${p.tier}">${tierLabel[p.tier]}</span>
         <img src="${p.imagen_principal}" class="card-photo" alt="${p.nombre}" loading="lazy"
